@@ -16,6 +16,10 @@ export default function Layout() {
       "href": "#services"
     },
     {
+      "name": "Embudo",
+      "href": "#funnel"
+    },
+    {
       "name": "Instagram SMM",
       "href": "#instagram"
     },

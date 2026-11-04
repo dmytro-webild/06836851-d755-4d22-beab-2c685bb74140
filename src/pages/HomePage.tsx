@@ -1,10 +1,11 @@
 import AboutTestimonial from '@/components/sections/about/AboutTestimonial';
-import ContactCta from '@/components/sections/contact/ContactCta';
+import LeadContactFormSection from '@/components/sections/contact/LeadContactFormSection';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import FeaturesDetailedCards from '@/components/sections/features/FeaturesDetailedCards';
 import FeaturesImageBento from '@/components/sections/features/FeaturesImageBento';
 import FeaturesMediaCarousel from '@/components/sections/features/FeaturesMediaCarousel';
 import FeaturesTaggedCards from '@/components/sections/features/FeaturesTaggedCards';
+import SalesFunnelSection from '@/components/sections/funnel/SalesFunnelSection';
 import HeroBillboardCreator from '@/components/sections/hero/HeroBillboardCreator';
 import MetricsMediaCards from '@/components/sections/metrics/MetricsMediaCards';
 import SocialProofMarquee from '@/components/sections/social-proof/SocialProofMarquee';
@@ -167,6 +168,12 @@ export default function HomePage() {
             ]}
             textAnimation="slide-up"
           />
+        </SectionErrorBoundary>
+      </div>
+
+      <div id="funnel" data-section="funnel">
+        <SectionErrorBoundary name="funnel">
+          <SalesFunnelSection />
         </SectionErrorBoundary>
       </div>
 
@@ -421,19 +428,7 @@ export default function HomePage() {
 
       <div id="contact" data-section="contact">
         <SectionErrorBoundary name="contact">
-          <ContactCta
-            tag="¿Listo para Escalar tu Marca?"
-            text="Impulsa tu negocio con producción audiovisual estratégica, storytelling y contenido orgánico de alto impacto diseñado para atraer audiencia y vender más en redes sociales en Punta Cana y Santo Domingo."
-            primaryButton={{
-              text: "Agendar por WhatsApp (RD)",
-              href: "https://wa.me/18492665501",
-            }}
-            secondaryButton={{
-              text: "Visitar Instagram @crowned.rd",
-              href: "https://instagram.com/crowned.rd",
-            }}
-            textAnimation="slide-up"
-          />
+          <LeadContactFormSection />
         </SectionErrorBoundary>
       </div>
     </>
