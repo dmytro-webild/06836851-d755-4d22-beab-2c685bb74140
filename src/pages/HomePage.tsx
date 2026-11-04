@@ -18,15 +18,14 @@ export default function HomePage() {
       <div id="hero" data-section="hero">
         <SectionErrorBoundary name="hero">
           <HeroBillboardCreator
-            tag="Estrategia Audiovisual & Embudos de Conversión"
-            title="Estrategia & Contenido Audiovisual que Impulsan tus Ventas"
-            description="Transformamos la narrativa visual en cierres de ventas y reservas para clientes del sector inmobiliario y turístico."
+            title="Transformamos tus Videos en Contenido Efectivo para Vender Más"
+            description="Convertimos tus videos en contenido para redes sociales que atrae clientes y genera ventas. Trabajamos de forma clara y directa con agentes inmobiliarios, hoteles, resorts y empresas en general."
             primaryButton={{
               text: "Agendar Sesión Estratégica",
               href: "#contact",
             }}
-            note="Especialistas en Real Estate, Agentes, Hoteles & Resorts orientados a captación de clientes y facturación real."
-            badgeText="Estrategia & Embudos de Conversión"
+            note="Contenido audiovisual para agentes inmobiliarios, hoteles, resorts y empresas."
+            badgeText="Videos que Venden"
             textAnimation="fade-blur"
             videos={[
               {
