@@ -19,7 +19,7 @@ import ImageOrVideo from "@/components/ui/ImageOrVideo";
 
 interface InstagramPost {
   id: string;
-  category: "all" | "tourism" | "automotive";
+  category: "all" | "realestate" | "hospitality" | "automotive";
   handle: string;
   clientName: string;
   verified: boolean;
@@ -39,7 +39,24 @@ interface InstagramPost {
 const posts: InstagramPost[] = [
   {
     id: "1",
-    category: "tourism",
+    category: "realestate",
+    handle: "@villas_capcana_realty",
+    clientName: "Cap Cana Luxury Real Estate",
+    verified: true,
+    location: "Cap Cana, República Dominicana",
+    avatarSrc: "https://randomuser.me/api/portraits/women/68.jpg",
+    videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=1",
+    likes: "28,450",
+    comments: "1,420",
+    reach: "1.9M Alcance",
+    caption: "🏡 Recorrido exclusivo por esta villa de lujo en Cap Cana con muelle privado y vista marina 🌊 Un proyecto diseñado para inversionistas que buscan alta rentabilidad. Agenda una visita privada por DM. #RealEstateRD #BienesRaicesRD #CapCana #AgentesInmobiliarios #CrownedSales",
+    metricsResult: "+18 Inversionistas Captados & Venta Cerrada",
+    tagLabel: "Agencia Inmobiliaria de Lujo",
+    date: "HACE 1 DÍA",
+  },
+  {
+    id: "2",
+    category: "hospitality",
     handle: "@puntacana_luxury_resort",
     clientName: "Grand Resort & Spa Punta Cana",
     verified: true,
@@ -55,7 +72,41 @@ const posts: InstagramPost[] = [
     date: "HACE 2 DÍAS",
   },
   {
-    id: "2",
+    id: "3",
+    category: "realestate",
+    handle: "@agente_marco_pena",
+    clientName: "Marco Peña | Broker Inmobiliario",
+    verified: true,
+    location: "Santo Domingo (Piantini), Rep. Dom.",
+    avatarSrc: "https://randomuser.me/api/portraits/men/46.jpg",
+    imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/rooms/oceanpavillion.webp",
+    likes: "19,300",
+    comments: "980",
+    reach: "1.1M Alcance",
+    caption: "🏢 ¿Buscas invertir en un Penthouse en Piantini con retorno garantizado? Te muestro cada detalle en este tour guiado 🎥 Escríbeme por mensaje directo para enviarte el dossier completo. #AgenteInmobiliario #RealEstateAgent #SantoDomingo #InversionesRD",
+    metricsResult: "12 Citas de Venta Agendadas",
+    tagLabel: "Agente Inmobiliario Top Producer",
+    date: "HACE 3 DÍAS",
+  },
+  {
+    id: "4",
+    category: "hospitality",
+    handle: "@boutique_hotel_lasterrenas",
+    clientName: "Las Terrenas Eco Resort & Villas",
+    verified: true,
+    location: "Las Terrenas, Samaná, Rep. Dom.",
+    avatarSrc: "https://randomuser.me/api/portraits/women/28.jpg",
+    imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/journeys/sailing.webp",
+    likes: "31,200",
+    comments: "1,580",
+    reach: "2.1M Alcance",
+    caption: "Desconéctate en medio de palmeras y bungalows frente al mar en Las Terrenas. Campaña de contenido cinematográfico enfocada en venta directa de estadías. 🌿🌊 #LasTerrenas #Samana #HotelesRD #TurismoSostenible",
+    metricsResult: "88% Ocupación Directa sin Comisiones",
+    tagLabel: "Hotel Boutique & Resort",
+    date: "HACE 4 DÍAS",
+  },
+  {
+    id: "5",
     category: "automotive",
     handle: "@autohaus_concesionario_rd",
     clientName: "AutoHaus Dominicana",
@@ -69,27 +120,10 @@ const posts: InstagramPost[] = [
     caption: "Llegó la nueva línea SUV Luxury 2026 a nuestro showroom 🔥 Rendimiento, confort y elegancia para las calles de RD. Pide tu prueba de manejo por DM hoy mismo. 🏎️💨 #ConcesionarioRD #AutosRD #VehiculosRD #SantoDomingo #CrownedManagement",
     metricsResult: "48 Test Drives Agendados por DM",
     tagLabel: "Concesionario Automotriz",
-    date: "HACE 3 DÍAS",
+    date: "HACE 5 DÍAS",
   },
   {
-    id: "3",
-    category: "tourism",
-    handle: "@capcana_beach_villas",
-    clientName: "Cap Cana Ocean Villas",
-    verified: true,
-    location: "Cap Cana, República Dominicana",
-    avatarSrc: "https://randomuser.me/api/portraits/women/68.jpg",
-    imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/rooms/oceanpavillion.webp",
-    likes: "31,200",
-    comments: "1,580",
-    reach: "2.1M Alcance",
-    caption: "Villas privadas con acceso directo a playas de arena blanca y piscina infinita en Cap Cana. El destino preferido para viajes de lujo en el Caribe. 🌊🏖️ #CapCana #RepublicaDominicana #PlayasRD #TurismoDeLujo #CrownedContent",
-    metricsResult: "92% Ocupación Mensual",
-    tagLabel: "Villas de Playa en RD",
-    date: "HACE 4 DÍAS",
-  },
-  {
-    id: "4",
+    id: "6",
     category: "automotive",
     handle: "@autotech_taller_mecanico",
     clientName: "AutoTech Taller Mecánico Especializado",
@@ -103,46 +137,12 @@ const posts: InstagramPost[] = [
     caption: "Diagnóstico computarizado, mantenimiento preventivo y reparación especializada multimarca en Santiago. Mantén tu auto al 100% con técnicos certificados. 🛠️🚗 Agenda por WhatsApp en el link del perfil. #TallerMecanicoRD #MantenimientoRD #MecanicaRD #SantiagoRD",
     metricsResult: "+210 Citas de Taller Captadas",
     tagLabel: "Taller Mecánico Especializado",
-    date: "HACE 5 DÍAS",
-  },
-  {
-    id: "5",
-    category: "tourism",
-    handle: "@bayahibe_catamaran_tours",
-    clientName: "Bayahíbe Excursions & Catamarán",
-    verified: true,
-    location: "Bayahíbe & Isla Saona, Rep. Dom.",
-    avatarSrc: "https://randomuser.me/api/portraits/women/28.jpg",
-    imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/journeys/sailing.webp",
-    likes: "29,150",
-    comments: "1,110",
-    reach: "1.8M Alcance",
-    caption: "Siente la brisa en aguas cristalinas rumbo a Isla Saona ⛵🌴 Excursiones privadas VIP en catamarán con snorkel y gastronomía dominicana. ¡Siente la verdadera vibra del Caribe! 🇩🇴✨ #Bayahibe #IslaSaona #TurismoRepublicaDominicana #Caribe #CrownedAgency",
-    metricsResult: "Reel Viral con 1.8M Visualizaciones",
-    tagLabel: "Excursiones & Playas RD",
-    date: "HACE 1 SEMANA",
-  },
-  {
-    id: "6",
-    category: "automotive",
-    handle: "@apex_performance_workshop",
-    clientName: "Apex Performance & Auto Detailing",
-    verified: true,
-    location: "Santo Domingo Este, Rep. Dom.",
-    avatarSrc: "https://randomuser.me/api/portraits/men/52.jpg",
-    videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?v=3",
-    likes: "21,300",
-    comments: "970",
-    reach: "980K Alcance",
-    caption: "Protección cerámica de 5 años + restauración de pintura impecable para este Porsche 911 GT3 🔥 Brillo de espejo y máxima durabilidad. Visita nuestro taller en SDE. 🧼✨ #AutoDetailingRD #TallerRD #MantenimientoLujo #TuningRD",
-    metricsResult: "3.8x Retorno sobre Inversión en Ads",
-    tagLabel: "Taller & Detallado Automotriz",
-    date: "HACE 1 SEMANA",
+    date: "HACE 6 DÍAS",
   },
 ];
 
 export default function InstagramShowcase() {
-  const [activeTab, setActiveTab] = useState<"all" | "tourism" | "automotive">("all");
+  const [activeTab, setActiveTab] = useState<"all" | "realestate" | "hospitality" | "automotive">("all");
 
   const filteredPosts = posts.filter(
     (post) => activeTab === "all" || post.category === activeTab
@@ -157,7 +157,7 @@ export default function InstagramShowcase() {
             Contenido con Propósito & Resultados Reales
           </h2>
           <p className="text-lg text-foreground/80">
-            Aplicamos storytelling y embudos de ventas en la gestión de Instagram. Aquí puedes ver la ejecución visual y el impacto real en nuestros proyectos del sector turístico y automotriz.
+            Aplicamos storytelling y embudos de ventas en la gestión de Instagram. Aquí puedes ver la ejecución visual y el impacto en ventas para Agentes & Agencias de Bienes Raíces, Hoteles & Resorts, y marcas destacadas.
           </p>
 
           {/* Filter Tabs */}
@@ -173,14 +173,24 @@ export default function InstagramShowcase() {
               Todos los Clientes ({posts.length})
             </button>
             <button
-              onClick={() => setActiveTab("tourism")}
+              onClick={() => setActiveTab("realestate")}
               className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all flex items-center gap-2 ${
-                activeTab === "tourism"
+                activeTab === "realestate"
                   ? "bg-primary text-primary-foreground shadow-md"
                   : "bg-card text-foreground/70 hover:text-foreground border border-border"
               }`}
             >
-              🏖️ Turismo & Resorts RD
+              🏢 Bienes Raíces & Agentes
+            </button>
+            <button
+              onClick={() => setActiveTab("hospitality")}
+              className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all flex items-center gap-2 ${
+                activeTab === "hospitality"
+                  ? "bg-primary text-primary-foreground shadow-md"
+                  : "bg-card text-foreground/70 hover:text-foreground border border-border"
+              }`}
+            >
+              🏨 Hoteles & Resorts
             </button>
             <button
               onClick={() => setActiveTab("automotive")}
@@ -327,7 +337,7 @@ export default function InstagramShowcase() {
                 ¿Quieres que gestionemos las redes sociales de tu marca?
               </h3>
               <p className="text-sm text-foreground/80 mt-1">
-                Estrategia mensual de contenido, Reels virales de resorts, playas y talleres, publicación estratégica y captación directa de clientes.
+                Estrategia mensual de contenido, Reels para agentes de bienes raíces, proyectos inmobiliarios, hoteles, resorts y empresas, enfocada en captación directa de clientes y ventas.
               </p>
             </div>
           </div>

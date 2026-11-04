@@ -8,6 +8,10 @@ import { StyleProvider } from "@/components/ui/StyleProvider";
 export default function Layout() {
   const navItems = [
     {
+      "name": "Especialidades",
+      "href": "#specialties"
+    },
+    {
       "name": "Servicios",
       "href": "#services"
     },
@@ -62,23 +66,23 @@ export default function Layout() {
           brand="Crowned"
           columns={[
             {
-              title: "Servicios",
+              title: "Especialización",
               items: [
                 {
-                  label: "Estrategia de Contenido",
-                  href: "#services",
+                  label: "Real Estate & Agentes",
+                  href: "#specialties",
                 },
                 {
-                  label: "Gestión de Redes Sociales",
-                  href: "#services",
+                  label: "Hoteles & Resorts",
+                  href: "#specialties",
                 },
                 {
-                  label: "Producción de Video",
-                  href: "#videos",
+                  label: "Embudos de Ventas & ROI",
+                  href: "#specialties",
                 },
                 {
-                  label: "Embudos de Ventas",
-                  href: "#services",
+                  label: "Gestión SMM Instagram",
+                  href: "#instagram",
                 },
               ],
             },
@@ -86,19 +90,19 @@ export default function Layout() {
               title: "Navegación",
               items: [
                 {
-                  label: "Estrategia",
-                  href: "#about",
+                  label: "Especialidades",
+                  href: "#specialties",
                 },
                 {
-                  label: "Gestión de Instagram",
-                  href: "#instagram",
+                  label: "Servicios Estratégicos",
+                  href: "#services",
                 },
                 {
                   label: "Portafolio Visual",
                   href: "#portfolio",
                 },
                 {
-                  label: "Resultados",
+                  label: "Resultados Comerciales",
                   href: "#results",
                 },
                 {
