@@ -19,7 +19,7 @@ export default function HomePage() {
             tag="Creación de Contenido & Redes Sociales"
             title="Contenido Estratégico que"
             titleHighlight="Escala tus Ventas"
-            description="Creamos contenido audiovisual de alto impacto y gestionamos tus redes para convertir seguidores en clientes."
+            description="Creamos contenido audiovisual de alto impacto y gestionamos tus redes sociales para marcas de Real Estate, Recorridos Inmobiliarios, Turismo y Estética Automotriz."
             primaryButton={{
               text: "Agendar Sesión Estratégica",
               href: "#contact",
@@ -29,40 +29,40 @@ export default function HomePage() {
             textAnimation="fade-blur"
             videos={[
               {
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-amara.mp4?_wi=1",
-                name: "Gestión Integral Instagram",
-                followers: "+1.2M Reproducciones",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/features/feature-1.webp?_wi=1",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4",
+                name: "Real Estate & Propiedades",
+                followers: "+2.4M Reproducciones",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/marbella/properties/villa-1.webp",
               },
               {
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-chloe.mp4?_wi=1",
-                name: "Estrategia & Campañas",
-                followers: "+340K Ventas Generadas",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/product-1.webp?_wi=1",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4",
+                name: "Recorridos de Casas & Villas",
+                followers: "+1.8M Interacciones",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/real-estate/properties/property1.webp",
               },
               {
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-elena.mp4?_wi=1",
-                name: "Storytelling Visual",
-                followers: "4.8x ROI en Redes",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/features/feature-2.webp?_wi=1",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4",
+                name: "Empresas de Turismo & Hoteles",
+                followers: "+3.5M Alcance Único",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/luxury-travel-agency/destination/destination1.webp",
               },
               {
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-isla.mp4?_wi=1",
-                name: "Crecimiento de Redes",
-                followers: "+1.1M Interacciones",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/product-2.webp",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
+                name: "Estética Automotriz & Detailing",
+                followers: "+4.2M Visualizaciones",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/feature1.webp",
               },
               {
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-zara.mp4?_wi=1",
-                name: "Creación de Contenido Pro",
-                followers: "+890K Alcance Único",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/features/feature-3.webp",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4",
+                name: "Tratamientos & Auto Styling",
+                followers: "5.4x Conversión",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/features2.webp",
               },
               {
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-nadia.mp4?_wi=1",
-                name: "Estrategia de Ventas SMM",
-                followers: "+5.2M Impresiones",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/product-3.webp",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4?v=2",
+                name: "Villas & Residencias Exclusivas",
+                followers: "+6.8M Impresiones",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/marbella/properties/villa-2.webp",
               },
             ]}
           />
@@ -73,7 +73,7 @@ export default function HomePage() {
         <SectionErrorBoundary name="about">
           <AboutTestimonial
             tag="Filosofía Crowned"
-            quote="Construimos la corona de tu marca combinando estrategia creativa de alta gama, Reels de alto rendimiento y gestión integral de redes para impulsar tus ventas."
+            quote="Construimos la corona de tu marca combinando estrategia creativa de alta gama, Reels de alto rendimiento y gestión integral de redes para impulsar tus ventas en inmobiliarias, turismo y estética automotriz."
             author="El Equipo Crowned"
             role="Creación de Contenido & Gestión Integral de Redes"
             videoSrc="https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4"
@@ -94,28 +94,28 @@ export default function HomePage() {
             }}
             items={[
               {
-                title: "Estrategia & Dirección Creativa de Contenido",
-                description: "Diseño de concepto visual, líneas editoriales e identidad de marca para redes sociales. Creamos contenido estético de alto impacto diseñado para proyectar autoridad, captar miradas y elevar el valor percibido de tu negocio.",
-                tags: ["Dirección Creativa", "Estrategia de Marca", "Identidad Visual", "Contenido Premium"],
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/features/feature-1.webp?_wi=2",
+                title: "Estrategia & Dirección Creativa Inmobiliaria y Turística",
+                description: "Diseño de concepto visual, líneas editoriales e identidad de marca para redes sociales. Creamos contenido estético de alto impacto diseñado para proyectar autoridad en bienes raíces, arquitectura y viajes.",
+                tags: ["Real Estate", "Turismo", "Dirección Creativa", "Contenido Premium"],
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/marbella/properties/villa-1.webp",
               },
               {
                 title: "Gestión Integral de Redes Sociales (SMM)",
-                description: "Administración completa de Instagram, TikTok y canales principales. Diseñamos la estrategia mensual, planificamos el calendario editorial, redactamos copies persuasivos, programamos publicaciones y optimizamos continuamente orientados a ventas.",
+                description: "Administración completa de Instagram, TikTok y canales principales. Diseñamos la estrategia mensual, planificamos el calendario editorial, redactamos copies persuasivos y optimizamos continuamente orientados a ventas.",
                 tags: ["Estrategia de Redes", "Calendario Editorial", "Community Management", "Growth & Conversión"],
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-amara.mp4?_wi=10",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4",
               },
               {
-                title: "Producción de Video Short-Form (Reels & TikToks)",
-                description: "Creación de videos dinámicos con narrativa de alto impacto, ganchos visuales en los primeros 3 segundos y edición profesional diseñados para maximizar retención, virabilidad y tracción comercial.",
-                tags: ["Reels & TikToks", "Hooks de Retención", "Edición Dinámica", "Anuncios en Video"],
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=10",
+                title: "Producción de Video & Recorridos en Short-Form (Reels & TikToks)",
+                description: "Creación de videos dinámicos y tours en video con ganchos visuales en los primeros 3 segundos y edición profesional para maximizar retención y captación de clientes.",
+                tags: ["Recorridos de Casas", "Auto Detailing", "Hooks de Retención", "Edición Dinámica"],
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
               },
               {
-                title: "Embudos de Contenido & Conversión",
-                description: "Conectamos tu contenido visual y tus videos estratégicos con rutas de compra claras, landing pages e interacciones guiadas para transformar tráfico en clientes recurrentes.",
+                title: "Embudos de Contenido & Conversión Directa",
+                description: "Conectamos tu contenido visual y tus recorridos estratégicos con rutas de reserva y compra claras para transformar seguidores en clientes en bienes raíces, turismo y talleres de detallado.",
                 tags: ["Embudos de Ventas", "Atracción de Leads", "ROI Medible", "Optimización de Perfil"],
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/joes-coffee/hero/hero.mp4?_wi=10",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4",
               },
             ]}
             textAnimation="slide-up"
@@ -126,40 +126,40 @@ export default function HomePage() {
       <div id="videos" data-section="videos">
         <SectionErrorBoundary name="videos">
           <FeaturesMediaCarousel
-            tag="Formatos Audiovisuales"
-            title="Contenido & Video Diseñados para Convertir"
-            description="Piezas visuales y reels optimizados para detener el scroll, transmitir autoridad instantánea y activar la decisión de compra en tu audiencia."
+            tag="Formatos Audiovisuales Especializados"
+            title="Sectores de Alto Rendimiento Visual"
+            description="Piezas en video optimizadas para detener el scroll, transmitir autoridad instantánea y activar decisiones de compra en bienes raíces, recorridos de casas, turismo y estética para autos."
             primaryButton={{
               text: "Explorar Portafolio",
               href: "#portfolio",
             }}
             items={[
               {
-                title: "Reels & TikToks de Retención Masiva",
-                description: "Edición dinámica con hooks visuales, ritmo acelerado y narrativa envolvente.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=1",
+                title: "Real Estate & Bienes Raíces",
+                description: "Videos cinematográficos de propiedades exclusivas que destacan valor arquitectónico y aceleran cierres.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4",
+                buttonIcon: "Home",
+                buttonHref: "#portfolio",
+              },
+              {
+                title: "Recorridos & Tours de Casas",
+                description: "Recorridos dinámicos y envolventes que muestran cada detalle con elegancia y ritmo acelerado.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4",
                 buttonIcon: "Play",
                 buttonHref: "#portfolio",
               },
               {
-                title: "Storytelling Visual & Contenido de Marca",
-                description: "Narrativas en video estructuradas para comunicar la esencia de tu marca e impulsar pedidos.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-amara.mp4?_wi=2",
-                buttonIcon: "TrendingUp",
-                buttonHref: "#portfolio",
-              },
-              {
-                title: "Gestión Estratégica & Embudos Orgánicos",
-                description: "Planificación de contenido en secuencia que educa y cualifica a tus clientes potenciales.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/joes-coffee/hero/hero.mp4?_wi=1",
-                buttonIcon: "Target",
-                buttonHref: "#portfolio",
-              },
-              {
-                title: "Anuncios Visuales de Alto Impacto",
-                description: "Combinación de formatos dinámicos y videos optimizados para escalar campañas pautadas.",
+                title: "Empresas de Turismo & Hotelería",
+                description: "Experiencias de viaje y conceptos de hospitalidad grabados con enfoque aspiracional para captar reservas.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4",
-                buttonIcon: "Zap",
+                buttonIcon: "Compass",
+                buttonHref: "#portfolio",
+              },
+              {
+                title: "Estética Automotriz & Auto Detailing",
+                description: "Producción audiovisual hiperdetallada que resalta tratamientos cerámicos, pulido y acabados impecables.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
+                buttonIcon: "Car",
                 buttonHref: "#portfolio",
               },
             ]}
@@ -171,48 +171,48 @@ export default function HomePage() {
       <div id="portfolio" data-section="portfolio">
         <SectionErrorBoundary name="portfolio">
           <FeaturesImageBento
-            tag="Portafolio Visual & Redes"
+            tag="Portafolio Visual & Sectores"
             title="Casos de Éxito & Contenido Estratégico"
-            description="Muestras de nuestra dirección creativa, producción en video y los sistemas de contenido que impulsan las ventas de nuestros clientes."
+            description="Muestras de nuestra dirección creativa, producción en video y gestión de redes para inmobiliarias, turismo y estética automotriz."
             primaryButton={{
               text: "Iniciar Mi Proyecto",
               href: "#contact",
             }}
             items={[
               {
-                title: "Dirección Creativa & Estilo de Vida",
-                description: "Piezas de marca con alta estética y edición cuidada para redes sociales.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/features/feature-1.webp?_wi=3",
+                title: "Real Estate & Bienes Raíces",
+                description: "Presentación cinematográfica de residencias de lujo y desarrollos inmobiliarios.",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/marbella/properties/villa-1.webp",
               },
               {
-                title: "Crecimiento Orgánico en Instagram",
-                description: "Hooks de impacto, estética pulida y gestión de comentarios enfocada en conversión.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-chloe.mp4?_wi=2",
+                title: "Recorridos & Tours de Casas",
+                description: "Reels inmersivos con ganchos visuales que destacan espacios y acabados.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4",
               },
               {
-                title: "Estrategia Visual de Producto",
-                description: "Detalle y elegancia para hacer que cada producto luzca irresistible en feed y tienda.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/product-1.webp?_wi=2",
+                title: "Turismo & Experiencias de Viaje",
+                description: "Contenido aspiracional para resorts, agencias de viajes y destinos de lujo.",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/luxury-travel-agency/destination/destination1.webp",
               },
               {
-                title: "Gestión Integral & Copies de Venta",
-                description: "Copywriting psicológico y calendario estratégico orientado a generación de leads.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=2",
+                title: "Estética Automotriz & Auto Detailing",
+                description: "Showcases impactantes con edición dinámica para estudios de auto detailing.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
               },
               {
-                title: "Producción Audiovisual Premium",
-                description: "Narrativas visuales que posicionan tu marca en el segmento más alto de tu mercado.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-isla.mp4?_wi=2",
+                title: "Tours Virtuales de Arquitectura",
+                description: "Recorridos paso a paso estructurados para proyectar el estilo de vida ideal.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4",
               },
               {
-                title: "Posicionamiento de Marca Personal",
-                description: "Proyección de autoridad y liderazgo para fundadores y ejecutivos.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/features/feature-2.webp?_wi=2",
+                title: "Promoción Turística & Hospitalidad",
+                description: "Producciones de alta calidad para captar viajeros y clientes internacionales.",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/luxury-travel-agency/destination/destination3.webp",
               },
               {
-                title: "Gestión Completa & Optimización SMM",
-                description: "Monitoreo diario, análisis de rendimiento y escalado continúo de ventas.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-nadia.mp4?_wi=2",
+                title: "Transformación & Detallado de Autos",
+                description: "Demostraciones de procesos de pulido, protección y acabados en alta definición.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4",
               },
             ]}
             textAnimation="slide-up"
@@ -229,33 +229,33 @@ export default function HomePage() {
             metrics={[
               {
                 value: "+350%",
-                title: "Crecimiento en Facturación",
-                description: "Aumento promedio de ventas tras implementar nuestra gestión integral de redes y estrategia de contenido.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=3",
+                title: "Ventas Inmobiliarias",
+                description: "Aumento en consultas cualificadas para agencias de real estate y desarrolladoras.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4",
               },
               {
                 value: "4.8x",
-                title: "Mayor Tasa de Interacción",
-                description: "Sube el engagement cualificado gracias a creativos profesionales y guiones estratégicos.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-chloe.mp4?_wi=3",
+                title: "Visualizaciones en Recorridos",
+                description: "Mayor retención en reels de tours de casas y arquitectura de lujo.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4",
               },
               {
                 value: "100%",
-                title: "Gestión Llave en Mano",
-                description: "Nos encargamos de la producción, edición, redacción de copies y publicación diaria.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/joes-coffee/hero/hero.mp4?_wi=2",
+                title: "Captación Turística",
+                description: "Estrategia audiovisual efectiva para hoteles boutique y empresas de turismo.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4",
               },
               {
                 value: "98%",
-                title: "Retención de Clientes",
-                description: "Marcas que confían en nuestra gestión continua por su ROI medible y constante.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-zara.mp4?_wi=3",
+                title: "Reservas en Estética Automotriz",
+                description: "Negocios de auto detailing que multiplican sus citas con videos de alto impacto.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
               },
               {
                 value: "15M+",
-                title: "Impresiones Totales",
-                description: "Alcance masivo acumulado en cuentas gestionadas bajo el sello Crowned.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-nadia.mp4?_wi=3",
+                title: "Impresiones en Redes",
+                description: "Alcance masivo logrado en sectores de bienes raíces, turismo y detailing.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4",
               },
             ]}
             textAnimation="slide-up"
@@ -268,42 +268,42 @@ export default function HomePage() {
           <TestimonialOverlayCards
             tag="Historias de Éxito"
             title="Lo que Dicen Nuestros Clientes"
-            description="Fundadores y marcas que delegaron su contenido y gestión de redes en Crowned para multiplicar sus ingresos."
+            description="Líderes de bienes raíces, turismos y estética automotriz que confían su gestión de redes sociales en Crowned."
             testimonials={[
               {
-                name: "Alex Rivet",
-                role: "CEO",
-                company: "Vantage Group",
+                name: "Carlos Mendoza",
+                role: "Director Inmobiliario",
+                company: "Marbella Real Estate",
                 rating: 5,
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-amara.mp4?_wi=4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4",
               },
               {
-                name: "Sofía Miller",
-                role: "Directora de Marketing",
-                company: "LuxBrand Co.",
+                name: "Sofía Valenzuela",
+                role: "Agente de Bienes Raíces",
+                company: "Habitat Property Group",
                 rating: 5,
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-chloe.mp4?_wi=4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4",
               },
               {
-                name: "Jonah K.",
+                name: "Javier Morales",
                 role: "Fundador",
-                company: "Rise Apparel",
+                company: "Aura Luxury Travel & Hotels",
                 rating: 5,
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-elena.mp4?_wi=3",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4",
               },
               {
-                name: "Elena M.",
-                role: "CMO",
-                company: "Flow Digital",
+                name: "Diego Fernández",
+                role: "Propietario",
+                company: "Apex Auto Detailing",
                 rating: 5,
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-isla.mp4?_wi=3",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
               },
               {
-                name: "Marcos T.",
-                role: "Fundador",
-                company: "Sprint Health",
+                name: "Mateo Rossi",
+                role: "Director de Marketing",
+                company: "Vanguard Detailing & Styling",
                 rating: 5,
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-zara.mp4?_wi=4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4",
               },
             ]}
             textAnimation="slide-up"
@@ -318,13 +318,13 @@ export default function HomePage() {
             title="Potenciando Marcas en Redes Sociales"
             description="Impulsamos la imagen, el contenido y la facturación de empresas líderes."
             names={[
-              "Lumina",
-              "Apex Studio",
-              "Nova Agency",
-              "Stellar Media",
-              "Orbit Funnels",
-              "Flux Commerce",
-              "Zenith Luxury",
+              "Marbella Estates",
+              "Habitat Luxury",
+              "Aura Travel",
+              "Apex Auto Detailing",
+              "Vanguard Property",
+              "Grand Hotel Collection",
+              "Zenith Motors",
             ]}
             textAnimation="slide-up"
           />
@@ -340,22 +340,22 @@ export default function HomePage() {
             items={[
               {
                 question: "¿Qué abarca la gestión integral de redes sociales?",
-                answer: "Nos encargamos de absolutamente todo: diseño de la estrategia de contenido, planificación del calendario editorial, producción de video, diseño visual, redacción de copies de conversión, programación de publicaciones y seguimiento analítico orientado a ventas.",
+                answer: "Nos encargamos de absolutamente todo: diseño de la estrategia de contenido, planificación del calendario editorial, producción de video de alta gama (real estate, recorridos, turismo y estética automotriz), redacción de copies de conversión, programación de publicaciones y seguimiento analítico orientado a ventas.",
               },
               {
-                question: "¿Qué tipo de contenido producen para las redes sociales?",
-                answer: "Nos especializamos en videos de formato corto (Reels, TikToks, Shorts), piezas gráficas de alto impacto, historias interactivas y recursos de marca diseñados para captar la atención y generar conversión.",
+                question: "¿Producen contenido en las ubicaciones de mis propiedades o taller?",
+                answer: "Sí, coordinamos producciones audiovisuales directas o trabajamos con tus tomas en bruto para editarlas con ganchos de alta retención, colorización profesional y ritmo cinematográfico adaptado a Reels y TikTok.",
               },
               {
                 question: "¿Cómo garantizan que el contenido genera ventas y no solo vistas?",
-                answer: "Diseñamos cada video y publicación con un objetivo comercial específico. Incorporamos ganchos psicológicos, ofertas claras, optimización del perfil y llamados a la acción estratégicos hacia tus canales de venta.",
+                answer: "Diseñamos cada video y publicación con un objetivo comercial específico. Incorporamos ganchos psicológicos, llamadas a la acción claras, optimización del perfil y embudos orientados a agendar visitas, consultas o reservas.",
               },
               {
                 question: "¿Cuánto tiempo toma poner en marcha el servicio?",
                 answer: "Tras la sesión estratégica de inicio, estructuramos la línea editorial y realizamos las primeras producciones de contenido y video en menos de 10 días laborables para comenzar a publicar sin demora.",
               },
             ]}
-            videoSrc="https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4"
+            videoSrc="https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4"
             textAnimation="slide-up"
           />
         </SectionErrorBoundary>
