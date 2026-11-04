@@ -10,7 +10,6 @@ import {
   MapPin, 
   Eye, 
   Sparkles,
-  Users,
   Play
 } from "lucide-react";
 import ScrollReveal from "@/components/ui/ScrollReveal";
@@ -333,21 +332,35 @@ export default function InstagramShowcase() {
               <Instagram className="w-7 h-7" />
             </div>
             <div>
-              <h3 className="text-xl md:text-2xl font-bold text-foreground">
-                ¿Quieres que gestionemos las redes sociales de tu marca?
+              <h3 className="text-xl md:text-2xl font-bold text-foreground flex flex-wrap items-center gap-2 justify-center md:justify-start">
+                <span>Síguenos en Instagram</span>
+                <span className="text-rose-400 font-mono">@crowned.rd</span>
               </h3>
               <p className="text-sm text-foreground/80 mt-1">
-                Estrategia mensual de contenido, Reels para agentes de bienes raíces, proyectos inmobiliarios, hoteles, resorts y empresas, enfocada en captación directa de clientes y ventas.
+                Ubicados en Punta Cana y Santo Domingo, RD. Estrategia de contenido audiovisual, Reels para bienes raíces, hoteles y empresas, con embudos de venta directos por WhatsApp (+1 849-266-5501).
               </p>
             </div>
           </div>
-          <a
-            href="#contact"
-            className="px-6 py-3 rounded-full bg-primary text-primary-foreground font-semibold text-sm hover:opacity-90 transition-opacity shrink-0 shadow-md flex items-center gap-2"
-          >
-            <span>Ver Plan de Redes</span>
-            <Users className="w-4 h-4" />
-          </a>
+          <div className="flex flex-wrap items-center justify-center gap-3 shrink-0">
+            <a
+              href="https://instagram.com/crowned.rd"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-3 rounded-full bg-gradient-to-r from-amber-500 via-rose-500 to-purple-600 text-white font-semibold text-sm hover:opacity-90 transition-opacity shadow-md flex items-center gap-2"
+            >
+              <span>@crowned.rd</span>
+              <Instagram className="w-4 h-4" />
+            </a>
+            <a
+              href="https://wa.me/18492665501"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-3 rounded-full bg-emerald-600 text-white font-semibold text-sm hover:bg-emerald-500 transition-colors shadow-md flex items-center gap-2"
+            >
+              <span>WhatsApp RD</span>
+              <MessageCircle className="w-4 h-4" />
+            </a>
+          </div>
         </div>
       </ScrollReveal>
     </section>

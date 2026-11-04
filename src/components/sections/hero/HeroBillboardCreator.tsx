@@ -62,12 +62,17 @@ const HeroBillboardCreator = ({
             transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
           >
             {title}{" "}
-            {titleHighlight && (
-              <span className="italic font-serif" style={{ fontFamily: "'Cardo', serif" }}>
-                {titleHighlight}
-              </span>
-            )}
           </motion.span>
+          {titleHighlight && (
+            <motion.span
+              className="inline-block text-white font-normal italic drop-shadow-md px-1"
+              style={{ fontFamily: "'Alex Brush', 'Great Vibes', 'Dancing Script', cursive" }}
+              variants={{ hidden: { opacity: 0, y: "50%" }, visible: { opacity: 1, y: 0 } }}
+              transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+            >
+              {titleHighlight}
+            </motion.span>
+          )}
         </motion.h1>
 
         <TextAnimation

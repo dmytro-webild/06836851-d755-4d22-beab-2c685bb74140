@@ -75,9 +75,9 @@ export default function HomePage() {
         <SectionErrorBoundary name="about">
           <AboutTestimonial
             tag="Nuestra Filosofía de Contenido"
-            quote="Creemos que el contenido sin propósito es solo ruido. Combinamos la fuerza del storytelling con la estructura de los embudos de ventas para crear contenido audiovisual con propósito que conecta emocionalmente con tu audiencia y genera conversiones medibles en redes sociales, con especial foco en bienes raíces y turismo."
+            quote="“Creemos que el contenido sin propósito es solo ruido. Combinamos la fuerza del storytelling con la estructura de los embudos de ventas para crear contenido audiovisual con propósito que conecta emocionalmente con tu audiencia y genera conversiones medibles en redes sociales, con especial foco en bienes raíces y turismo.”"
             author="El Equipo Crowned"
-            role="Estrategia de Contenido, Storytelling & Embudos de Ventas"
+            role="Estrategia & Producción Audiovisual · Punta Cana & Santo Domingo"
             videoSrc="https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=2"
             textAnimation="slide-up"
           />
@@ -425,14 +425,14 @@ export default function HomePage() {
         <SectionErrorBoundary name="contact">
           <ContactCta
             tag="¿Listo para Escalar tu Marca?"
-            text="Impulsa tu negocio con contenido con propósito, storytelling que conecta y embudos de ventas diseñados para generar resultados reales en redes sociales para agentes, inmobiliarias, hoteles y empresas."
+            text="Impulsa tu negocio con contenido con propósito, storytelling que conecta y embudos de ventas diseñados para generar resultados reales en redes sociales en Punta Cana y Santo Domingo."
             primaryButton={{
-              text: "Agendar Sesión Estratégica",
-              href: "#",
+              text: "Agendar por WhatsApp (RD)",
+              href: "https://wa.me/18492665501",
             }}
             secondaryButton={{
-              text: "Ver Portafolio",
-              href: "#portfolio",
+              text: "Visitar Instagram @crowned.rd",
+              href: "https://instagram.com/crowned.rd",
             }}
             textAnimation="slide-up"
           />
