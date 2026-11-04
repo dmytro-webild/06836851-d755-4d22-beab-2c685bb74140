@@ -7,94 +7,107 @@ import { StyleProvider } from "@/components/ui/StyleProvider";
 
 export default function Layout() {
   const navItems = [
-  {
-    "name": "Work",
-    "href": "#portfolio"
-  },
-  {
-    "name": "Method",
-    "href": "#about"
-  },
-  {
-    "name": "Results",
-    "href": "#results"
-  },
-  {
-    "name": "Contact",
-    "href": "#contact"
-  },
-  {
-    "name": "Hero",
-    "href": "#hero"
-  },
-  {
-    "name": "Testimonials",
-    "href": "#testimonials"
-  },
-  {
-    "name": "Social Proof",
-    "href": "#social-proof"
-  }
-];
+    {
+      "name": "Portafolio",
+      "href": "#portfolio"
+    },
+    {
+      "name": "Formatos Video",
+      "href": "#videos"
+    },
+    {
+      "name": "Estrategia",
+      "href": "#about"
+    },
+    {
+      "name": "Resultados",
+      "href": "#results"
+    },
+    {
+      "name": "Testimonios",
+      "href": "#testimonials"
+    },
+    {
+      "name": "Preguntas",
+      "href": "#faq"
+    },
+    {
+      "name": "Contacto",
+      "href": "#contact"
+    }
+  ];
 
   return (
-    <StyleProvider buttonVariant="bubble" siteBackground="floatingGradient" heroBackground="lightRaysCenter">
+    <StyleProvider buttonVariant="bounce" siteBackground="floatingGradient" heroBackground="lightRaysCenter">
       <SiteBackgroundSlot />
       <SectionErrorBoundary name="navbar">
         <NavbarFloating
-      logo="Crowned"
-      ctaButton={{
-        text: "Let's Talk",
-        href: "#contact",
-      }}
-     navItems={navItems} />
+          logo="Crowned"
+          ctaButton={{
+            text: "Agendar Sesión",
+            href: "#contact",
+          }}
+          navItems={navItems}
+        />
       </SectionErrorBoundary>
       <main className="flex-grow">
         <Outlet />
       </main>
       <SectionErrorBoundary name="footer">
         <FooterSimple
-      brand="Crowned"
-      columns={[
-        {
-          title: "Company",
-          items: [
+          brand="Crowned"
+          columns={[
             {
-              label: "About",
-              href: "#about",
+              title: "Agencia",
+              items: [
+                {
+                  label: "Estrategia",
+                  href: "#about",
+                },
+                {
+                  label: "Portafolio",
+                  href: "#portfolio",
+                },
+                {
+                  label: "Formatos Video",
+                  href: "#videos",
+                },
+              ],
             },
             {
-              label: "Work",
-              href: "#portfolio",
+              title: "Servicios",
+              items: [
+                {
+                  label: "Resultados",
+                  href: "#results",
+                },
+                {
+                  label: "Testimonios",
+                  href: "#testimonials",
+                },
+                {
+                  label: "Preguntas Frecuentes",
+                  href: "#faq",
+                },
+                {
+                  label: "Contacto",
+                  href: "#contact",
+                },
+              ],
             },
-          ],
-        },
-        {
-          title: "Support",
-          items: [
+          ]}
+          copyright="© 2026 Crowned Agency. Todos los derechos reservados."
+          links={[
             {
-              label: "FAQ",
-              href: "#faq",
+              label: "Política de Privacidad",
+              href: "#",
             },
             {
-              label: "Contact",
-              href: "#contact",
+              label: "Términos y Condiciones",
+              href: "#",
             },
-          ],
-        },
-      ]}
-      copyright="© 2024 Crowned Agency. All rights reserved."
-      links={[
-        {
-          label: "Privacy",
-          href: "#",
-        },
-        {
-          label: "Terms",
-          href: "#",
-        },
-      ]}
-    />
+          ]}
+        />
       </SectionErrorBoundary>
     </StyleProvider>
   );
