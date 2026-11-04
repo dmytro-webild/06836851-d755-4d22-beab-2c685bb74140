@@ -12,28 +12,12 @@ export default function Layout() {
       "href": "/"
     },
     {
-      "name": "Servicios Creativos",
+      "name": "Servicios",
       "href": "/servicios"
     },
     {
-      "name": "Solicitar Briefing",
-      "href": "/servicios#solicitud"
-    },
-    {
-      "name": "Especialidades",
-      "href": "/#specialties"
-    },
-    {
       "name": "Portafolio",
-      "href": "/#portfolio"
-    },
-    {
-      "name": "Embudo",
-      "href": "/#funnel"
-    },
-    {
-      "name": "Instagram SMM",
-      "href": "/#instagram"
+      "href": "/portafolio"
     },
     {
       "name": "Preguntas",
@@ -42,6 +26,10 @@ export default function Layout() {
     {
       "name": "Contacto",
       "href": "/#contact"
+    },
+    {
+      "name": "Solicitar Asesoría",
+      "href": "/solicitar-asesoria"
     }
   ];
 
@@ -51,10 +39,10 @@ export default function Layout() {
       <SectionErrorBoundary name="navbar">
         <NavbarFloating
           logo="Crowned"
-          logoImageSrc="/crowned-logo-dark.png"
+          logoImageSrc="/crowned-logo-white.png"
           ctaButton={{
-            text: "Solicitar Servicio",
-            href: "/servicios#solicitud",
+            text: "Solicitar Asesoría",
+            href: "/solicitar-asesoria",
           }}
           navItems={navItems}
         />
@@ -65,26 +53,26 @@ export default function Layout() {
       <SectionErrorBoundary name="footer">
         <FooterSimple
           brand="Crowned"
-          brandImageSrc="/crowned-logo-dark.png"
+          brandImageSrc="/crowned-logo-white.png"
           columns={[
             {
-              title: "Especialización",
+              title: "Servicios & Soluciones",
               items: [
                 {
-                  label: "Real Estate & Agentes",
-                  href: "#specialties",
+                  label: "Producción de Reels & Video",
+                  href: "/servicios",
                 },
                 {
-                  label: "Hoteles & Resorts",
-                  href: "#specialties",
+                  label: "Storytelling & Dirección",
+                  href: "/servicios",
                 },
                 {
-                  label: "Contenido Orgánico & ROI",
-                  href: "#specialties",
+                  label: "Portafolio Cinematográfico",
+                  href: "/portafolio",
                 },
                 {
-                  label: "Gestión SMM Instagram",
-                  href: "#instagram",
+                  label: "Solicitar Asesoría 1:1",
+                  href: "/solicitar-asesoria",
                 },
               ],
             },
@@ -105,32 +93,28 @@ export default function Layout() {
                 },
                 {
                   label: "Punta Cana & Santo Domingo, RD",
-                  href: "#contact",
+                  href: "/#contact",
                 },
               ],
             },
             {
-              title: "Navegación",
+              title: "Navegación Principal",
               items: [
                 {
-                  label: "Página Principal",
+                  label: "Inicio",
                   href: "/",
                 },
                 {
-                  label: "Oferta de Servicios",
+                  label: "Servicios Creativos",
                   href: "/servicios",
                 },
                 {
-                  label: "Solicitud & Briefing",
-                  href: "/servicios#solicitud",
+                  label: "Portafolio",
+                  href: "/portafolio",
                 },
                 {
-                  label: "Especialidades",
-                  href: "/#specialties",
-                },
-                {
-                  label: "Portafolio Visual",
-                  href: "/#portfolio",
+                  label: "Solicitar Asesoría",
+                  href: "/solicitar-asesoria",
                 },
                 {
                   label: "Preguntas Frecuentes",
