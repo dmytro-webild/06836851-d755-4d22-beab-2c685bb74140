@@ -18,16 +18,16 @@ export default function HomePage() {
       <div id="hero" data-section="hero">
         <SectionErrorBoundary name="hero">
           <HeroBillboardCreator
-            tag="Contenido con Propósito & Embudos de Ventas"
-            title="Creamos Contenido con Propósito que"
-            titleHighlight="Multiplica tus Ventas"
-            description="Transformamos tu marca con storytelling de alto impacto, producción audiovisual estratégica y embudos de ventas diseñados para agentes inmobiliarios, agencias de bienes raíces, hoteles y resorts. Convertimos vistas en cierres de ventas y reservas reales."
+            tag="Estrategia Audiovisual & Embudos de Conversión"
+            title="Transformamos tu Presencia Digital en"
+            titleHighlight="Cierres de Ventas & Reservas Reales"
+            description="Producimos narrativa visual cinematográfica y embudos de venta directa para agentes inmobiliarios, agencias de bienes raíces, hoteles y resorts. Convertimos cada visualización en clientes potenciales calificados, cierres inmobiliarios y reservas confirmadas."
             primaryButton={{
               text: "Agendar Sesión Estratégica",
               href: "#contact",
             }}
             note="Especialistas en Real Estate, Agentes, Hoteles & Resorts orientados a captación de clientes y facturación real."
-            badgeText="Storytelling & Embudos de Ventas"
+            badgeText="Estrategia & Embudos de Conversión"
             textAnimation="fade-blur"
             videos={[
               {
@@ -74,10 +74,10 @@ export default function HomePage() {
       <div id="about" data-section="about">
         <SectionErrorBoundary name="about">
           <AboutTestimonial
-            tag="Nuestra Filosofía de Contenido"
-            quote="“Creemos que el contenido sin propósito es solo ruido. Combinamos la fuerza del storytelling con la estructura de los embudos de ventas para crear contenido audiovisual con propósito que conecta emocionalmente con tu audiencia y genera conversiones medibles en redes sociales, con especial foco en bienes raíces y turismo.”"
+            tag="Nuestra Filosofía de Trabajo"
+            quote="“Creemos que la producción visual sin estrategia comercial es solo adorno. Combinamos la fuerza de la narrativa cinematográfica con la estructura de los embudos de venta directa para crear piezas audiovisuales de alto rendimiento que conectan emocionalmente con tu audiencia y generan resultados medibles en bienes raíces y turismo.”"
             author="El Equipo Crowned"
-            role="Estrategia & Producción Audiovisual · Punta Cana & Santo Domingo"
+            role="Estrategia Audiovisual & Conversión Digital · Punta Cana & Santo Domingo"
             videoSrc="https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=2"
             textAnimation="slide-up"
           />
@@ -135,7 +135,7 @@ export default function HomePage() {
         <SectionErrorBoundary name="services">
           <FeaturesDetailedCards
             tag="Nuestros Servicios Estratégicos"
-            title="Creación de Contenido con Propósito, Storytelling & Embudos de Ventas"
+            title="Producción Audiovisual Estratégica, Storytelling & Embudos de Ventas"
             description="Llevamos tu marca al siguiente nivel uniendo la producción audiovisual de estética cinematográfica con estrategias de conversión comercial y gestión activa en redes sociales."
             primaryButton={{
               text: "Solicitar Propuesta",
@@ -143,9 +143,9 @@ export default function HomePage() {
             }}
             items={[
               {
-                title: "Creación de Contenido con Propósito & Video Reels",
+                title: "Producción de Reels & Video Estratégico",
                 description: "Producimos videos cinematográficos y piezas visuales con mensajes claros que capturan la atención, comunican el valor diferencial de tu marca y detienen el scroll en Instagram y TikTok.",
-                tags: ["Contenido con Propósito", "Producción Audiovisual", "Reels & TikTok", "Diseño Visual"],
+                tags: ["Contenido Estratégico", "Producción Audiovisual", "Reels & TikTok", "Diseño Visual"],
                 imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/amenities/pool.jpg?_wi=2",
               },
               {
@@ -182,7 +182,7 @@ export default function HomePage() {
         <SectionErrorBoundary name="videos">
           <FeaturesMediaCarousel
             tag="Formatos Audiovisuales"
-            title="Contenido con Propósito que Detiene el Scroll"
+            title="Narrativa Visual de Alto Impacto que Detiene el Scroll"
             description="Piezas de video diseñadas estratégicamente para transmitir autoridad, conectar mediante storytelling y activar conversiones en redes sociales."
             primaryButton={{
               text: "Explorar Portafolio",
@@ -228,7 +228,7 @@ export default function HomePage() {
           <FeaturesImageBento
             tag="Portafolio Visual"
             title="Estrategia Visual & Casos de Éxito"
-            description="Muestras de nuestra dirección creativa, producción en video y gestión de contenido con propósito para clientes destacados."
+            description="Muestras de nuestra dirección creativa, producción cinematográfica y gestión de alto rendimiento para clientes destacados."
             primaryButton={{
               text: "Iniciar Mi Proyecto",
               href: "#contact",
@@ -280,7 +280,7 @@ export default function HomePage() {
           <MetricsMediaCards
             tag="Resultados Comprobados"
             title="Embudos de Ventas que Generan Facturación Real"
-            description="Estrategias orientadas a retorno sobre inversión y crecimiento sostenido a través de contenido con propósito."
+            description="Estrategias orientadas a retorno sobre inversión y crecimiento sostenido a través de producciones audiovisuales de alto rendimiento."
             metrics={[
               {
                 value: "+380%",
@@ -323,7 +323,7 @@ export default function HomePage() {
           <TestimonialOverlayCards
             tag="Historias de Éxito"
             title="Marcas que Confían en Nuestra Estrategia"
-            description="Descubre cómo el contenido con propósito, el storytelling y los embudos de ventas han impulsado el crecimiento de nuestros clientes en bienes raíces, turismo y más."
+            description="Descubre cómo la producción audiovisual estratégica, el storytelling y los embudos de ventas han impulsado el crecimiento de nuestros clientes en bienes raíces, turismo y más."
             testimonials={[
               {
                 name: "Lic. Alejandro Sterling",
@@ -392,7 +392,7 @@ export default function HomePage() {
           <FaqSplitMedia
             tag="Preguntas Frecuentes"
             title="Resuelve tus Dudas sobre Nuestra Estrategia"
-            description="Respuestas claras sobre cómo aplicamos contenido con propósito, storytelling y embudos de ventas en bienes raíces, hoteles y empresas."
+            description="Respuestas claras sobre cómo aplicamos narrativa audiovisual estratégica, storytelling y embudos de ventas en bienes raíces, hoteles y empresas."
             items={[
               {
                 question: "¿Cómo ayudan a agentes y agencias de bienes raíces (real estate) a vender más?",
@@ -403,8 +403,8 @@ export default function HomePage() {
                 answer: "Creamos contenido envolvente que resalta las experiencias, suites y gastronomía del resort. Desarrollamos campañas dirigidas a impulsar las reservas directas en la plataforma del hotel, reduciendo la dependencia y comisiones de las OTAs.",
               },
               {
-                question: "¿En qué consiste la creación de contenido con propósito?",
-                answer: "Diseñamos cada video, imagen y publicación con un objetivo claro: no solo captar atención o acumular reproducciones, sino comunicar el valor diferencial de tu marca, transmitir emociones mediante storytelling y guiar al usuario hacia una acción concreta de compra o reserva.",
+                question: "¿En qué consiste nuestra estrategia de producción audiovisual orientada a ventas?",
+                answer: "Diseñamos cada video, imagen y publicación con un objetivo comercial claro: no solo captar atención o acumular reproducciones, sino comunicar el valor diferencial de tu marca, transmitir emociones mediante storytelling y guiar al usuario hacia una acción concreta de compra o reserva.",
               },
               {
                 question: "¿Cómo estructuran los embudos de ventas en redes sociales?",
@@ -425,7 +425,7 @@ export default function HomePage() {
         <SectionErrorBoundary name="contact">
           <ContactCta
             tag="¿Listo para Escalar tu Marca?"
-            text="Impulsa tu negocio con contenido con propósito, storytelling que conecta y embudos de ventas diseñados para generar resultados reales en redes sociales en Punta Cana y Santo Domingo."
+            text="Impulsa tu negocio con producción audiovisual estratégica, storytelling de alto impacto y embudos de ventas diseñados para generar resultados reales en redes sociales en Punta Cana y Santo Domingo."
             primaryButton={{
               text: "Agendar por WhatsApp (RD)",
               href: "https://wa.me/18492665501",

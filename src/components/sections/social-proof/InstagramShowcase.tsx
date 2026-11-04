@@ -153,7 +153,7 @@ export default function InstagramShowcase() {
         <div className="text-center max-w-3xl mx-auto mb-12 flex flex-col items-center">
           <ActiveBadge text="Gestión de Redes Sociales en Vivo" className="mb-4" />
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground mb-4">
-            Contenido con Propósito & Resultados Reales
+            Estrategia Audiovisual & Resultados Reales
           </h2>
           <p className="text-lg text-foreground/80">
             Aplicamos storytelling y embudos de ventas en la gestión de Instagram. Aquí puedes ver la ejecución visual y el impacto en ventas para Agentes & Agencias de Bienes Raíces, Hoteles & Resorts, y marcas destacadas.
