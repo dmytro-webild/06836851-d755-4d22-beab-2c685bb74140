@@ -19,11 +19,11 @@ export default function HomePage() {
       <div id="hero" data-section="hero">
         <SectionErrorBoundary name="hero">
           <HeroBillboardCreator
-            title="CREACIÓN audiovisual & DIRECCIÓN DE [CONTENIDO]"
+            title="Transformamos tus Videos en Contenido Orgánico de Alto Impacto"
             description="Convertimos tu material audiovisual en una herramienta efectiva para conectar con tu audiencia, atraer clientes y vender más a través de redes sociales. Un enfoque cercano y profesional para bienes raíces, hotelería y empresas en general."
             primaryButton={{
-              text: "Solicitar Asesoría Estratégica",
-              href: "/servicios#briefing",
+              text: "Agendar Sesión Estratégica",
+              href: "#contact",
             }}
             note="Contenido orgánico de alto impacto para bienes raíces, hotelería y empresas."
             badgeText="Contenido Orgánico"
@@ -90,8 +90,8 @@ export default function HomePage() {
             title="Especialistas en Bienes Raíces, Hotelería & Empresas en General"
             description="Desarrollamos estrategias de contenido orgánico de alto impacto diseñadas para captar la atención de tu audiencia, multiplicar el alcance y generar clientes calificados."
             primaryButton={{
-              text: "Solicitar Asesoría Estratégica",
-              href: "/servicios#briefing",
+              text: "Agendar Asesoría Especializada",
+              href: "#contact",
             }}
             items={[
               {
@@ -101,7 +101,7 @@ export default function HomePage() {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=1",
                 primaryButton: {
                   text: "Estrategia Real Estate",
-                  href: "/servicios#briefing",
+                  href: "#contact",
                 },
               },
               {
@@ -111,7 +111,7 @@ export default function HomePage() {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=1",
                 primaryButton: {
                   text: "Estrategia Hoteles & Resorts",
-                  href: "/servicios#briefing",
+                  href: "#contact",
                 },
               },
               {
@@ -121,7 +121,7 @@ export default function HomePage() {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=1",
                 primaryButton: {
                   text: "Multiplicar Ventas Comerciales",
-                  href: "/servicios#briefing",
+                  href: "#contact",
                 },
               },
             ]}
@@ -137,8 +137,8 @@ export default function HomePage() {
             title="Producción Audiovisual Estratégica, Storytelling & Contenido Orgánico"
             description="Llevamos tu marca al siguiente nivel uniendo la producción audiovisual cinematográfica con contenido orgánico de alto impacto y gestión estratégica en redes sociales."
             primaryButton={{
-              text: "Solicitar Asesoría",
-              href: "/servicios#briefing",
+              text: "Solicitar Propuesta",
+              href: "#contact",
             }}
             items={[
               {
@@ -190,8 +190,8 @@ export default function HomePage() {
             title="Narrativa Visual de Alto Impacto que Detiene el Scroll"
             description="Piezas de video diseñadas estratégicamente para transmitir autoridad, conectar mediante storytelling y activar conversiones en redes sociales."
             primaryButton={{
-              text: "Solicitar Asesoría para Mi Marca",
-              href: "/servicios#briefing",
+              text: "Explorar Portafolio",
+              href: "#portfolio",
             }}
             items={[
               {
@@ -199,28 +199,28 @@ export default function HomePage() {
                 description: "Tours cinematográficos de propiedades con narración persuasiva para acelerar el cierre de ventas.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=2",
                 buttonIcon: "Compass",
-                buttonHref: "/servicios#briefing",
+                buttonHref: "#portfolio",
               },
               {
                 title: "Resorts & Hoteles en Punta Cana",
                 description: "Videos envolventes que combinan narrativa aspiracional y experiencias de lujo para incentivar reservas.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=3",
                 buttonIcon: "Sun",
-                buttonHref: "/servicios#briefing",
+                buttonHref: "#portfolio",
               },
               {
                 title: "Exhibición en Concesionarios",
                 description: "Presentaciones cinematográficas de vehículos con ángulos dinámicos y ganchos visuales de alta retención.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=3",
                 buttonIcon: "Car",
-                buttonHref: "/servicios#briefing",
+                buttonHref: "#portfolio",
               },
               {
                 title: "Procesos en Talleres Mecánicos",
                 description: "Contenido de valor que muestra el trabajo técnico de precisión para generar máxima confianza y citas.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4?_wi=3",
                 buttonIcon: "Wrench",
-                buttonHref: "/servicios#briefing",
+                buttonHref: "#portfolio",
               },
             ]}
             textAnimation="slide-up"
@@ -235,8 +235,8 @@ export default function HomePage() {
             title="Estrategia Visual & Casos de Éxito"
             description="Muestras de nuestra dirección creativa, producción cinematográfica y gestión de alto rendimiento para clientes destacados."
             primaryButton={{
-              text: "Solicitar Asesoría para Mi Marca",
-              href: "/servicios#briefing",
+              text: "Iniciar Mi Proyecto",
+              href: "#contact",
             }}
             items={[
               {
