@@ -4,16 +4,17 @@
 @import "./styles/animations.css";
 
 :root {
-  /* Clean Light Theme with Dark Slate typography & #DA7756 Brand CTA */
+  /* Inverted Theme: White background & Pure Black typography */
   --background: #ffffff;
-  --card: #f8fafc;
-  --foreground: #09090b;
+  --card: #ffffff;
+  --foreground: #000000;
   --primary-cta: #DA7756;
   --primary-cta-text: #ffffff;
-  --secondary-cta: #09090b;
+  --secondary-cta: #000000;
   --secondary-cta-text: #ffffff;
-  --accent: #f1f5f9;
-  --background-accent: #f8fafc;
+  --accent: #f4f4f5;
+  --background-accent: #ffffff;
+  --border: #e4e4e7;
 
   /* @layout/border-radius/rounded */
   --radius: 1.5rem;
@@ -86,6 +87,7 @@
   --color-secondary-cta-text: var(--secondary-cta-text);
   --color-accent: var(--accent);
   --color-background-accent: var(--background-accent);
+  --color-border: var(--border);
 
   /* Fonts */
   --font-sans: 'Manrope', sans-serif;
