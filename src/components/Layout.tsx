@@ -51,7 +51,7 @@ export default function Layout() {
       <SectionErrorBoundary name="navbar">
         <NavbarFloating
           logo="Crowned"
-          logoImageSrc="/crowned-logo-dark.png"
+          logoImageSrc="/crowned-logo-light.png"
           ctaButton={{
             text: "Solicitar Servicio",
             href: "/servicios#solicitud",
@@ -65,7 +65,7 @@ export default function Layout() {
       <SectionErrorBoundary name="footer">
         <FooterSimple
           brand="Crowned"
-          brandImageSrc="/crowned-logo-dark.png"
+          brandImageSrc="/crowned-logo-light.png"
           columns={[
             {
               title: "Especialización",

@@ -24,7 +24,8 @@ import {
   Volume2,
   VolumeX,
   Layers,
-  ArrowRight
+  ArrowRight,
+  AlertCircle
 } from "lucide-react";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import ImageOrVideo from "@/components/ui/ImageOrVideo";
@@ -200,6 +201,59 @@ export default function ServicesPage() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const [currentStep, setCurrentStep] = useState(1);
+  const totalSteps = 4;
+  const [stepError, setStepError] = useState<string | null>(null);
+
+  const steps = [
+    { id: 1, title: "Empresa", description: "Datos generales y marca" },
+    { id: 2, title: "Contacto", description: "Directo & dimensión" },
+    { id: 3, title: "Servicios", description: "Selección de soluciones" },
+    { id: 4, title: "Presupuesto", description: "Inversión & detalles" },
+  ];
+
+  const handleNextStep = () => {
+    setStepError(null);
+    if (currentStep === 1) {
+      if (!formState.companyName.trim()) {
+        setStepError("Por favor ingresa el nombre de tu empresa.");
+        return;
+      }
+      if (!formState.locations.trim()) {
+        setStepError("Por favor ingresa la ubicación o sedes de la empresa.");
+        return;
+      }
+      setCurrentStep(2);
+    } else if (currentStep === 2) {
+      if (!formState.contactName.trim()) {
+        setStepError("Por favor ingresa el nombre del contacto principal.");
+        return;
+      }
+      if (!formState.email.trim() || !formState.email.includes("@")) {
+        setStepError("Por favor ingresa un correo electrónico válido.");
+        return;
+      }
+      if (!formState.phone.trim()) {
+        setStepError("Por favor ingresa un número de teléfono o WhatsApp.");
+        return;
+      }
+      setCurrentStep(3);
+    } else if (currentStep === 3) {
+      if (formState.selectedServices.length === 0) {
+        setStepError("Por favor selecciona al menos un servicio que sea de tu interés.");
+        return;
+      }
+      setCurrentStep(4);
+    }
+  };
+
+  const handlePrevStep = () => {
+    setStepError(null);
+    if (currentStep > 1) {
+      setCurrentStep((prev) => prev - 1);
+    }
+  };
 
   const toggleService = (serviceId: string) => {
     setFormState((prev) => {
@@ -628,7 +682,7 @@ export default function ServicesPage() {
                   onClick={() => setSelectedMedia(media)}
                 >
                   {/* Media Frame Container */}
-                  <div className={`relative w-full ${isWide ? "aspect-video md:aspect-[16/9]" : "aspect-[9/16] md:aspect-[4/5]"} overflow-hidden bg-slate-100`}>
+                  <div className={`relative w-full ${isWide ? "aspect-video md:aspect-[16/9]" : "aspect-[9/16] md:aspect-[4/5]"} overflow-hidden bg-zinc-900`}>
                     <ImageOrVideo
                       imageSrc={media.imageSrc}
                       videoSrc={media.videoSrc}
@@ -856,7 +910,10 @@ export default function ServicesPage() {
                 </div>
 
                 <button
-                  onClick={() => setIsSubmitted(false)}
+                  onClick={() => {
+                    setIsSubmitted(false);
+                    setCurrentStep(1);
+                  }}
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full secondary-button font-medium text-sm transition-transform hover:scale-105"
                 >
                   <RotateCcw className="size-4" />
@@ -864,290 +921,462 @@ export default function ServicesPage() {
                 </button>
               </div>
             ) : (
-              /* Agency Brief Form */
-              <form onSubmit={handleBriefSubmit} className="space-y-10">
+              /* Multi-Step Interactive Questionnaire Wizard */
+              <form onSubmit={handleBriefSubmit} className="space-y-8">
                 
-                {/* SECTION 1: DATOS DE LA EMPRESA */}
-                <div className="space-y-6">
-                  <div className="flex items-center gap-3 border-b border-border/60 pb-3">
-                    <div className="size-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">
-                      1
-                    </div>
-                    <h3 className="text-xl font-bold text-foreground">
-                      Información General de la Empresa
-                    </h3>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
-                        Nombre de la Empresa *
-                      </label>
-                      <div className="relative">
-                        <Building2 className="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-foreground/40" />
-                        <input
-                          type="text"
-                          required
-                          value={formState.companyName}
-                          onChange={(e) => setFormState({ ...formState, companyName: e.target.value })}
-                          placeholder="Ej. Riviera Cap Cana Properties"
-                          className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-background border border-border/80 text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none text-sm transition-colors"
-                        />
-                      </div>
-                    </div>
-
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
-                        Sedes & Ubicaciones *
-                      </label>
-                      <div className="relative">
-                        <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-foreground/40" />
-                        <input
-                          type="text"
-                          required
-                          value={formState.locations}
-                          onChange={(e) => setFormState({ ...formState, locations: e.target.value })}
-                          placeholder="Ej. Punta Cana, Santo Domingo, Miami"
-                          className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-background border border-border/80 text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none text-sm transition-colors"
-                        />
-                      </div>
-                    </div>
-
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
-                        Redes Sociales (Instagram / TikTok)
-                      </label>
-                      <div className="relative">
-                        <Share2 className="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-foreground/40" />
-                        <input
-                          type="text"
-                          value={formState.socialMedia}
-                          onChange={(e) => setFormState({ ...formState, socialMedia: e.target.value })}
-                          placeholder="Ej. @miempresa_rd"
-                          className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-background border border-border/80 text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none text-sm transition-colors"
-                        />
-                      </div>
-                    </div>
-
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
-                        Sitio Web Actual
-                      </label>
-                      <div className="relative">
-                        <Globe className="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-foreground/40" />
-                        <input
-                          type="url"
-                          value={formState.website}
-                          onChange={(e) => setFormState({ ...formState, website: e.target.value })}
-                          placeholder="Ej. https://miempresa.com"
-                          className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-background border border-border/80 text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none text-sm transition-colors"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* SECTION 2: DATOS DE CONTACTO & TAMAÑO DE EQUIPO */}
-                <div className="space-y-6">
-                  <div className="flex items-center gap-3 border-b border-border/60 pb-3">
-                    <div className="size-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">
-                      2
-                    </div>
-                    <h3 className="text-xl font-bold text-foreground">
-                      Contacto Directo & Dimensión del Negocio
-                    </h3>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
-                        Nombre del Contacto *
-                      </label>
-                      <input
-                        type="text"
-                        required
-                        value={formState.contactName}
-                        onChange={(e) => setFormState({ ...formState, contactName: e.target.value })}
-                        placeholder="Tu nombre completo"
-                        className="w-full px-4 py-3.5 rounded-xl bg-background border border-border/80 text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none text-sm transition-colors"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
-                        Correo Electrónico *
-                      </label>
-                      <input
-                        type="email"
-                        required
-                        value={formState.email}
-                        onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                        placeholder="contacto@empresa.com"
-                        className="w-full px-4 py-3.5 rounded-xl bg-background border border-border/80 text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none text-sm transition-colors"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
-                        Teléfono / WhatsApp *
-                      </label>
-                      <input
-                        type="tel"
-                        required
-                        value={formState.phone}
-                        onChange={(e) => setFormState({ ...formState, phone: e.target.value })}
-                        placeholder="+1 (809) 000-0000"
-                        className="w-full px-4 py-3.5 rounded-xl bg-background border border-border/80 text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none text-sm transition-colors"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
-                        Cargo / Rol en la Empresa
-                      </label>
-                      <input
-                        type="text"
-                        value={formState.role}
-                        onChange={(e) => setFormState({ ...formState, role: e.target.value })}
-                        placeholder="Ej. Director de Marketing / CEO"
-                        className="w-full px-4 py-3.5 rounded-xl bg-background border border-border/80 text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none text-sm transition-colors"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">
-                        Número de Empleados
-                      </label>
-                      <select
-                        value={formState.employeeCount}
-                        onChange={(e) => setFormState({ ...formState, employeeCount: e.target.value })}
-                        className="w-full px-4 py-3.5 rounded-xl bg-background border border-border/80 text-foreground focus:border-primary focus:outline-none text-sm transition-colors"
-                      >
-                        <option value="1-5 empleados">1 - 5 empleados</option>
-                        <option value="6-20 empleados">6 - 20 empleados</option>
-                        <option value="21-50 empleados">21 - 50 empleados</option>
-                        <option value="Más de 50 empleados">Más de 50 empleados</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-
-                {/* SECTION 3: SELECCIÓN DE SERVICIOS & PRESUPUESTO */}
-                <div className="space-y-6">
-                  <div className="flex items-center gap-3 border-b border-border/60 pb-3">
-                    <div className="size-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">
-                      3
-                    </div>
-                    <h3 className="text-xl font-bold text-foreground">
-                      Servicios Requeridos & Presupuesto a Destinar
-                    </h3>
-                  </div>
-
-                  {/* Multi-Select Checkboxes */}
-                  <div>
-                    <label className="block text-sm font-semibold text-foreground mb-3">
-                      Selecciona los Servicios que te Interesan (Puedes elegir varios):
-                    </label>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-                      {availableServices.map((service) => {
-                        const isSelected = formState.selectedServices.includes(service.id);
-                        return (
-                          <div
-                            key={service.id}
-                            onClick={() => toggleService(service.id)}
-                            className={`p-3.5 rounded-xl border cursor-pointer select-none transition-all flex items-start gap-3 ${
-                              isSelected
-                                ? "bg-primary/10 border-primary text-foreground shadow-sm"
-                                : "bg-background border-border/80 text-foreground/75 hover:border-border"
-                            }`}
-                          >
-                            <div
-                              className={`size-5 rounded flex items-center justify-center shrink-0 mt-0.5 transition-colors ${
-                                isSelected ? "bg-primary text-white" : "border border-border/80 bg-card"
+                {/* Step Wizard Header Progress Bar */}
+                <div>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+                    {steps.map((step) => {
+                      const isCompleted = currentStep > step.id;
+                      const isCurrent = currentStep === step.id;
+                      return (
+                        <button
+                          type="button"
+                          key={step.id}
+                          onClick={() => {
+                            if (step.id < currentStep) {
+                              setStepError(null);
+                              setCurrentStep(step.id);
+                            }
+                          }}
+                          disabled={step.id > currentStep}
+                          className={`p-3 rounded-2xl border text-left transition-all ${
+                            isCurrent
+                              ? "bg-primary/10 border-primary text-foreground shadow-sm"
+                              : isCompleted
+                              ? "bg-accent/60 border-border/80 text-foreground/80 cursor-pointer hover:border-primary/50"
+                              : "bg-background/50 border-border/40 text-foreground/40 cursor-not-allowed"
+                          }`}
+                        >
+                          <div className="flex items-center justify-between mb-1">
+                            <span
+                              className={`size-6 rounded-full text-xs font-bold flex items-center justify-center ${
+                                isCurrent
+                                  ? "bg-primary text-white"
+                                  : isCompleted
+                                  ? "bg-emerald-500 text-white"
+                                  : "bg-border text-foreground/60"
                               }`}
                             >
-                              {isSelected && <Check className="size-3.5" />}
-                            </div>
-                            <span className="text-xs font-semibold leading-tight">{service.label}</span>
+                              {isCompleted ? <Check className="size-3.5" /> : step.id}
+                            </span>
+                            <span className="text-[10px] font-mono font-semibold uppercase tracking-wider text-foreground/50">
+                              Paso {step.id}/4
+                            </span>
                           </div>
-                        );
-                      })}
-                    </div>
+                          <div className="font-bold text-xs sm:text-sm text-foreground truncate">
+                            {step.title}
+                          </div>
+                          <div className="text-[11px] text-foreground/60 truncate hidden sm:block">
+                            {step.description}
+                          </div>
+                        </button>
+                      );
+                    })}
                   </div>
 
-                  {/* Budget Selector */}
-                  <div>
-                    <label className="block text-sm font-semibold text-foreground mb-3">
-                      Presupuesto Estimado a Destinar *
-                    </label>
-                    <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-                      {[
-                        "< $1,500 USD",
-                        "$1,500 - $3,000 USD",
-                        "$3,000 - $6,000 USD",
-                        "$6,000 - $12,000 USD",
-                        "+$12,000 USD",
-                      ].map((range) => {
-                        const isSelected = formState.budget === range;
-                        return (
-                          <button
-                            type="button"
-                            key={range}
-                            onClick={() => setFormState({ ...formState, budget: range })}
-                            className={`p-3 rounded-xl border text-xs font-bold transition-all text-center ${
-                              isSelected
-                                ? "primary-button text-white border-primary shadow-md"
-                                : "bg-background border-border/80 text-foreground/80 hover:border-foreground/30"
-                            }`}
-                          >
-                            {range}
-                          </button>
-                        );
-                      })}
-                    </div>
-                  </div>
-
-                  {/* Additional Notes */}
-                  <div>
-                    <label className="block text-sm font-semibold text-foreground mb-2">
-                      Detalles Adicionales / Objetivos Comerciales del Proyecto
-                    </label>
-                    <textarea
-                      rows={4}
-                      value={formState.additionalNotes}
-                      onChange={(e) => setFormState({ ...formState, additionalNotes: e.target.value })}
-                      placeholder="Cuéntanos sobre los objetivos de tu marca, plazos deseados o cualquier requerimiento especial..."
-                      className="w-full p-4 rounded-xl bg-background border border-border/80 text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none text-sm transition-colors resize-y"
+                  {/* Progress Line Bar */}
+                  <div className="w-full h-1.5 bg-border/60 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-primary transition-all duration-500 ease-out"
+                      style={{ width: `${(currentStep / totalSteps) * 100}%` }}
                     />
                   </div>
                 </div>
 
-                {/* Submit Action */}
-                <div className="pt-6 border-t border-border/60 flex flex-col sm:flex-row items-center justify-between gap-6">
-                  <div className="flex items-center gap-2 text-xs text-foreground/70">
-                    <CheckCircle2 className="size-4 text-emerald-500 shrink-0" />
-                    <span>Tus datos están protegidos y solo se utilizarán para la propuesta comercial.</span>
+                {/* Animated Step Viewport */}
+                <AnimatePresence mode="wait">
+                  {currentStep === 1 && (
+                    <motion.div
+                      key="step1"
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: -20 }}
+                      transition={{ duration: 0.25 }}
+                      className="space-y-6"
+                    >
+                      <div className="flex items-center gap-3 border-b border-border/60 pb-3">
+                        <div className="size-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-bold text-sm border border-primary/20">
+                          1
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold text-foreground">
+                            Paso 1: Información General de la Empresa
+                          </h3>
+                          <p className="text-xs text-foreground/70">
+                            Cuéntanos sobre tu marca y presencia digital actual.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                          <label className="block text-sm font-semibold text-foreground mb-2">
+                            Nombre de la Empresa *
+                          </label>
+                          <div className="relative">
+                            <Building2 className="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-foreground/40" />
+                            <input
+                              type="text"
+                              required
+                              value={formState.companyName}
+                              onChange={(e) => {
+                                setFormState({ ...formState, companyName: e.target.value });
+                                if (stepError) setStepError(null);
+                              }}
+                              placeholder="Ej. Riviera Cap Cana Properties"
+                              className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-background border border-border/80 text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none text-sm transition-colors"
+                            />
+                          </div>
+                        </div>
+
+                        <div>
+                          <label className="block text-sm font-semibold text-foreground mb-2">
+                            Sedes & Ubicaciones *
+                          </label>
+                          <div className="relative">
+                            <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-foreground/40" />
+                            <input
+                              type="text"
+                              required
+                              value={formState.locations}
+                              onChange={(e) => {
+                                setFormState({ ...formState, locations: e.target.value });
+                                if (stepError) setStepError(null);
+                              }}
+                              placeholder="Ej. Punta Cana, Santo Domingo, Miami"
+                              className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-background border border-border/80 text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none text-sm transition-colors"
+                            />
+                          </div>
+                        </div>
+
+                        <div>
+                          <label className="block text-sm font-semibold text-foreground mb-2">
+                            Redes Sociales (Instagram / TikTok)
+                          </label>
+                          <div className="relative">
+                            <Share2 className="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-foreground/40" />
+                            <input
+                              type="text"
+                              value={formState.socialMedia}
+                              onChange={(e) => setFormState({ ...formState, socialMedia: e.target.value })}
+                              placeholder="Ej. @miempresa_rd"
+                              className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-background border border-border/80 text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none text-sm transition-colors"
+                            />
+                          </div>
+                        </div>
+
+                        <div>
+                          <label className="block text-sm font-semibold text-foreground mb-2">
+                            Sitio Web Actual
+                          </label>
+                          <div className="relative">
+                            <Globe className="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-foreground/40" />
+                            <input
+                              type="url"
+                              value={formState.website}
+                              onChange={(e) => setFormState({ ...formState, website: e.target.value })}
+                              placeholder="Ej. https://miempresa.com"
+                              className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-background border border-border/80 text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none text-sm transition-colors"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+
+                  {currentStep === 2 && (
+                    <motion.div
+                      key="step2"
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: -20 }}
+                      transition={{ duration: 0.25 }}
+                      className="space-y-6"
+                    >
+                      <div className="flex items-center gap-3 border-b border-border/60 pb-3">
+                        <div className="size-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-bold text-sm border border-primary/20">
+                          2
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold text-foreground">
+                            Paso 2: Contacto Directo & Dimensiones del Negocio
+                          </h3>
+                          <p className="text-xs text-foreground/70">
+                            ¿Con quién coordinaremos las propuestas estratégicas?
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                          <label className="block text-sm font-semibold text-foreground mb-2">
+                            Nombre del Contacto *
+                          </label>
+                          <input
+                            type="text"
+                            required
+                            value={formState.contactName}
+                            onChange={(e) => {
+                              setFormState({ ...formState, contactName: e.target.value });
+                              if (stepError) setStepError(null);
+                            }}
+                            placeholder="Tu nombre completo"
+                            className="w-full px-4 py-3.5 rounded-xl bg-background border border-border/80 text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none text-sm transition-colors"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="block text-sm font-semibold text-foreground mb-2">
+                            Correo Electrónico *
+                          </label>
+                          <input
+                            type="email"
+                            required
+                            value={formState.email}
+                            onChange={(e) => {
+                              setFormState({ ...formState, email: e.target.value });
+                              if (stepError) setStepError(null);
+                            }}
+                            placeholder="contacto@empresa.com"
+                            className="w-full px-4 py-3.5 rounded-xl bg-background border border-border/80 text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none text-sm transition-colors"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="block text-sm font-semibold text-foreground mb-2">
+                            Teléfono / WhatsApp *
+                          </label>
+                          <input
+                            type="tel"
+                            required
+                            value={formState.phone}
+                            onChange={(e) => {
+                              setFormState({ ...formState, phone: e.target.value });
+                              if (stepError) setStepError(null);
+                            }}
+                            placeholder="+1 (809) 000-0000"
+                            className="w-full px-4 py-3.5 rounded-xl bg-background border border-border/80 text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none text-sm transition-colors"
+                          />
+                        </div>
+                      </div>
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                          <label className="block text-sm font-semibold text-foreground mb-2">
+                            Cargo / Rol en la Empresa
+                          </label>
+                          <input
+                            type="text"
+                            value={formState.role}
+                            onChange={(e) => setFormState({ ...formState, role: e.target.value })}
+                            placeholder="Ej. Director de Marketing / CEO"
+                            className="w-full px-4 py-3.5 rounded-xl bg-background border border-border/80 text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none text-sm transition-colors"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="block text-sm font-semibold text-foreground mb-2">
+                            Número de Empleados
+                          </label>
+                          <select
+                            value={formState.employeeCount}
+                            onChange={(e) => setFormState({ ...formState, employeeCount: e.target.value })}
+                            className="w-full px-4 py-3.5 rounded-xl bg-background border border-border/80 text-foreground focus:border-primary focus:outline-none text-sm transition-colors"
+                          >
+                            <option value="1-5 empleados">1 - 5 empleados</option>
+                            <option value="6-20 empleados">6 - 20 empleados</option>
+                            <option value="21-50 empleados">21 - 50 empleados</option>
+                            <option value="Más de 50 empleados">Más de 50 empleados</option>
+                          </select>
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+
+                  {currentStep === 3 && (
+                    <motion.div
+                      key="step3"
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: -20 }}
+                      transition={{ duration: 0.25 }}
+                      className="space-y-6"
+                    >
+                      <div className="flex items-center gap-3 border-b border-border/60 pb-3">
+                        <div className="size-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-bold text-sm border border-primary/20">
+                          3
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold text-foreground">
+                            Paso 3: Selección de Servicios Requeridos
+                          </h3>
+                          <p className="text-xs text-foreground/70">
+                            Selecciona los servicios que deseas incluir en tu plan (puedes elegir varios).
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                        {availableServices.map((service) => {
+                          const isSelected = formState.selectedServices.includes(service.id);
+                          return (
+                            <div
+                              key={service.id}
+                              onClick={() => {
+                                toggleService(service.id);
+                                if (stepError) setStepError(null);
+                              }}
+                              className={`p-4 rounded-xl border cursor-pointer select-none transition-all flex items-start gap-3 ${
+                                isSelected
+                                  ? "bg-primary/10 border-primary text-foreground shadow-sm"
+                                  : "bg-background border-border/80 text-foreground/75 hover:border-border hover:bg-card"
+                              }`}
+                            >
+                              <div
+                                className={`size-5 rounded flex items-center justify-center shrink-0 mt-0.5 transition-colors ${
+                                  isSelected ? "bg-primary text-white" : "border border-border/80 bg-card"
+                                }`}
+                              >
+                                {isSelected && <Check className="size-3.5" />}
+                              </div>
+                              <span className="text-xs font-semibold leading-tight">{service.label}</span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </motion.div>
+                  )}
+
+                  {currentStep === 4 && (
+                    <motion.div
+                      key="step4"
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: -20 }}
+                      transition={{ duration: 0.25 }}
+                      className="space-y-6"
+                    >
+                      <div className="flex items-center gap-3 border-b border-border/60 pb-3">
+                        <div className="size-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-bold text-sm border border-primary/20">
+                          4
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold text-foreground">
+                            Paso 4: Presupuesto Estimado & Objetivos del Proyecto
+                          </h3>
+                          <p className="text-xs text-foreground/70">
+                            Finaliza tu briefing estableciendo el rango de inversión y notas clave.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div>
+                        <label className="block text-sm font-semibold text-foreground mb-3">
+                          Presupuesto Estimado a Destinar *
+                        </label>
+                        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+                          {[
+                            "< $1,500 USD",
+                            "$1,500 - $3,000 USD",
+                            "$3,000 - $6,000 USD",
+                            "$6,000 - $12,000 USD",
+                            "+$12,000 USD",
+                          ].map((range) => {
+                            const isSelected = formState.budget === range;
+                            return (
+                              <button
+                                type="button"
+                                key={range}
+                                onClick={() => setFormState({ ...formState, budget: range })}
+                                className={`p-3 rounded-xl border text-xs font-bold transition-all text-center ${
+                                  isSelected
+                                    ? "primary-button text-white border-primary shadow-md"
+                                    : "bg-background border-border/80 text-foreground/80 hover:border-foreground/30"
+                                }`}
+                              >
+                                {range}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </div>
+
+                      <div>
+                        <label className="block text-sm font-semibold text-foreground mb-2">
+                          Detalles Adicionales / Objetivos Comerciales del Proyecto
+                        </label>
+                        <textarea
+                          rows={4}
+                          value={formState.additionalNotes}
+                          onChange={(e) => setFormState({ ...formState, additionalNotes: e.target.value })}
+                          placeholder="Cuéntanos sobre los objetivos de tu marca, plazos deseados o cualquier requerimiento especial..."
+                          className="w-full p-4 rounded-xl bg-background border border-border/80 text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none text-sm transition-colors resize-y"
+                        />
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+
+                {/* Validation Error Message */}
+                {stepError && (
+                  <div className="p-3.5 rounded-xl bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs font-medium flex items-center gap-2">
+                    <AlertCircle className="size-4 shrink-0 text-rose-400" />
+                    <span>{stepError}</span>
+                  </div>
+                )}
+
+                {/* Wizard Controls Footer */}
+                <div className="pt-6 border-t border-border/60 flex flex-col sm:flex-row items-center justify-between gap-4">
+                  {currentStep > 1 ? (
+                    <button
+                      type="button"
+                      onClick={handlePrevStep}
+                      className="w-full sm:w-auto px-5 py-3 rounded-xl secondary-button font-medium text-sm flex items-center justify-center gap-2 transition-transform hover:scale-105"
+                    >
+                      <ChevronLeft className="size-4" />
+                      <span>Paso Anterior</span>
+                    </button>
+                  ) : (
+                    <div className="hidden sm:flex items-center gap-2 text-xs text-foreground/60">
+                      <CheckCircle2 className="size-4 text-emerald-500 shrink-0" />
+                      <span>Proceso confidencial & respuesta en max. 24h</span>
+                    </div>
+                  )}
+
+                  <div className="text-xs font-mono font-semibold text-foreground/50">
+                    Paso {currentStep} de {totalSteps}
                   </div>
 
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full sm:w-auto px-8 py-4 rounded-2xl primary-button text-white font-bold text-base shadow-lg transition-transform hover:scale-105 disabled:opacity-50 disabled:hover:scale-100 flex items-center justify-center gap-3"
-                  >
-                    {isSubmitting ? (
-                      <>
-                        <div className="size-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                        <span>Enviando Informe...</span>
-                      </>
-                    ) : (
-                      <>
-                        <span>Enviar Solicitud de Briefing</span>
-                        <ChevronRight className="size-5" />
-                      </>
-                    )}
-                  </button>
+                  {currentStep < totalSteps ? (
+                    <button
+                      type="button"
+                      onClick={handleNextStep}
+                      className="w-full sm:w-auto px-7 py-3.5 rounded-xl primary-button text-white font-bold text-sm shadow-lg flex items-center justify-center gap-2 transition-transform hover:scale-105"
+                    >
+                      <span>Siguiente Paso</span>
+                      <ChevronRight className="size-4" />
+                    </button>
+                  ) : (
+                    <button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="w-full sm:w-auto px-8 py-4 rounded-xl primary-button text-white font-bold text-base shadow-lg transition-transform hover:scale-105 disabled:opacity-50 disabled:hover:scale-100 flex items-center justify-center gap-3"
+                    >
+                      {isSubmitting ? (
+                        <>
+                          <div className="size-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                          <span>Enviando Informe...</span>
+                        </>
+                      ) : (
+                        <>
+                          <span>Enviar Solicitud de Briefing</span>
+                          <ChevronRight className="size-5" />
+                        </>
+                      )}
+                    </button>
+                  )}
                 </div>
 
               </form>
