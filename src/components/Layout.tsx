@@ -8,24 +8,44 @@ import { StyleProvider } from "@/components/ui/StyleProvider";
 export default function Layout() {
   const navItems = [
     {
-      "name": "Inicio",
-      "href": "/"
+      "name": "Especialidades",
+      "href": "#specialties"
     },
     {
       "name": "Servicios",
-      "href": "/servicios"
+      "href": "#services"
     },
     {
-      "name": "Especialidades",
-      "href": "/#specialties"
+      "name": "Embudo",
+      "href": "#funnel"
+    },
+    {
+      "name": "Instagram SMM",
+      "href": "#instagram"
+    },
+    {
+      "name": "Portafolio",
+      "href": "#portfolio"
+    },
+    {
+      "name": "Formatos",
+      "href": "#videos"
+    },
+    {
+      "name": "Estrategia",
+      "href": "#about"
+    },
+    {
+      "name": "Resultados",
+      "href": "#results"
     },
     {
       "name": "Preguntas",
-      "href": "/#faq"
+      "href": "#faq"
     },
     {
       "name": "Contacto",
-      "href": "/#contact"
+      "href": "#contact"
     }
   ];
 
@@ -35,10 +55,10 @@ export default function Layout() {
       <SectionErrorBoundary name="navbar">
         <NavbarFloating
           logo="Crowned"
-          logoImageSrc="/crowned-logo-white.png"
+          logoImageSrc="/crowned-logo-light.png"
           ctaButton={{
-            text: "Solicitar Asesoría",
-            href: "/servicios#briefing",
+            text: "Agendar Sesión",
+            href: "#contact",
           }}
           navItems={navItems}
         />
@@ -49,26 +69,26 @@ export default function Layout() {
       <SectionErrorBoundary name="footer">
         <FooterSimple
           brand="Crowned"
-          brandImageSrc="/crowned-logo-white.png"
+          brandImageSrc="/crowned-logo-light.png"
           columns={[
             {
-              title: "Servicios & Soluciones",
+              title: "Especialización",
               items: [
                 {
-                  label: "Producción de Reels & Video",
-                  href: "/servicios",
+                  label: "Real Estate & Agentes",
+                  href: "#specialties",
                 },
                 {
-                  label: "Storytelling & Dirección",
-                  href: "/servicios",
+                  label: "Hoteles & Resorts",
+                  href: "#specialties",
                 },
                 {
-                  label: "Solicitud de Briefing",
-                  href: "/servicios#briefing",
+                  label: "Contenido Orgánico & ROI",
+                  href: "#specialties",
                 },
                 {
-                  label: "Especialización Inmobiliaria",
-                  href: "/#specialties",
+                  label: "Gestión SMM Instagram",
+                  href: "#instagram",
                 },
               ],
             },
@@ -89,32 +109,36 @@ export default function Layout() {
                 },
                 {
                   label: "Punta Cana & Santo Domingo, RD",
-                  href: "/#contact",
+                  href: "#contact",
                 },
               ],
             },
             {
-              title: "Navegación Principal",
+              title: "Navegación",
               items: [
                 {
-                  label: "Inicio",
-                  href: "/",
-                },
-                {
-                  label: "Servicios Creativos",
-                  href: "/servicios",
-                },
-                {
                   label: "Especialidades",
-                  href: "/#specialties",
+                  href: "#specialties",
+                },
+                {
+                  label: "Servicios Estratégicos",
+                  href: "#services",
+                },
+                {
+                  label: "Portafolio Visual",
+                  href: "#portfolio",
+                },
+                {
+                  label: "Resultados Comerciales",
+                  href: "#results",
                 },
                 {
                   label: "Preguntas Frecuentes",
-                  href: "/#faq",
+                  href: "#faq",
                 },
                 {
-                  label: "Contacto Directo",
-                  href: "/#contact",
+                  label: "Contacto",
+                  href: "#contact",
                 },
               ],
             },
