@@ -16,15 +16,15 @@ export default function HomePage() {
       <div id="hero" data-section="hero">
         <SectionErrorBoundary name="hero">
           <HeroBillboardCreator
-            tag="Creación de Contenido & Gestión de Redes"
-            title="Contenido Estratégico & Video que"
-            titleHighlight="Impulsa tus Ventas"
-            description="En Crowned transformamos la presencia de tu marca en redes sociales. Combinamos creación de contenido audiovisual de alto impacto, videos en tendencia y gestión integral de redes sociales enfocada en convertir seguidores en clientes."
+            tag="Creación de Contenido & Redes Sociales"
+            title="Contenido Estratégico que"
+            titleHighlight="Escala tus Ventas"
+            description="Creamos contenido audiovisual de alto impacto y gestionamos tus redes para convertir seguidores en clientes."
             primaryButton={{
               text: "Agendar Sesión Estratégica",
               href: "#contact",
             }}
-            note="Creación de contenido estratégico y gestión integral de redes diseñadas para generar ingresos reales."
+            note="Estrategia y gestión enfocadas en facturación real."
             badgeText="Estrategia & Producción Crowned"
             textAnimation="fade-blur"
             videos={[
@@ -73,7 +73,7 @@ export default function HomePage() {
         <SectionErrorBoundary name="about">
           <AboutTestimonial
             tag="Filosofía Crowned"
-            quote="En un entorno saturado de ruido digital, Crowned construye la corona de tu marca. El contenido no es solo publicar vídeos o imágenes aisladas; es la combinación de estrategia creativa de alta gama, Reels de alto rendimiento y gestión integral de redes para impulsar tus ventas."
+            quote="Construimos la corona de tu marca combinando estrategia creativa de alta gama, Reels de alto rendimiento y gestión integral de redes para impulsar tus ventas."
             author="El Equipo Crowned"
             role="Creación de Contenido & Gestión Integral de Redes"
             videoSrc="https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4"

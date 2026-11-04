@@ -53,7 +53,7 @@ const FooterSimple = ({
       <div className="w-content-width mx-auto">
         <div className="flex flex-col md:flex-row gap-10 md:gap-0 justify-between items-start mb-10">
           <div className="flex flex-col gap-2 items-start">
-            <img src="/crowned-logo-dark.png" alt={brand} className="h-10 md:h-12 w-auto object-contain" />
+            <img src="/crowned-logo-dark.png" alt={brand} className="h-8 md:h-10 w-auto object-contain" />
             <span className="text-xs opacity-80 font-serif italic tracking-wider">est 2026 · Estudio creativo</span>
           </div>
 
