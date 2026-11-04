@@ -17,16 +17,16 @@ export default function HomePage() {
       <div id="hero" data-section="hero">
         <SectionErrorBoundary name="hero">
           <HeroBillboardCreator
-            tag="Turismo RD & Sector Automotriz en Instagram"
-            title="Contenido Audiovisual que"
+            tag="Contenido con Propósito & Embudos de Ventas"
+            title="Creamos Contenido con Propósito que"
             titleHighlight="Multiplica tus Ventas"
-            description="Creamos videos de alto impacto de resorts y playas en República Dominicana, contenido para concesionarios y talleres mecánicos, y gestionamos tus redes sociales para convertir vistas en clientes."
+            description="Transformamos tu marca con storytelling de alto impacto, producción audiovisual estratégica y embudos de ventas diseñados para convertir vistas en clientes reales en redes sociales."
             primaryButton={{
               text: "Agendar Sesión Estratégica",
               href: "#contact",
             }}
-            note="Estrategia, producción y gestión enfocadas en facturación real."
-            badgeText="Estrategia & Producción Crowned RD"
+            note="Estrategia, storytelling y embudos de ventas enfocados en facturación real."
+            badgeText="Storytelling & Embudos de Ventas"
             textAnimation="fade-blur"
             videos={[
               {
@@ -73,10 +73,10 @@ export default function HomePage() {
       <div id="about" data-section="about">
         <SectionErrorBoundary name="about">
           <AboutTestimonial
-            tag="Filosofía Crowned Dominicana"
-            quote="Posicionamos las mejores marcas del país combinando la belleza paradisíaca de los resorts y playas de República Dominicana con la solidez visual de concesionarios y talleres mecánicos, todo gestionado mediante estrategias de Instagram diseñadas para llenar habitaciones y agendar citas."
+            tag="Nuestra Filosofía de Contenido"
+            quote="Creemos que el contenido sin propósito es solo ruido. Combinamos la fuerza del storytelling con la estructura de los embudos de ventas para crear contenido audiovisual con propósito que conecta emocionalmente con tu audiencia y genera conversiones medibles en redes sociales."
             author="El Equipo Crowned"
-            role="Gestión de Redes Sociales & Producción Audiovisual Especializada"
+            role="Estrategia de Contenido, Storytelling & Embudos de Ventas"
             videoSrc="https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=2"
             textAnimation="slide-up"
           />
@@ -86,36 +86,36 @@ export default function HomePage() {
       <div id="services" data-section="services">
         <SectionErrorBoundary name="services">
           <FeaturesDetailedCards
-            tag="Nuestros Servicios Especializados"
-            title="Gestión de Instagram & Producción para Turismo y Sector Automotriz"
-            description="Llevamos tu marca al siguiente nivel uniendo la producción audiovisual de estética cinematográfica con una administración activa de canales en Instagram y TikTok."
+            tag="Nuestros Servicios Estratégicos"
+            title="Creación de Contenido con Propósito, Storytelling & Embudos de Ventas"
+            description="Llevamos tu marca al siguiente nivel uniendo la producción audiovisual de estética cinematográfica con estrategias de conversión y gestión activa en redes sociales."
             primaryButton={{
               text: "Solicitar Propuesta",
               href: "#contact",
             }}
             items={[
               {
-                title: "Turismo & Resorts en República Dominicana",
-                description: "Estrategia visual y Reels virales para resorts 5 estrellas, villas de lujo, hoteles boutique y playas en Punta Cana, Cap Cana, Las Terrenas y Bayahíbe. Resaltamos experiencias caribeñas exclusivas para atraer viajeros nacionales e internacionales.",
-                tags: ["Punta Cana", "Resorts de Lujo", "Playas RD", "Turismo"],
+                title: "Creación de Contenido con Propósito & Video Reels",
+                description: "Producimos videos cinematográficos y piezas visuales con mensajes claros que capturan la atención, comunican el valor diferencial de tu marca y detienen el scroll en Instagram y TikTok.",
+                tags: ["Contenido con Propósito", "Producción Audiovisual", "Reels & TikTok", "Diseño Visual"],
                 imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/amenities/pool.jpg?_wi=2",
               },
               {
-                title: "Concesionarios de Vehículos & Showrooms",
-                description: "Creación de contenido para concesionarios de vehículos nuevos y seminuevos. Destacamos lanzamientos, recorridos 360°, pruebas de manejo y promociones estratégicas que generan solicitudes directas por mensaje privado.",
-                tags: ["Concesionarios", "Showrooms", "Ventas de Autos", "Reels Automotrices"],
+                title: "Storytelling Estratégico & Branding Narrativo",
+                description: "Desarrollamos la narrativa visual y verbal de tu marca. Conectamos con las emociones y deseos de tu audiencia ideal para construir confianza, autoridad y una comunidad leal.",
+                tags: ["Storytelling", "Narrativa de Marca", "Posicionamiento", "Conexión Emocional"],
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=2",
               },
               {
-                title: "Talleres Mecánicos & Centros de Mantenimiento",
-                description: "Mostramos la capacidad técnica, diagnósticos computarizados y antes/después de reparación mecánica y auto detailing. Generamos máxima credibilidad para agendar citas de servicio semanalmente.",
-                tags: ["Talleres Mecánicos", "Mantenimiento Preventivo", "Auto Detailing", "Citas por DM"],
+                title: "Embudos de Ventas & Conversión Digital",
+                description: "Estructuramos el camino completo del prospecto: desde la atracción con contenido viral hasta la conversión mediante llamadas a la acción, mensajes directos (DM) y secuencias de venta.",
+                tags: ["Embudos de Ventas", "Conversión Directa", "Captación de Clientes", "Estrategia Comercial"],
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4?_wi=2",
               },
               {
-                title: "Gestión Integral de Redes Sociales (Instagram SMM)",
-                description: "Administración completa de tu perfil de Instagram: diseño del calendario editorial, redacción de copies persuasivos, publicación de stories interactivas, gestión de mensajes y analítica para optimizar conversiones.",
-                tags: ["Instagram SMM", "Calendario Editorial", "Community Management", "Embudos de Ventas"],
+                title: "Gestión Integral de Redes Sociales (Instagram & SMM)",
+                description: "Administración completa de tu presencia digital: diseño del calendario editorial, redacción de copies persuasivos, publicación de historias interactivas, community management y analítica.",
+                tags: ["Gestión de Redes Sociales", "Instagram SMM", "Calendario Editorial", "Community Management"],
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=3",
               },
             ]}
@@ -134,8 +134,8 @@ export default function HomePage() {
         <SectionErrorBoundary name="videos">
           <FeaturesMediaCarousel
             tag="Formatos Audiovisuales"
-            title="Contenido que Destaca en el Feed de Instagram"
-            description="Piezas de video diseñadas estratégicamente para detener el scroll, transmitir autoridad y activar reservas en resorts y visitas a concesionarios y talleres mecánicos."
+            title="Contenido con Propósito que Detiene el Scroll"
+            description="Piezas de video diseñadas estratégicamente para transmitir autoridad, conectar mediante storytelling y activar conversiones en redes sociales."
             primaryButton={{
               text: "Explorar Portafolio",
               href: "#portfolio",
@@ -143,28 +143,28 @@ export default function HomePage() {
             items={[
               {
                 title: "Resorts & Hoteles en Punta Cana",
-                description: "Videos envolventes que muestran piscinas infinitas, suites de lujo y gastronomía de clase mundial.",
+                description: "Videos envolventes que combinan narrativa aspiracional y experiencias de lujo para incentivar reservas.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=3",
                 buttonIcon: "Compass",
                 buttonHref: "#portfolio",
               },
               {
                 title: "Exhibición en Concesionarios",
-                description: "Presentaciones cinematográficas de vehículos con ángulos dinámicos y sonido envolvente.",
+                description: "Presentaciones cinematográficas de vehículos con ángulos dinámicos y ganchos visuales de alta retención.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=3",
                 buttonIcon: "Car",
                 buttonHref: "#portfolio",
               },
               {
                 title: "Playas Paradisiacas & Cap Cana",
-                description: "Tomas aéreas y estilo de vida costero en las playas más icónicas de República Dominicana.",
+                description: "Tomas aéreas y storytelling de estilo de vida costero en los destinos más icónicos de República Dominicana.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=2",
                 buttonIcon: "Sun",
                 buttonHref: "#portfolio",
               },
               {
                 title: "Procesos en Talleres Mecánicos",
-                description: "Contenido detallado de mecánica especializada, afinación y acabados de auto detailing.",
+                description: "Contenido de valor que muestra el trabajo técnico de precisión para generar máxima confianza y citas.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4?_wi=3",
                 buttonIcon: "Wrench",
                 buttonHref: "#portfolio",
@@ -179,8 +179,8 @@ export default function HomePage() {
         <SectionErrorBoundary name="portfolio">
           <FeaturesImageBento
             tag="Portafolio Visual"
-            title="Proyectos de Turismo & Sector Automotriz"
-            description="Muestras de nuestra dirección creativa, producción en video y gestión de redes para clientes destacados en República Dominicana."
+            title="Estrategia Visual & Casos de Éxito"
+            description="Muestras de nuestra dirección creativa, producción en video y gestión de contenido con propósito para clientes destacados."
             primaryButton={{
               text: "Iniciar Mi Proyecto",
               href: "#contact",
@@ -231,37 +231,37 @@ export default function HomePage() {
         <SectionErrorBoundary name="results">
           <MetricsMediaCards
             tag="Resultados Comprobados"
-            title="Métricas en Instagram & Ventas Directas"
-            description="Estrategias orientadas a retorno sobre inversión para empresas turísticas y automotrices en República Dominicana."
+            title="Embudos de Ventas que Generan Facturación Real"
+            description="Estrategias orientadas a retorno sobre inversión y crecimiento sostenido a través de contenido con propósito."
             metrics={[
               {
                 value: "+380%",
-                title: "Reservas en Resorts",
-                description: "Incremento en consultas y reservas directas para hoteles y villas en Punta Cana.",
+                title: "Conversión Directa",
+                description: "Incremento en consultas y ventas directas generadas a través de redes sociales.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=4",
               },
               {
                 value: "4.5x",
-                title: "Pruebas de Manejo",
-                description: "Aumento en citas de test drive agendadas por DM para concesionarios automotrices.",
+                title: "Retorno de Inversión",
+                description: "Multiplicación de resultados comerciales en campañas de contenido y embudos de ventas.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=5",
               },
               {
                 value: "+240",
-                title: "Citas en Taller Mecánico",
-                description: "Clientes nuevos recibidos mensualmente gracias a reels de mantenimiento y diagnóstico.",
+                title: "Clientes Potenciales",
+                description: "Prospectos calificados captados mensualmente mediante publicaciones con llamado a la acción.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4?_wi=5",
               },
               {
                 value: "18M+",
-                title: "Alcance en Instagram",
-                description: "Visualizaciones orgánicas acumuladas en contenido de playas, resorts y autos en RD.",
+                title: "Alcance Orgánico",
+                description: "Visualizaciones acumuladas en contenido audiovisual producido con storytelling estratégico.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=3",
               },
               {
                 value: "98%",
-                title: "Fidelización de Clientes",
-                description: "Marcas del sector turísticos y automotriz que mantienen su gestión de redes con Crowned.",
+                title: "Retención de Clientes",
+                description: "Marcas que mantienen su gestión de redes sociales y producción continua con Crowned.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4?_wi=2",
               },
             ]}
@@ -274,8 +274,8 @@ export default function HomePage() {
         <SectionErrorBoundary name="testimonials">
           <TestimonialOverlayCards
             tag="Historias de Éxito"
-            title="Lo que Dicen Nuestros Clientes"
-            description="Líderes del turismo en República Dominicana y del sector automotriz que confían en Crowned."
+            title="Marcas que Confían en Nuestra Estrategia"
+            description="Descubre cómo el contenido con propósito, el storytelling y los embudos de ventas han impulsado el crecimiento de nuestros clientes."
             testimonials={[
               {
                 name: "Don Gustavo Peralta",
@@ -322,8 +322,8 @@ export default function HomePage() {
         <SectionErrorBoundary name="social-proof">
           <SocialProofMarquee
             tag="Marcas Destacadas"
-            title="Potenciando el Turismo RD & Sector Automotriz"
-            description="Gestionamos y posicionamos marcas líderes en redes sociales."
+            title="Potenciando Marcas en Redes Sociales"
+            description="Transformamos la presencia digital de empresas líderes con contenido estratégico."
             names={[
               "Punta Cana Ocean Resort",
               "AutoHaus Dominicana",
@@ -343,24 +343,24 @@ export default function HomePage() {
         <SectionErrorBoundary name="faq">
           <FaqSplitMedia
             tag="Preguntas Frecuentes"
-            title="Resuelve tus Dudas sobre el Servicio"
-            description="Respuestas claras sobre nuestra producción audiovisual y gestión de Instagram para turismo y autos."
+            title="Resuelve tus Dudas sobre Nuestra Estrategia"
+            description="Respuestas claras sobre cómo aplicamos contenido con propósito, storytelling y embudos de ventas."
             items={[
               {
-                question: "¿Cómo abarca Crowned la gestión de Instagram para resorts y turismo?",
-                answer: "Realizamos grabaciones periódicas en los resorts, villas y playas de República Dominicana (Punta Cana, Cap Cana, Bayahíbe, etc.), editamos Reels con música en tendencia y ganchos visuales de alta retención, programamos el contenido y gestionamos la interacción con viajeros interesados.",
+                question: "¿En qué consiste la creación de contenido con propósito?",
+                answer: "Diseñamos cada video, imagen y publicación con un objetivo claro: no solo captar atención o acumular reproducciones, sino comunicar el valor diferencial de tu marca, transmitir emociones mediante storytelling y guiar al usuario hacia una acción concreta de compra o reserva.",
               },
               {
-                question: "¿Qué tipo de contenido crean para concesionarios y talleres mecánicos?",
-                answer: "Para concesionarios, grabamos exhibiciones de autos en showroom, pruebas de manejo y entregas de vehículos. Para talleres mecánicos, mostramos el trabajo técnico, cambios de piezas, diagnósticos y antes/después de mantenimiento para generar confianza y llamadas de clientes.",
+                question: "¿Cómo estructuran los embudos de ventas en redes sociales?",
+                answer: "Implementamos un proceso de 3 fases: Atracción (contenido dinámico y viral para captar audiencia), Nutrición (storytelling y prueba social para generar confianza) y Conversión (llamados a la acción directos para llevar prospectos a mensajes directos, WhatsApp o formularios).",
               },
               {
-                question: "¿Incluyen la gestión de mensajes directos (DM) y comentarios?",
-                answer: "Sí, nuestro equipo de Community Management supervisa tus cuentas de Instagram para responder dudas frecuentes, enviar enlaces de reserva o dirigir prospectos a tu canal de ventas por WhatsApp.",
+                question: "¿Cómo integran la producción audiovisual de turismo y sector automotriz?",
+                answer: "Contamos con equipos y formatos optimizados para resorts, playas, hoteles, concesionarios y talleres mecánicos. Capturamos la esencia visual del sector y la combinamos con nuestra metodología de contenido estratégico para maximizar conversiones.",
               },
               {
-                question: "¿Cuál es el tiempo de producción e inicio del servicio?",
-                answer: "Tras la reunión de planificación estratégica y la toma del contenido inicial en las instalaciones de tu resort, concesionario o taller, lanzamos el primer calendario editorial en menos de 7 a 10 días laborables.",
+                question: "¿Incluyen la gestión completa de Instagram y atención de mensajes?",
+                answer: "Sí, nuestro equipo de Community Management administra tu perfil, publica el calendario editorial, monitorea interacciones y atiende consultas por mensaje directo (DM) para no perder ninguna oportunidad de venta.",
               },
             ]}
             videoSrc="https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=6"
@@ -372,15 +372,15 @@ export default function HomePage() {
       <div id="contact" data-section="contact">
         <SectionErrorBoundary name="contact">
           <ContactCta
-            tag="¿Listo para Escalar tu Marca en RD?"
-            text="Si tienes un resort, hotel, villa, concesionario o taller mecánico en República Dominicana, llevamos tu cuenta de Instagram al siguiente nivel con contenido de clase mundial que genera ventas reales."
+            tag="¿Listo para Escalar tu Marca?"
+            text="Impulsa tu negocio con contenido con propósito, storytelling que conecta y embudos de ventas diseñados para generar resultados reales en redes sociales."
             primaryButton={{
               text: "Agendar Sesión Estratégica",
               href: "#",
             }}
             secondaryButton={{
-              text: "Ver Portafolio en PDF",
-              href: "#",
+              text: "Ver Portafolio",
+              href: "#portfolio",
             }}
             textAnimation="slide-up"
           />

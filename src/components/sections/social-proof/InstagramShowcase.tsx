@@ -154,10 +154,10 @@ export default function InstagramShowcase() {
         <div className="text-center max-w-3xl mx-auto mb-12 flex flex-col items-center">
           <ActiveBadge text="Gestión de Redes Sociales en Vivo" className="mb-4" />
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground mb-4">
-            Gestión de Instagram & Resultados Reales
+            Contenido con Propósito & Resultados Reales
           </h2>
           <p className="text-lg text-foreground/80">
-            Así gestionamos la presencia en Instagram de resorts, playas, concesionarios y talleres mecánicos en República Dominicana para posicionar marcas y multiplicar ventas.
+            Aplicamos storytelling y embudos de ventas en la gestión de Instagram. Aquí puedes ver la ejecución visual y el impacto real en nuestros proyectos del sector turístico y automotriz.
           </p>
 
           {/* Filter Tabs */}
