@@ -49,11 +49,7 @@ const NavbarFloating = ({ logo, navItems, ctaButton }: NavbarFloatingProps) => {
         <div className="mx-auto w-full md:w-1/2 overflow-hidden rounded backdrop-blur-sm card">
           <div className="relative z-10 flex items-center justify-between gap-3 xl:gap-4 2xl:gap-5 p-3 xl:p-4 2xl:p-5">
             <a href="/" className="flex items-center gap-2 group">
-              <img
-                src="/crowned-logo-dark.png"
-                alt={logo}
-                className="h-7 md:h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-              />
+              <span className="text-xl font-bold tracking-tight text-foreground">{logo}</span>
             </a>
 
             <div
