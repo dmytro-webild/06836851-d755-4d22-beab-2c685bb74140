@@ -29,31 +29,31 @@ export default function HomePage() {
             textAnimation="fade-blur"
             videos={[
               {
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4?_wi=1",
                 name: "Real Estate & Propiedades",
                 followers: "+2.4M Reproducciones",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/marbella/properties/villa-1.webp",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/marbella/properties/villa-1.webp?_wi=1",
               },
               {
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=1",
                 name: "Recorridos de Casas & Villas",
                 followers: "+1.8M Interacciones",
                 imageSrc: "https://storage.googleapis.com/webild/default/templates/real-estate/properties/property1.webp",
               },
               {
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=1",
                 name: "Empresas de Turismo & Hoteles",
                 followers: "+3.5M Alcance Único",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/luxury-travel-agency/destination/destination1.webp",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/luxury-travel-agency/destination/destination1.webp?_wi=1",
               },
               {
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=1",
                 name: "Estética Automotriz & Detailing",
                 followers: "+4.2M Visualizaciones",
                 imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/feature1.webp",
               },
               {
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4?_wi=1",
                 name: "Tratamientos & Auto Styling",
                 followers: "5.4x Conversión",
                 imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/features2.webp",
@@ -76,7 +76,7 @@ export default function HomePage() {
             quote="Construimos la corona de tu marca combinando estrategia creativa de alta gama, Reels de alto rendimiento y gestión integral de redes para impulsar tus ventas en inmobiliarias, turismo y estética automotriz."
             author="El Equipo Crowned"
             role="Creación de Contenido & Gestión Integral de Redes"
-            videoSrc="https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4"
+            videoSrc="https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4?_wi=2"
             textAnimation="slide-up"
           />
         </SectionErrorBoundary>
@@ -97,25 +97,25 @@ export default function HomePage() {
                 title: "Estrategia & Dirección Creativa Inmobiliaria y Turística",
                 description: "Diseño de concepto visual, líneas editoriales e identidad de marca para redes sociales. Creamos contenido estético de alto impacto diseñado para proyectar autoridad en bienes raíces, arquitectura y viajes.",
                 tags: ["Real Estate", "Turismo", "Dirección Creativa", "Contenido Premium"],
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/marbella/properties/villa-1.webp",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/marbella/properties/villa-1.webp?_wi=2",
               },
               {
                 title: "Gestión Integral de Redes Sociales (SMM)",
                 description: "Administración completa de Instagram, TikTok y canales principales. Diseñamos la estrategia mensual, planificamos el calendario editorial, redactamos copies persuasivos y optimizamos continuamente orientados a ventas.",
                 tags: ["Estrategia de Redes", "Calendario Editorial", "Community Management", "Growth & Conversión"],
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4?_wi=3",
               },
               {
                 title: "Producción de Video & Recorridos en Short-Form (Reels & TikToks)",
                 description: "Creación de videos dinámicos y tours en video con ganchos visuales en los primeros 3 segundos y edición profesional para maximizar retención y captación de clientes.",
                 tags: ["Recorridos de Casas", "Auto Detailing", "Hooks de Retención", "Edición Dinámica"],
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=2",
               },
               {
                 title: "Embudos de Contenido & Conversión Directa",
                 description: "Conectamos tu contenido visual y tus recorridos estratégicos con rutas de reserva y compra claras para transformar seguidores en clientes en bienes raíces, turismo y talleres de detallado.",
                 tags: ["Embudos de Ventas", "Atracción de Leads", "ROI Medible", "Optimización de Perfil"],
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=2",
               },
             ]}
             textAnimation="slide-up"
@@ -137,28 +137,28 @@ export default function HomePage() {
               {
                 title: "Real Estate & Bienes Raíces",
                 description: "Videos cinematográficos de propiedades exclusivas que destacan valor arquitectónico y aceleran cierres.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4?_wi=4",
                 buttonIcon: "Home",
                 buttonHref: "#portfolio",
               },
               {
                 title: "Recorridos & Tours de Casas",
                 description: "Recorridos dinámicos y envolventes que muestran cada detalle con elegancia y ritmo acelerado.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=2",
                 buttonIcon: "Play",
                 buttonHref: "#portfolio",
               },
               {
                 title: "Empresas de Turismo & Hotelería",
                 description: "Experiencias de viaje y conceptos de hospitalidad grabados con enfoque aspiracional para captar reservas.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=3",
                 buttonIcon: "Compass",
                 buttonHref: "#portfolio",
               },
               {
                 title: "Estética Automotriz & Auto Detailing",
                 description: "Producción audiovisual hiperdetallada que resalta tratamientos cerámicos, pulido y acabados impecables.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=3",
                 buttonIcon: "Car",
                 buttonHref: "#portfolio",
               },
@@ -182,27 +182,27 @@ export default function HomePage() {
               {
                 title: "Real Estate & Bienes Raíces",
                 description: "Presentación cinematográfica de residencias de lujo y desarrollos inmobiliarios.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/marbella/properties/villa-1.webp",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/marbella/properties/villa-1.webp?_wi=3",
               },
               {
                 title: "Recorridos & Tours de Casas",
                 description: "Reels inmersivos con ganchos visuales que destacan espacios y acabados.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4?_wi=5",
               },
               {
                 title: "Turismo & Experiencias de Viaje",
                 description: "Contenido aspiracional para resorts, agencias de viajes y destinos de lujo.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/luxury-travel-agency/destination/destination1.webp",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/luxury-travel-agency/destination/destination1.webp?_wi=2",
               },
               {
                 title: "Estética Automotriz & Auto Detailing",
                 description: "Showcases impactantes con edición dinámica para estudios de auto detailing.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=4",
               },
               {
                 title: "Tours Virtuales de Arquitectura",
                 description: "Recorridos paso a paso estructurados para proyectar el estilo de vida ideal.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=3",
               },
               {
                 title: "Promoción Turística & Hospitalidad",
@@ -212,7 +212,7 @@ export default function HomePage() {
               {
                 title: "Transformación & Detallado de Autos",
                 description: "Demostraciones de procesos de pulido, protección y acabados en alta definición.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4?_wi=2",
               },
             ]}
             textAnimation="slide-up"
@@ -231,31 +231,31 @@ export default function HomePage() {
                 value: "+350%",
                 title: "Ventas Inmobiliarias",
                 description: "Aumento en consultas cualificadas para agencias de real estate y desarrolladoras.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4?_wi=6",
               },
               {
                 value: "4.8x",
                 title: "Visualizaciones en Recorridos",
                 description: "Mayor retención en reels de tours de casas y arquitectura de lujo.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=4",
               },
               {
                 value: "100%",
                 title: "Captación Turística",
                 description: "Estrategia audiovisual efectiva para hoteles boutique y empresas de turismo.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=4",
               },
               {
                 value: "98%",
                 title: "Reservas en Estética Automotriz",
                 description: "Negocios de auto detailing que multiplican sus citas con videos de alto impacto.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=5",
               },
               {
                 value: "15M+",
                 title: "Impresiones en Redes",
                 description: "Alcance masivo logrado en sectores de bienes raíces, turismo y detailing.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4?_wi=3",
               },
             ]}
             textAnimation="slide-up"
@@ -275,35 +275,35 @@ export default function HomePage() {
                 role: "Director Inmobiliario",
                 company: "Marbella Real Estate",
                 rating: 5,
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4?_wi=7",
               },
               {
                 name: "Sofía Valenzuela",
                 role: "Agente de Bienes Raíces",
                 company: "Habitat Property Group",
                 rating: 5,
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=5",
               },
               {
                 name: "Javier Morales",
                 role: "Fundador",
                 company: "Aura Luxury Travel & Hotels",
                 rating: 5,
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=5",
               },
               {
                 name: "Diego Fernández",
                 role: "Propietario",
                 company: "Apex Auto Detailing",
                 rating: 5,
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=6",
               },
               {
                 name: "Mateo Rossi",
                 role: "Director de Marketing",
                 company: "Vanguard Detailing & Styling",
                 rating: 5,
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4?_wi=4",
               },
             ]}
             textAnimation="slide-up"
@@ -355,7 +355,7 @@ export default function HomePage() {
                 answer: "Tras la sesión estratégica de inicio, estructuramos la línea editorial y realizamos las primeras producciones de contenido y video en menos de 10 días laborables para comenzar a publicar sin demora.",
               },
             ]}
-            videoSrc="https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4"
+            videoSrc="https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4?_wi=8"
             textAnimation="slide-up"
           />
         </SectionErrorBoundary>
