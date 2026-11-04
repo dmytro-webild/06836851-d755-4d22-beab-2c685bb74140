@@ -6,6 +6,7 @@ import Button from "@/components/ui/Button";
 
 interface NavbarFloatingProps {
   logo: string;
+  logoImageSrc?: string;
   navItems: { name: string; href: string }[];
   ctaButton: { text: string; href: string };
 }
@@ -19,7 +20,7 @@ const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, on
   onClose?.();
 };
 
-const NavbarFloating = ({ logo, navItems, ctaButton }: NavbarFloatingProps) => {
+const NavbarFloating = ({ logo, logoImageSrc, navItems, ctaButton }: NavbarFloatingProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -49,7 +50,11 @@ const NavbarFloating = ({ logo, navItems, ctaButton }: NavbarFloatingProps) => {
         <div className="mx-auto w-full md:w-1/2 overflow-hidden rounded backdrop-blur-sm card">
           <div className="relative z-10 flex items-center justify-between gap-3 xl:gap-4 2xl:gap-5 p-3 xl:p-4 2xl:p-5">
             <a href="/" className="flex items-center gap-2 group">
-              <span className="text-xl font-bold tracking-tight text-foreground">{logo}</span>
+              {logoImageSrc ? (
+                <img src={logoImageSrc} alt={logo} className="h-6 md:h-7 w-auto object-contain" />
+              ) : (
+                <span className="text-xl font-bold tracking-tight text-foreground">{logo}</span>
+              )}
             </a>
 
             <div
