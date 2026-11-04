@@ -8,11 +8,15 @@ import { StyleProvider } from "@/components/ui/StyleProvider";
 export default function Layout() {
   const navItems = [
     {
+      "name": "Servicios",
+      "href": "#services"
+    },
+    {
       "name": "Portafolio",
       "href": "#portfolio"
     },
     {
-      "name": "Formatos Video",
+      "name": "Formatos",
       "href": "#videos"
     },
     {
@@ -22,10 +26,6 @@ export default function Layout() {
     {
       "name": "Resultados",
       "href": "#results"
-    },
-    {
-      "name": "Testimonios",
-      "href": "#testimonials"
     },
     {
       "name": "Preguntas",
@@ -58,32 +58,40 @@ export default function Layout() {
           brand="Crowned"
           columns={[
             {
-              title: "Agencia",
+              title: "Servicios",
+              items: [
+                {
+                  label: "Fotografía Profesional",
+                  href: "#services",
+                },
+                {
+                  label: "Gestión de Redes Sociales",
+                  href: "#services",
+                },
+                {
+                  label: "Producción de Video",
+                  href: "#videos",
+                },
+                {
+                  label: "Embudos de Ventas",
+                  href: "#services",
+                },
+              ],
+            },
+            {
+              title: "Navegación",
               items: [
                 {
                   label: "Estrategia",
                   href: "#about",
                 },
                 {
-                  label: "Portafolio",
+                  label: "Portafolio Visual",
                   href: "#portfolio",
                 },
                 {
-                  label: "Formatos Video",
-                  href: "#videos",
-                },
-              ],
-            },
-            {
-              title: "Servicios",
-              items: [
-                {
                   label: "Resultados",
                   href: "#results",
-                },
-                {
-                  label: "Testimonios",
-                  href: "#testimonials",
                 },
                 {
                   label: "Preguntas Frecuentes",
