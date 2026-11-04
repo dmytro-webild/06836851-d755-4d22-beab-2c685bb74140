@@ -8,44 +8,40 @@ import { StyleProvider } from "@/components/ui/StyleProvider";
 export default function Layout() {
   const navItems = [
     {
+      "name": "Inicio",
+      "href": "/"
+    },
+    {
+      "name": "Servicios Creativos",
+      "href": "/servicios"
+    },
+    {
+      "name": "Solicitar Briefing",
+      "href": "/servicios#solicitud"
+    },
+    {
       "name": "Especialidades",
-      "href": "#specialties"
-    },
-    {
-      "name": "Servicios",
-      "href": "#services"
-    },
-    {
-      "name": "Embudo",
-      "href": "#funnel"
-    },
-    {
-      "name": "Instagram SMM",
-      "href": "#instagram"
+      "href": "/#specialties"
     },
     {
       "name": "Portafolio",
-      "href": "#portfolio"
+      "href": "/#portfolio"
     },
     {
-      "name": "Formatos",
-      "href": "#videos"
+      "name": "Embudo",
+      "href": "/#funnel"
     },
     {
-      "name": "Estrategia",
-      "href": "#about"
-    },
-    {
-      "name": "Resultados",
-      "href": "#results"
+      "name": "Instagram SMM",
+      "href": "/#instagram"
     },
     {
       "name": "Preguntas",
-      "href": "#faq"
+      "href": "/#faq"
     },
     {
       "name": "Contacto",
-      "href": "#contact"
+      "href": "/#contact"
     }
   ];
 
@@ -55,10 +51,10 @@ export default function Layout() {
       <SectionErrorBoundary name="navbar">
         <NavbarFloating
           logo="Crowned"
-          logoImageSrc="/crowned-logo-light.png"
+          logoImageSrc="/crowned-logo-dark.png"
           ctaButton={{
-            text: "Agendar Sesión",
-            href: "#contact",
+            text: "Solicitar Servicio",
+            href: "/servicios#solicitud",
           }}
           navItems={navItems}
         />
@@ -69,7 +65,7 @@ export default function Layout() {
       <SectionErrorBoundary name="footer">
         <FooterSimple
           brand="Crowned"
-          brandImageSrc="/crowned-logo-light.png"
+          brandImageSrc="/crowned-logo-dark.png"
           columns={[
             {
               title: "Especialización",
@@ -117,28 +113,32 @@ export default function Layout() {
               title: "Navegación",
               items: [
                 {
-                  label: "Especialidades",
-                  href: "#specialties",
+                  label: "Página Principal",
+                  href: "/",
                 },
                 {
-                  label: "Servicios Estratégicos",
-                  href: "#services",
+                  label: "Oferta de Servicios",
+                  href: "/servicios",
+                },
+                {
+                  label: "Solicitud & Briefing",
+                  href: "/servicios#solicitud",
+                },
+                {
+                  label: "Especialidades",
+                  href: "/#specialties",
                 },
                 {
                   label: "Portafolio Visual",
-                  href: "#portfolio",
-                },
-                {
-                  label: "Resultados Comerciales",
-                  href: "#results",
+                  href: "/#portfolio",
                 },
                 {
                   label: "Preguntas Frecuentes",
-                  href: "#faq",
+                  href: "/#faq",
                 },
                 {
-                  label: "Contacto",
-                  href: "#contact",
+                  label: "Contacto Directo",
+                  href: "/#contact",
                 },
               ],
             },
