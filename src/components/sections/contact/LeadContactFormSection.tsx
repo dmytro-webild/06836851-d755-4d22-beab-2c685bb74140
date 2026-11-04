@@ -14,7 +14,8 @@ import {
   MessageSquare,
   Clock,
   Sparkles,
-  RotateCcw
+  RotateCcw,
+  Mail
 } from "lucide-react";
 
 interface LeadContactFormSectionProps {
@@ -133,6 +134,19 @@ export default function LeadContactFormSection({
 
                 {/* Direct Contact Cards */}
                 <div className="flex flex-col gap-3">
+                  <a
+                    href="mailto:contacto@creativecrowned.com"
+                    className="flex items-center gap-3.5 p-3.5 rounded-xl bg-card border border-primary/30 hover:border-primary/60 hover:bg-primary/10 transition-all group"
+                  >
+                    <div className="size-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                      <Mail className="size-5 text-primary" />
+                    </div>
+                    <div className="flex flex-col min-w-0">
+                      <span className="text-[11px] uppercase tracking-wider text-foreground/60 font-medium">Correo Oficial</span>
+                      <span className="text-sm font-semibold text-foreground truncate">contacto@creativecrowned.com</span>
+                    </div>
+                  </a>
+
                   <a
                     href="https://wa.me/18492665501"
                     target="_blank"
