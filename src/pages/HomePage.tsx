@@ -19,8 +19,8 @@ export default function HomePage() {
         <SectionErrorBoundary name="hero">
           <HeroBillboardCreator
             tag="Estrategia Audiovisual & Embudos de Conversión"
-            title="Transformamos tu Presencia Digital en Cierres de Ventas & Reservas Reales"
-            description="Producimos narrativa visual cinematográfica y embudos de venta directa para agentes inmobiliarios, agencias de bienes raíces, hoteles y resorts. Convertimos cada visualización en clientes potenciales calificados, cierres inmobiliarios y reservas confirmadas."
+            title="Estrategia & Contenido Audiovisual que Impulsan tus Ventas"
+            description="Transformamos la narrativa visual en cierres de ventas y reservas para clientes del sector inmobiliario y turístico."
             primaryButton={{
               text: "Agendar Sesión Estratégica",
               href: "#contact",
