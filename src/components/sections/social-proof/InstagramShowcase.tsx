@@ -156,7 +156,7 @@ export default function InstagramShowcase() {
             Estrategia Audiovisual & Resultados Reales
           </h2>
           <p className="text-lg text-foreground/80">
-            Aplicamos storytelling y embudos de ventas en la gestión de Instagram. Aquí puedes ver la ejecución visual y el impacto en ventas para Agentes & Agencias de Bienes Raíces, Hoteles & Resorts, y marcas destacadas.
+            Aplicamos storytelling y contenido orgánico de alto impacto en la gestión de Instagram. Aquí puedes ver la ejecución visual y el alcance generado para Agentes & Agencias de Bienes Raíces, Hoteles & Resorts, y empresas en general.
           </p>
 
           {/* Filter Tabs */}
@@ -337,7 +337,7 @@ export default function InstagramShowcase() {
                 <span className="text-rose-400 font-mono">@crowned.rd</span>
               </h3>
               <p className="text-sm text-foreground/80 mt-1">
-                Ubicados en Punta Cana y Santo Domingo, RD. Estrategia de contenido audiovisual, Reels para bienes raíces, hoteles y empresas, con embudos de venta directos por WhatsApp (+1 849-266-5501).
+                Ubicados en Punta Cana y Santo Domingo, RD. Estrategia de contenido audiovisual orgánico y Reels para bienes raíces, hotelería y empresas en general (+1 849-266-5501).
               </p>
             </div>
           </div>
