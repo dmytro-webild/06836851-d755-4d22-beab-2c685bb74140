@@ -61,7 +61,7 @@ export default function Layout() {
               title: "Servicios",
               items: [
                 {
-                  label: "Fotografía Profesional",
+                  label: "Estrategia de Contenido",
                   href: "#services",
                 },
                 {
