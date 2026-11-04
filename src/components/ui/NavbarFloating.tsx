@@ -52,7 +52,7 @@ const NavbarFloating = ({ logo, navItems, ctaButton }: NavbarFloatingProps) => {
               <img
                 src="/crowned-logo-dark.png"
                 alt={logo}
-                className="h-6 md:h-7 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                className="h-7 md:h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
             </a>
 
