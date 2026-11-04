@@ -63,7 +63,7 @@ const HeroBillboardCreator = ({
           >
             {title}{" "}
             {titleHighlight && (
-              <span className="italic" style={{ fontFamily: "'Playfair Display', serif" }}>
+              <span className="italic font-serif" style={{ fontFamily: "'Cardo', serif" }}>
                 {titleHighlight}
               </span>
             )}
