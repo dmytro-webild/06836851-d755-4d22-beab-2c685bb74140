@@ -16,8 +16,8 @@ export default function Layout() {
       "href": "/servicios"
     },
     {
-      "name": "Portafolio",
-      "href": "/portafolio"
+      "name": "Especialidades",
+      "href": "/#specialties"
     },
     {
       "name": "Preguntas",
@@ -26,10 +26,6 @@ export default function Layout() {
     {
       "name": "Contacto",
       "href": "/#contact"
-    },
-    {
-      "name": "Solicitar Asesoría",
-      "href": "/solicitar-asesoria"
     }
   ];
 
@@ -42,7 +38,7 @@ export default function Layout() {
           logoImageSrc="/crowned-logo-white.png"
           ctaButton={{
             text: "Solicitar Asesoría",
-            href: "/solicitar-asesoria",
+            href: "/servicios#briefing",
           }}
           navItems={navItems}
         />
@@ -67,12 +63,12 @@ export default function Layout() {
                   href: "/servicios",
                 },
                 {
-                  label: "Portafolio Cinematográfico",
-                  href: "/portafolio",
+                  label: "Solicitud de Briefing",
+                  href: "/servicios#briefing",
                 },
                 {
-                  label: "Solicitar Asesoría 1:1",
-                  href: "/solicitar-asesoria",
+                  label: "Especialización Inmobiliaria",
+                  href: "/#specialties",
                 },
               ],
             },
@@ -109,12 +105,8 @@ export default function Layout() {
                   href: "/servicios",
                 },
                 {
-                  label: "Portafolio",
-                  href: "/portafolio",
-                },
-                {
-                  label: "Solicitar Asesoría",
-                  href: "/solicitar-asesoria",
+                  label: "Especialidades",
+                  href: "/#specialties",
                 },
                 {
                   label: "Preguntas Frecuentes",

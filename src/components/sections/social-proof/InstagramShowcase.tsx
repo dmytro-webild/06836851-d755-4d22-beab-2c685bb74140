@@ -407,7 +407,7 @@ export default function InstagramShowcase() {
               {/* Action Buttons */}
               <div className="pt-6 border-t border-white/10 flex flex-col gap-2.5 mt-6">
                 <a
-                  href="/solicitar-asesoria"
+                  href="/servicios#briefing"
                   className="w-full py-3 px-4 rounded-xl primary-button font-bold text-xs sm:text-sm text-center shadow-md transition-transform hover:scale-102"
                 >
                   Solicitar Asesoría para Mi Marca

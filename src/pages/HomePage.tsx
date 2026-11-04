@@ -23,7 +23,7 @@ export default function HomePage() {
             description="Convertimos tu material audiovisual en una herramienta efectiva para conectar con tu audiencia, atraer clientes y vender más a través de redes sociales. Un enfoque cercano y profesional para bienes raíces, hotelería y empresas en general."
             primaryButton={{
               text: "Solicitar Asesoría Estratégica",
-              href: "/solicitar-asesoria",
+              href: "/servicios#briefing",
             }}
             note="Contenido orgánico de alto impacto para bienes raíces, hotelería y empresas."
             badgeText="Contenido Orgánico"
@@ -91,7 +91,7 @@ export default function HomePage() {
             description="Desarrollamos estrategias de contenido orgánico de alto impacto diseñadas para captar la atención de tu audiencia, multiplicar el alcance y generar clientes calificados."
             primaryButton={{
               text: "Solicitar Asesoría Estratégica",
-              href: "/solicitar-asesoria",
+              href: "/servicios#briefing",
             }}
             items={[
               {
@@ -101,7 +101,7 @@ export default function HomePage() {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=1",
                 primaryButton: {
                   text: "Estrategia Real Estate",
-                  href: "/solicitar-asesoria",
+                  href: "/servicios#briefing",
                 },
               },
               {
@@ -111,7 +111,7 @@ export default function HomePage() {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=1",
                 primaryButton: {
                   text: "Estrategia Hoteles & Resorts",
-                  href: "/solicitar-asesoria",
+                  href: "/servicios#briefing",
                 },
               },
               {
@@ -121,7 +121,7 @@ export default function HomePage() {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=1",
                 primaryButton: {
                   text: "Multiplicar Ventas Comerciales",
-                  href: "/solicitar-asesoria",
+                  href: "/servicios#briefing",
                 },
               },
             ]}
@@ -138,7 +138,7 @@ export default function HomePage() {
             description="Llevamos tu marca al siguiente nivel uniendo la producción audiovisual cinematográfica con contenido orgánico de alto impacto y gestión estratégica en redes sociales."
             primaryButton={{
               text: "Solicitar Asesoría",
-              href: "/solicitar-asesoria",
+              href: "/servicios#briefing",
             }}
             items={[
               {
@@ -190,8 +190,8 @@ export default function HomePage() {
             title="Narrativa Visual de Alto Impacto que Detiene el Scroll"
             description="Piezas de video diseñadas estratégicamente para transmitir autoridad, conectar mediante storytelling y activar conversiones en redes sociales."
             primaryButton={{
-              text: "Explorar Portafolio Completo",
-              href: "/portafolio",
+              text: "Solicitar Asesoría para Mi Marca",
+              href: "/servicios#briefing",
             }}
             items={[
               {
@@ -199,28 +199,28 @@ export default function HomePage() {
                 description: "Tours cinematográficos de propiedades con narración persuasiva para acelerar el cierre de ventas.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=2",
                 buttonIcon: "Compass",
-                buttonHref: "/portafolio",
+                buttonHref: "/servicios#briefing",
               },
               {
                 title: "Resorts & Hoteles en Punta Cana",
                 description: "Videos envolventes que combinan narrativa aspiracional y experiencias de lujo para incentivar reservas.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=3",
                 buttonIcon: "Sun",
-                buttonHref: "/portafolio",
+                buttonHref: "/servicios#briefing",
               },
               {
                 title: "Exhibición en Concesionarios",
                 description: "Presentaciones cinematográficas de vehículos con ángulos dinámicos y ganchos visuales de alta retención.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=3",
                 buttonIcon: "Car",
-                buttonHref: "/portafolio",
+                buttonHref: "/servicios#briefing",
               },
               {
                 title: "Procesos en Talleres Mecánicos",
                 description: "Contenido de valor que muestra el trabajo técnico de precisión para generar máxima confianza y citas.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4?_wi=3",
                 buttonIcon: "Wrench",
-                buttonHref: "/portafolio",
+                buttonHref: "/servicios#briefing",
               },
             ]}
             textAnimation="slide-up"
@@ -236,7 +236,7 @@ export default function HomePage() {
             description="Muestras de nuestra dirección creativa, producción cinematográfica y gestión de alto rendimiento para clientes destacados."
             primaryButton={{
               text: "Solicitar Asesoría para Mi Marca",
-              href: "/solicitar-asesoria",
+              href: "/servicios#briefing",
             }}
             items={[
               {
