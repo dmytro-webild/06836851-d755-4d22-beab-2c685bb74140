@@ -16,15 +16,15 @@ export default function HomePage() {
       <div id="hero" data-section="hero">
         <SectionErrorBoundary name="hero">
           <HeroBillboardCreator
-            tag="Creación de Contenido, Fotografía & Gestión de Redes"
-            title="Fotografía & Video Estratégico que"
+            tag="Creación de Contenido & Gestión de Redes"
+            title="Contenido Estratégico & Video que"
             titleHighlight="Impulsa tus Ventas"
-            description="En Crowned transformamos la presencia de tu marca en redes sociales. Combinamos fotografía profesional de alto impacto, creación de contenido en video y gestión integral de redes sociales enfocada en convertir seguidores en clientes."
+            description="En Crowned transformamos la presencia de tu marca en redes sociales. Combinamos creación de contenido audiovisual de alto impacto, videos en tendencia y gestión integral de redes sociales enfocada en convertir seguidores en clientes."
             primaryButton={{
               text: "Agendar Sesión Estratégica",
               href: "#contact",
             }}
-            note="Fotografía, video y gestión integral de redes diseñadas para generar ingresos reales."
+            note="Creación de contenido estratégico y gestión integral de redes diseñadas para generar ingresos reales."
             badgeText="Estrategia & Producción Crowned"
             textAnimation="fade-blur"
             videos={[
@@ -36,7 +36,7 @@ export default function HomePage() {
               },
               {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-chloe.mp4?_wi=1",
-                name: "Fotografía & Campañas",
+                name: "Estrategia & Campañas",
                 followers: "+340K Ventas Generadas",
                 imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/product-1.webp?_wi=1",
               },
@@ -54,7 +54,7 @@ export default function HomePage() {
               },
               {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-zara.mp4?_wi=1",
-                name: "Fotografía de Producto Pro",
+                name: "Creación de Contenido Pro",
                 followers: "+890K Alcance Único",
                 imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/features/feature-3.webp",
               },
@@ -73,9 +73,9 @@ export default function HomePage() {
         <SectionErrorBoundary name="about">
           <AboutTestimonial
             tag="Filosofía Crowned"
-            quote="En un entorno saturado de ruido digital, Crowned construye la corona de tu marca. El contenido no es solo publicar imágenes o videos aislados; es la combinación de fotografía profesional de alta gama, video envolvente y gestión estratégica de redes para impulsar tus ventas."
+            quote="En un entorno saturado de ruido digital, Crowned construye la corona de tu marca. El contenido no es solo publicar vídeos o imágenes aisladas; es la combinación de estrategia creativa de alta gama, Reels de alto rendimiento y gestión integral de redes para impulsar tus ventas."
             author="El Equipo Crowned"
-            role="Fotografía, Video & Gestión Integral de Redes"
+            role="Creación de Contenido & Gestión Integral de Redes"
             videoSrc="https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4"
             textAnimation="slide-up"
           />
@@ -94,9 +94,9 @@ export default function HomePage() {
             }}
             items={[
               {
-                title: "Fotografía Profesional de Marca & Producto",
-                description: "Dirección de arte y sesiones fotográficas editoriales, de catálogo y de estilo de vida. Creamos imágenes impecables en alta resolución diseñadas para proyectar lujo, captar miradas y elevar el valor percibido de tus productos.",
-                tags: ["Fotografía de Producto", "Dirección de Arte", "Contenido Editorial", "Alta Resolución"],
+                title: "Estrategia & Dirección Creativa de Contenido",
+                description: "Diseño de concepto visual, líneas editoriales e identidad de marca para redes sociales. Creamos contenido estético de alto impacto diseñado para proyectar autoridad, captar miradas y elevar el valor percibido de tu negocio.",
+                tags: ["Dirección Creativa", "Estrategia de Marca", "Identidad Visual", "Contenido Premium"],
                 imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/features/feature-1.webp?_wi=2",
               },
               {
@@ -113,7 +113,7 @@ export default function HomePage() {
               },
               {
                 title: "Embudos de Contenido & Conversión",
-                description: "Conectamos tu fotografía profesional y tus videos estratégicos con rutas de compra claras, landing pages e interacciones guiadas para transformar tráfico en clientes recurrentes.",
+                description: "Conectamos tu contenido visual y tus videos estratégicos con rutas de compra claras, landing pages e interacciones guiadas para transformar tráfico en clientes recurrentes.",
                 tags: ["Embudos de Ventas", "Atracción de Leads", "ROI Medible", "Optimización de Perfil"],
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/joes-coffee/hero/hero.mp4?_wi=10",
               },
@@ -127,8 +127,8 @@ export default function HomePage() {
         <SectionErrorBoundary name="videos">
           <FeaturesMediaCarousel
             tag="Formatos Audiovisuales"
-            title="Fotografía & Video Diseñados para Convertir"
-            description="Piezas visuales optimizadas para detener el scroll, transmitir autoridad instantánea y activar la decisión de compra en tu audiencia."
+            title="Contenido & Video Diseñados para Convertir"
+            description="Piezas visuales y reels optimizados para detener el scroll, transmitir autoridad instantánea y activar la decisión de compra en tu audiencia."
             primaryButton={{
               text: "Explorar Portafolio",
               href: "#portfolio",
@@ -142,8 +142,8 @@ export default function HomePage() {
                 buttonHref: "#portfolio",
               },
               {
-                title: "Fotografía & Storytelling de Marca",
-                description: "Imágenes y videos estructurados para comunicar la esencia de tu marca e impulsar pedidos.",
+                title: "Storytelling Visual & Contenido de Marca",
+                description: "Narrativas en video estructuradas para comunicar la esencia de tu marca e impulsar pedidos.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-amara.mp4?_wi=2",
                 buttonIcon: "TrendingUp",
                 buttonHref: "#portfolio",
@@ -157,7 +157,7 @@ export default function HomePage() {
               },
               {
                 title: "Anuncios Visuales de Alto Impacto",
-                description: "Combinación de fotos de producto y videos optimizados para escalar campañas pautadas.",
+                description: "Combinación de formatos dinámicos y videos optimizados para escalar campañas pautadas.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4",
                 buttonIcon: "Zap",
                 buttonHref: "#portfolio",
@@ -172,16 +172,16 @@ export default function HomePage() {
         <SectionErrorBoundary name="portfolio">
           <FeaturesImageBento
             tag="Portafolio Visual & Redes"
-            title="Fotografía Profesional, Video & Casos de Éxito"
-            description="Muestras de nuestra dirección de arte fotográfica, producción en video y los sistemas de contenido que impulsan las ventas de nuestros clientes."
+            title="Casos de Éxito & Contenido Estratégico"
+            description="Muestras de nuestra dirección creativa, producción en video y los sistemas de contenido que impulsan las ventas de nuestros clientes."
             primaryButton={{
               text: "Iniciar Mi Proyecto",
               href: "#contact",
             }}
             items={[
               {
-                title: "Fotografía Editorial & Estilo de Vida",
-                description: "Imágenes de alta resolución con iluminación de estudio y color grading profesional.",
+                title: "Dirección Creativa & Estilo de Vida",
+                description: "Piezas de marca con alta estética y edición cuidada para redes sociales.",
                 imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/features/feature-1.webp?_wi=3",
               },
               {
@@ -190,7 +190,7 @@ export default function HomePage() {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-chloe.mp4?_wi=2",
               },
               {
-                title: "Fotografía de Producto & Catálogo",
+                title: "Estrategia Visual de Producto",
                 description: "Detalle y elegancia para hacer que cada producto luzca irresistible en feed y tienda.",
                 imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/product-1.webp?_wi=2",
               },
@@ -205,7 +205,7 @@ export default function HomePage() {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-isla.mp4?_wi=2",
               },
               {
-                title: "Fotografía de Marca Personal & Retrato",
+                title: "Posicionamiento de Marca Personal",
                 description: "Proyección de autoridad y liderazgo para fundadores y ejecutivos.",
                 imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/features/feature-2.webp?_wi=2",
               },
@@ -225,24 +225,24 @@ export default function HomePage() {
           <MetricsMediaCards
             tag="Resultados Comprobados"
             title="Métricas de Impacto en Redes y Ventas Directas"
-            description="Combinamos fotografía profesional, video envolvente y gestión analítica de redes sociales para convertir el alcance en facturación."
+            description="Combinamos producción audiovisual, contenido estratégico y gestión analítica de redes sociales para convertir el alcance en facturación."
             metrics={[
               {
                 value: "+350%",
                 title: "Crecimiento en Facturación",
-                description: "Aumento promedio de ventas tras implementar nuestra gestión integral de redes y fotografía de producto.",
+                description: "Aumento promedio de ventas tras implementar nuestra gestión integral de redes y estrategia de contenido.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=3",
               },
               {
                 value: "4.8x",
                 title: "Mayor Tasa de Interacción",
-                description: "Sube el engagement cualificado gracias a imágenes profesionales y guiones estratégicos.",
+                description: "Sube el engagement cualificado gracias a creativos profesionales y guiones estratégicos.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-chloe.mp4?_wi=3",
               },
               {
                 value: "100%",
                 title: "Gestión Llave en Mano",
-                description: "Nos encargamos de la fotografía, edición, redacción de copies y publicación diaria.",
+                description: "Nos encargamos de la producción, edición, redacción de copies y publicación diaria.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/joes-coffee/hero/hero.mp4?_wi=2",
               },
               {
@@ -268,7 +268,7 @@ export default function HomePage() {
           <TestimonialOverlayCards
             tag="Historias de Éxito"
             title="Lo que Dicen Nuestros Clientes"
-            description="Fundadores y marcas que delegaron su fotografía y gestión de redes en Crowned para multiplicar sus ingresos."
+            description="Fundadores y marcas que delegaron su contenido y gestión de redes en Crowned para multiplicar sus ingresos."
             testimonials={[
               {
                 name: "Alex Rivet",
@@ -340,19 +340,19 @@ export default function HomePage() {
             items={[
               {
                 question: "¿Qué abarca la gestión integral de redes sociales?",
-                answer: "Nos encargamos de absolutamente todo: diseño de la estrategia de contenido, planificación del calendario, fotografía profesional, producción de video, redacción de copies de conversión, programación de publicaciones y seguimiento analítico orientado a ventas.",
+                answer: "Nos encargamos de absolutamente todo: diseño de la estrategia de contenido, planificación del calendario editorial, producción de video, diseño visual, redacción de copies de conversión, programación de publicaciones y seguimiento analítico orientado a ventas.",
               },
               {
-                question: "¿Realizan sesiones de fotografía profesional de producto o marca?",
-                answer: "Sí, coordinamos la dirección creativa, iluminación, styling y edición fotográfica de alta calidad para asegurarnos de que tu marca proyecte el nivel de lujo y atractivo necesario para destacar.",
+                question: "¿Qué tipo de contenido producen para las redes sociales?",
+                answer: "Nos especializamos en videos de formato corto (Reels, TikToks, Shorts), piezas gráficas de alto impacto, historias interactivas y recursos de marca diseñados para captar la atención y generar conversión.",
               },
               {
                 question: "¿Cómo garantizan que el contenido genera ventas y no solo vistas?",
-                answer: "Diseñamos cada foto, video y publicación con un objetivo comercial específico. Incorporamos ganchos psicológicos, ofertas claras, optimización del perfil y llamados a la acción estratégicos hacia tus canales de venta.",
+                answer: "Diseñamos cada video y publicación con un objetivo comercial específico. Incorporamos ganchos psicológicos, ofertas claras, optimización del perfil y llamados a la acción estratégicos hacia tus canales de venta.",
               },
               {
                 question: "¿Cuánto tiempo toma poner en marcha el servicio?",
-                answer: "Tras la sesión estratégica de inicio, estructuramos la línea editorial y realizamos las primeras sesiones de fotografía y video en menos de 10 días laborables para comenzar a publicar sin demora.",
+                answer: "Tras la sesión estratégica de inicio, estructuramos la línea editorial y realizamos las primeras producciones de contenido y video en menos de 10 días laborables para comenzar a publicar sin demora.",
               },
             ]}
             videoSrc="https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4"
@@ -365,7 +365,7 @@ export default function HomePage() {
         <SectionErrorBoundary name="contact">
           <ContactCta
             tag="¿Listo para Escalar tu Marca?"
-            text="Tu negocio merece una imagen fotográfica impecable y una gestión de redes sociales totalmente enfocada en generar ventas. Hablemos hoy y construyamos la corona de tu marca."
+            text="Tu negocio merece una identidad visual impecable y una gestión de redes sociales totalmente enfocada en generar ventas. Hablemos hoy y construyamos la corona de tu marca."
             primaryButton={{
               text: "Agendar Sesión Estratégica",
               href: "#",
