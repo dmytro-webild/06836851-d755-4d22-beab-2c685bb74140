@@ -4,17 +4,17 @@
 @import "./styles/animations.css";
 
 :root {
-  /* Inverted Theme: White background & Pure Black typography */
-  --background: #ffffff;
-  --card: #ffffff;
-  --foreground: #000000;
+  /* Global Theme: Dark Black background & Pure White typography */
+  --background: #000000;
+  --card: #121215;
+  --foreground: #ffffff;
   --primary-cta: #DA7756;
   --primary-cta-text: #ffffff;
-  --secondary-cta: #000000;
-  --secondary-cta-text: #ffffff;
-  --accent: #f4f4f5;
-  --background-accent: #ffffff;
-  --border: #e4e4e7;
+  --secondary-cta: #ffffff;
+  --secondary-cta-text: #000000;
+  --accent: #18181b;
+  --background-accent: #09090b;
+  --border: #27272a;
 
   /* @layout/border-radius/rounded */
   --radius: 1.5rem;
@@ -133,7 +133,7 @@
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0);
+  scrollbar-color: rgba(255, 255, 255, 0.2) rgba(0, 0, 0, 0);
 }
 
 html {
@@ -174,9 +174,9 @@ i,
 
 .card {
   /* WEBILD_CARD_STYLE */
-  background: color-mix(in srgb, var(--color-card) 96%, #ffffff);
-  border: 1px solid color-mix(in srgb, var(--color-foreground) 10%, transparent);
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04);
+  background: color-mix(in srgb, var(--color-card) 96%, #000000);
+  border: 1px solid color-mix(in srgb, var(--color-foreground) 12%, transparent);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
 }
 
 .primary-button {
