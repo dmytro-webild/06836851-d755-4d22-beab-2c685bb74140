@@ -77,7 +77,7 @@ export default function Layout() {
                   href: "#specialties",
                 },
                 {
-                  label: "Embudos de Ventas & ROI",
+                  label: "Contenido Orgánico & ROI",
                   href: "#specialties",
                 },
                 {

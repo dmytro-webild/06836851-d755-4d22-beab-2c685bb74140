@@ -18,14 +18,14 @@ export default function HomePage() {
       <div id="hero" data-section="hero">
         <SectionErrorBoundary name="hero">
           <HeroBillboardCreator
-            title="Transformamos tus Videos en Contenido Efectivo para Vender Más"
-            description="Convertimos tus videos en contenido para redes sociales que atrae clientes y genera ventas. Trabajamos de forma clara y directa con agentes inmobiliarios, hoteles, resorts y empresas en general."
+            title="Transformamos tus Videos en Contenido Orgánico de Alto Impacto"
+            description="Convertimos tu material audiovisual en una herramienta efectiva para conectar con tu audiencia, atraer clientes y vender más a través de redes sociales. Un enfoque cercano y profesional para bienes raíces, hotelería y empresas en general."
             primaryButton={{
               text: "Agendar Sesión Estratégica",
               href: "#contact",
             }}
-            note="Contenido audiovisual para agentes inmobiliarios, hoteles, resorts y empresas."
-            badgeText="Videos que Venden"
+            note="Contenido orgánico de alto impacto para bienes raíces, hotelería y empresas."
+            badgeText="Contenido Orgánico"
             textAnimation="fade-blur"
             videos={[
               {
@@ -73,9 +73,9 @@ export default function HomePage() {
         <SectionErrorBoundary name="about">
           <AboutTestimonial
             tag="Nuestra Filosofía de Trabajo"
-            quote="“Creemos que la producción visual sin estrategia comercial es solo adorno. Combinamos la fuerza de la narrativa cinematográfica con la estructura de los embudos de venta directa para crear piezas audiovisuales de alto rendimiento que conectan emocionalmente con tu audiencia y generan resultados medibles en bienes raíces y turismo.”"
+            quote="“Creemos que la producción visual sin estrategia es solo adorno. Combinamos la fuerza de la narrativa cinematográfica con la creación de contenido orgánico de alto impacto que atrae audiencia, conecta emocionalmente y genera crecimiento real para bienes raíces, hotelería y empresas en general.”"
             author="El Equipo Crowned"
-            role="Estrategia Audiovisual & Conversión Digital · Punta Cana & Santo Domingo"
+            role="Estrategia Audiovisual & Contenido Orgánico · Punta Cana & Santo Domingo"
             videoSrc="https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=2"
             textAnimation="slide-up"
           />
@@ -86,8 +86,8 @@ export default function HomePage() {
         <SectionErrorBoundary name="specialties">
           <FeaturesTaggedCards
             tag="Nuestra Especialización"
-            title="Especialistas en Real Estate, Agentes, Hoteles & Resorts"
-            description="Desarrollamos estrategias audiovisuales de alto rendimiento diseñadas para generar resultados comerciales tangibles: cierres de ventas inmobiliarias y reservas directas de hospedaje."
+            title="Especialistas en Bienes Raíces, Hotelería & Empresas en General"
+            description="Desarrollamos estrategias de contenido orgánico de alto impacto diseñadas para captar la atención de tu audiencia, multiplicar el alcance y generar clientes calificados."
             primaryButton={{
               text: "Agendar Asesoría Especializada",
               href: "#contact",
@@ -96,7 +96,7 @@ export default function HomePage() {
               {
                 tag: "Bienes Raíces & Agentes",
                 title: "Agentes & Agencias Inmobiliarias (Real Estate)",
-                description: "Producimos recorridos cinematográficos de villas, apartamentos y proyectos en plano. Diseñamos guiones estratégicos para agentes de bienes raíces y embudos en redes sociales que captan compradores e inversionistas calificados.",
+                description: "Producimos recorridos cinematográficos de villas, apartamentos y proyectos en plano. Diseñamos guiones estratégicos y contenido orgánico para agentes de bienes raíces que atrae compradores e inversionistas calificados.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=1",
                 primaryButton: {
                   text: "Estrategia Real Estate",
@@ -115,8 +115,8 @@ export default function HomePage() {
               },
               {
                 tag: "Resultados Comerciales",
-                title: "Embudos de Ventas & Retorno de Inversión",
-                description: "Unimos la dirección creativa con ganchos de retención y llamados a la acción estratégicos. Convertimos interacciones en Instagram y TikTok en consultas directas, citas de venta y compras confirmadas.",
+                title: "Contenido Orgánico & Crecimiento Medible",
+                description: "Unimos la dirección creativa con ganchos de retención y storytelling estratégico. Convertimos interacciones en Instagram y TikTok en conexiones reales, consultas directas y ventas.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=1",
                 primaryButton: {
                   text: "Multiplicar Ventas Comerciales",
@@ -133,8 +133,8 @@ export default function HomePage() {
         <SectionErrorBoundary name="services">
           <FeaturesDetailedCards
             tag="Nuestros Servicios Estratégicos"
-            title="Producción Audiovisual Estratégica, Storytelling & Embudos de Ventas"
-            description="Llevamos tu marca al siguiente nivel uniendo la producción audiovisual de estética cinematográfica con estrategias de conversión comercial y gestión activa en redes sociales."
+            title="Producción Audiovisual Estratégica, Storytelling & Contenido Orgánico"
+            description="Llevamos tu marca al siguiente nivel uniendo la producción audiovisual cinematográfica con contenido orgánico de alto impacto y gestión estratégica en redes sociales."
             primaryButton={{
               text: "Solicitar Propuesta",
               href: "#contact",
@@ -153,9 +153,9 @@ export default function HomePage() {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=2",
               },
               {
-                title: "Embudos de Ventas & Conversión Digital",
-                description: "Estructuramos el camino completo del prospecto: desde la atracción con contenido viral hasta la conversión mediante llamadas a la acción, mensajes directos (DM) y secuencias de venta.",
-                tags: ["Embudos de Ventas", "Conversión Directa", "Captación de Clientes", "Estrategia Comercial"],
+                title: "Atracción de Audiencia & Crecimiento en Redes",
+                description: "Estructuramos el camino para atraer audiencia de calidad: desde la captación con contenido orgánico de alto impacto hasta la conversión mediante mensajes directos (DM) y llamados a la acción dinámicos.",
+                tags: ["Contenido Orgánico", "Atracción de Audiencia", "Crecimiento Digital", "Conexión con Clientes"],
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4?_wi=2",
               },
               {
@@ -277,8 +277,8 @@ export default function HomePage() {
         <SectionErrorBoundary name="results">
           <MetricsMediaCards
             tag="Resultados Comprobados"
-            title="Embudos de Ventas que Generan Facturación Real"
-            description="Estrategias orientadas a retorno sobre inversión y crecimiento sostenido a través de producciones audiovisuales de alto rendimiento."
+            title="Contenido Orgánico que Genera Crecimiento y Resultados Reales"
+            description="Estrategias enfocadas en la atracción de audiencia y el crecimiento sostenido a través de producciones audiovisuales de alto impacto."
             metrics={[
               {
                 value: "+380%",
@@ -289,7 +289,7 @@ export default function HomePage() {
               {
                 value: "4.5x",
                 title: "Retorno de Inversión",
-                description: "Multiplicación de resultados comerciales en campañas de contenido y embudos de ventas.",
+                description: "Multiplicación del alcance y de resultados comerciales mediante contenido orgánico de alto impacto.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=5",
               },
               {
@@ -321,7 +321,7 @@ export default function HomePage() {
           <TestimonialOverlayCards
             tag="Historias de Éxito"
             title="Marcas que Confían en Nuestra Estrategia"
-            description="Descubre cómo la producción audiovisual estratégica, el storytelling y los embudos de ventas han impulsado el crecimiento de nuestros clientes en bienes raíces, turismo y más."
+            description="Descubre cómo la producción audiovisual estratégica, el storytelling y la creación de contenido orgánico han impulsado el crecimiento de nuestros clientes en bienes raíces, hotelería y empresas en general."
             testimonials={[
               {
                 name: "Lic. Alejandro Sterling",
@@ -369,7 +369,7 @@ export default function HomePage() {
           <SocialProofMarquee
             tag="Marcas Destacadas"
             title="Potenciando Marcas en Redes Sociales"
-            description="Transformamos la presencia digital de inmobiliarias, agentes, resorts y empresas líderes con contenido estratégico."
+            description="Transformamos la presencia digital de inmobiliarias, agentes, resorts y empresas líderes con contenido orgánico estratégico."
             names={[
               "Sterling Real Estate Group",
               "Punta Cana Ocean Resort",
@@ -390,11 +390,11 @@ export default function HomePage() {
           <FaqSplitMedia
             tag="Preguntas Frecuentes"
             title="Resuelve tus Dudas sobre Nuestra Estrategia"
-            description="Respuestas claras sobre cómo aplicamos narrativa audiovisual estratégica, storytelling y embudos de ventas en bienes raíces, hoteles y empresas."
+            description="Respuestas claras sobre cómo aplicamos narrativa audiovisual estratégica, storytelling y contenido orgánico de alto impacto en bienes raíces, hotelería y empresas."
             items={[
               {
                 question: "¿Cómo ayudan a agentes y agencias de bienes raíces (real estate) a vender más?",
-                answer: "Producimos recorridos cinematográficos de propiedades con guiones persuasivos para el agente. Diseñamos embudos de captación en redes sociales que llevan a compradores e inversionistas calificados directamente a tu DM o WhatsApp para agendar visitas de compra.",
+                answer: "Producimos recorridos cinematográficos de propiedades con guiones persuasivos para el agente. Diseñamos estrategias de contenido orgánico en redes sociales que llevan a compradores e inversionistas calificados directamente a tu DM o WhatsApp para agendar visitas.",
               },
               {
                 question: "¿De qué manera benefician a hoteles y resorts en la venta de estadías?",
@@ -405,8 +405,8 @@ export default function HomePage() {
                 answer: "Diseñamos cada video, imagen y publicación con un objetivo comercial claro: no solo captar atención o acumular reproducciones, sino comunicar el valor diferencial de tu marca, transmitir emociones mediante storytelling y guiar al usuario hacia una acción concreta de compra o reserva.",
               },
               {
-                question: "¿Cómo estructuran los embudos de ventas en redes sociales?",
-                answer: "Implementamos un proceso de 3 fases: Atracción (contenido dinámico y viral para captar audiencia), Nutrición (storytelling y prueba social para generar confianza) y Conversión (llamados a la acción directos para llevar prospectos a mensajes directos, WhatsApp o formularios).",
+                question: "¿Cómo estructuran la estrategia de contenido orgánico en redes sociales?",
+                answer: "Implementamos un proceso de 3 fases: Atracción (contenido orgánico dinámico para captar audiencia), Nutrición (storytelling y posicionamiento para generar confianza) y Conversión (llamados a la acción directos para conectar con clientes y agendar ventas).",
               },
               {
                 question: "¿Incluyen la gestión completa de Instagram y atención de mensajes?",
@@ -423,7 +423,7 @@ export default function HomePage() {
         <SectionErrorBoundary name="contact">
           <ContactCta
             tag="¿Listo para Escalar tu Marca?"
-            text="Impulsa tu negocio con producción audiovisual estratégica, storytelling de alto impacto y embudos de ventas diseñados para generar resultados reales en redes sociales en Punta Cana y Santo Domingo."
+            text="Impulsa tu negocio con producción audiovisual estratégica, storytelling y contenido orgánico de alto impacto diseñado para atraer audiencia y vender más en redes sociales en Punta Cana y Santo Domingo."
             primaryButton={{
               text: "Agendar por WhatsApp (RD)",
               href: "https://wa.me/18492665501",
