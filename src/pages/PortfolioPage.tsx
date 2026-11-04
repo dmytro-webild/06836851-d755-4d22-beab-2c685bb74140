@@ -56,7 +56,7 @@ const portfolioProjects: PortfolioProject[] = [
     strategy: "Video widescreen 16:9 de estilo cine documental con tomas aéreas con dron y música emocional de autor.",
     results: "+380% en reservas directas en la web del hotel sin comisiones intermedias.",
     format: "horizontal",
-    videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4",
+    videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=2",
     metrics: [
       { label: "Alcance Total", value: "3.8M" },
       { label: "Reservas Directas", value: "+380%" },
@@ -73,7 +73,7 @@ const portfolioProjects: PortfolioProject[] = [
     strategy: "Planos dinámicos en movimiento con iluminación nocturna en Santo Domingo y sonido envolvente.",
     results: "48 test drives agendados por mensaje directo en los primeros 7 días.",
     format: "vertical",
-    videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
+    videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=2",
     metrics: [
       { label: "Reproducciones", value: "2.9M" },
       { label: "Test Drives", value: "48" },
@@ -90,7 +90,7 @@ const portfolioProjects: PortfolioProject[] = [
     strategy: "Filmación hiperrealista bajo el agua y tomas aereas de cayos turquesas en Saona y Bayahíbe.",
     results: "+320 cupos de excursiones VIP vendidos directamente en temporada alta.",
     format: "horizontal",
-    videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4",
+    videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4?_wi=2",
     metrics: [
       { label: "Visualizaciones", value: "1.7M" },
       { label: "Excursiones Vendidas", value: "+320" },
@@ -107,7 +107,7 @@ const portfolioProjects: PortfolioProject[] = [
     strategy: "Explicaciones paso a paso de diagnósticos computarizados y reparación certificada.",
     results: "+210 citas captadas y calendario de taller completo por 2 meses consecutivos.",
     format: "vertical",
-    videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4",
+    videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4?_wi=2",
     metrics: [
       { label: "Alcance Local", value: "620K" },
       { label: "Citas Captadas", value: "+210" },
