@@ -94,12 +94,16 @@ export default function Layout() {
               title: "Contacto & Ubicación",
               items: [
                 {
-                  label: "Instagram: @crowned.rd",
-                  href: "https://instagram.com/crowned.rd",
+                  label: "Email: contacto@creativecrowned.com",
+                  href: "mailto:contacto@creativecrowned.com",
                 },
                 {
                   label: "WhatsApp: +1 (849) 266-5501",
                   href: "https://wa.me/18492665501",
+                },
+                {
+                  label: "Instagram: @crowned.rd",
+                  href: "https://instagram.com/crowned.rd",
                 },
                 {
                   label: "Punta Cana & Santo Domingo, RD",
