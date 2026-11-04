@@ -539,7 +539,7 @@ export default function ServicesPage() {
       </section>
 
       {/* AGENCY BRIEFING REQUEST FORM SECTION */}
-      <section id="solicitud" className="w-content-width mx-auto pt-10">
+      <section id="briefing" className="w-content-width mx-auto pt-10">
         <ScrollReveal variant="slide-up">
           <div className="card rounded-3xl p-6 sm:p-10 md:p-12 border border-border/80 shadow-2xl relative overflow-hidden bg-card">
             

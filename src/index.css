@@ -4,16 +4,16 @@
 @import "./styles/animations.css";
 
 :root {
-  /* Dark Charcoal Theme with Ivory typography & #DA7756 Terracotta Brand CTA */
-  --background: #0d0d11;
-  --card: #18181f;
+  /* Black Theme with Ivory typography & #DA7756 Terracotta Brand CTA */
+  --background: #000000;
+  --card: #121217;
   --foreground: #f4f4f7;
   --primary-cta: #DA7756;
   --primary-cta-text: #ffffff;
-  --secondary-cta: #24242c;
+  --secondary-cta: #1e1e25;
   --secondary-cta-text: #f4f4f7;
-  --accent: #212129;
-  --background-accent: #121217;
+  --accent: #17171e;
+  --background-accent: #0a0a0e;
   --border: rgba(255, 255, 255, 0.12);
 
   /* @layout/border-radius/rounded */
