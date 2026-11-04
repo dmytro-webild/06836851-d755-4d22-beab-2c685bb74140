@@ -52,7 +52,10 @@ const FooterSimple = ({
     <footer data-section="footer" aria-label="Site footer" className="w-full py-15 mt-20 primary-button text-primary-cta-text">
       <div className="w-content-width mx-auto">
         <div className="flex flex-col md:flex-row gap-10 md:gap-0 justify-between items-start mb-10">
-          <h2 className="text-4xl font-semibold">{brand}</h2>
+          <div className="flex flex-col gap-2 items-start">
+            <img src="/crowned-logo-dark.png" alt={brand} className="h-10 md:h-12 w-auto object-contain" />
+            <span className="text-xs opacity-80 font-serif italic tracking-wider">est 2026 · Estudio creativo</span>
+          </div>
 
           <div className="w-full md:w-fit flex flex-wrap gap-y-10 md:gap-12">
             {columns.map((column) => (
