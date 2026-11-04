@@ -4,6 +4,7 @@ import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import FeaturesDetailedCards from '@/components/sections/features/FeaturesDetailedCards';
 import FeaturesImageBento from '@/components/sections/features/FeaturesImageBento';
 import FeaturesMediaCarousel from '@/components/sections/features/FeaturesMediaCarousel';
+import FeaturesTaggedCards from '@/components/sections/features/FeaturesTaggedCards';
 import HeroBillboardCreator from '@/components/sections/hero/HeroBillboardCreator';
 import MetricsMediaCards from '@/components/sections/metrics/MetricsMediaCards';
 import SocialProofMarquee from '@/components/sections/social-proof/SocialProofMarquee';
@@ -20,19 +21,25 @@ export default function HomePage() {
             tag="Contenido con Propósito & Embudos de Ventas"
             title="Creamos Contenido con Propósito que"
             titleHighlight="Multiplica tus Ventas"
-            description="Transformamos tu marca con storytelling de alto impacto, producción audiovisual estratégica y embudos de ventas diseñados para convertir vistas en clientes reales en redes sociales."
+            description="Transformamos tu marca con storytelling de alto impacto, producción audiovisual estratégica y embudos de ventas diseñados para agentes inmobiliarios, agencias de bienes raíces, hoteles y resorts. Convertimos vistas en cierres de ventas y reservas reales."
             primaryButton={{
               text: "Agendar Sesión Estratégica",
               href: "#contact",
             }}
-            note="Estrategia, storytelling y embudos de ventas enfocados en facturación real."
+            note="Especialistas en Real Estate, Agentes, Hoteles & Resorts orientados a captación de clientes y facturación real."
             badgeText="Storytelling & Embudos de Ventas"
             textAnimation="fade-blur"
             videos={[
               {
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=1",
+                name: "Real Estate & Agentes Inmobiliarios",
+                followers: "+5.1M Alcance & Venta Cerrada",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/rooms/oceanpavillion.webp?_wi=1",
+              },
+              {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=1",
-                name: "Resorts & Playas en Punta Cana",
-                followers: "+4.8M Reproducciones",
+                name: "Hoteles & Resorts en Punta Cana",
+                followers: "+4.8M Reproducciones & Reservas Directas",
                 imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/amenities/pool.jpg?_wi=1",
               },
               {
@@ -42,12 +49,6 @@ export default function HomePage() {
                 imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/feature1.webp?_wi=1",
               },
               {
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=1",
-                name: "Villas de Playa & Vistas Aéreas en Cap Cana",
-                followers: "+5.1M Alcance Único",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/rooms/oceanpavillion.webp?_wi=1",
-              },
-              {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4?_wi=1",
                 name: "Talleres Mecánicos & Servicio Especializado",
                 followers: "+2.9M Visualizaciones",
@@ -55,15 +56,15 @@ export default function HomePage() {
               },
               {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4?_wi=1",
-                name: "Excursiones en Catamarán & Bayahíbe",
+                name: "Excursiones & Experiencias Turísticas",
                 followers: "4.8x Conversión Directa",
                 imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/journeys/sailing.webp?_wi=1",
               },
               {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?v=2",
-                name: "Taller & Detallado Automotriz en Santo Domingo",
+                name: "Proyectos Inmobiliarios & Villas de Lujo",
                 followers: "+6.5M Impresiones",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/feature1.webp?_wi=2",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/rooms/gardenvilla.webp",
               },
             ]}
           />
@@ -74,10 +75,57 @@ export default function HomePage() {
         <SectionErrorBoundary name="about">
           <AboutTestimonial
             tag="Nuestra Filosofía de Contenido"
-            quote="Creemos que el contenido sin propósito es solo ruido. Combinamos la fuerza del storytelling con la estructura de los embudos de ventas para crear contenido audiovisual con propósito que conecta emocionalmente con tu audiencia y genera conversiones medibles en redes sociales."
+            quote="Creemos que el contenido sin propósito es solo ruido. Combinamos la fuerza del storytelling con la estructura de los embudos de ventas para crear contenido audiovisual con propósito que conecta emocionalmente con tu audiencia y genera conversiones medibles en redes sociales, con especial foco en bienes raíces y turismo."
             author="El Equipo Crowned"
             role="Estrategia de Contenido, Storytelling & Embudos de Ventas"
             videoSrc="https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=2"
+            textAnimation="slide-up"
+          />
+        </SectionErrorBoundary>
+      </div>
+
+      <div id="specialties" data-section="specialties">
+        <SectionErrorBoundary name="specialties">
+          <FeaturesTaggedCards
+            tag="Nuestra Especialización"
+            title="Especialistas en Real Estate, Agentes, Hoteles & Resorts"
+            description="Desarrollamos estrategias audiovisuales de alto rendimiento diseñadas para generar resultados comerciales tangibles: cierres de ventas inmobiliarias y reservas directas de hospedaje."
+            primaryButton={{
+              text: "Agendar Asesoría Especializada",
+              href: "#contact",
+            }}
+            items={[
+              {
+                tag: "Bienes Raíces & Agentes",
+                title: "Agentes & Agencias Inmobiliarias (Real Estate)",
+                description: "Producimos recorridos cinematográficos de villas, apartamentos y proyectos en plano. Diseñamos guiones estratégicos para agentes de bienes raíces y embudos en redes sociales que captan compradores e inversionistas calificados.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=1",
+                primaryButton: {
+                  text: "Estrategia Real Estate",
+                  href: "#contact",
+                },
+              },
+              {
+                tag: "Hoteles & Resorts",
+                title: "Hoteles, Resorts & Experiencias de Hospedaje",
+                description: "Producimos piezas audiovisuales de alta estética que destacan suites, experiencias gastronómicas y amenidades. Dirigimos el tráfico directamente al motor de reservas del hotel, reduciendo comisiones a intermediarios.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=1",
+                primaryButton: {
+                  text: "Estrategia Hoteles & Resorts",
+                  href: "#contact",
+                },
+              },
+              {
+                tag: "Resultados Comerciales",
+                title: "Embudos de Ventas & Retorno de Inversión",
+                description: "Unimos la dirección creativa con ganchos de retención y llamados a la acción estratégicos. Convertimos interacciones en Instagram y TikTok en consultas directas, citas de venta y compras confirmadas.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=1",
+                primaryButton: {
+                  text: "Multiplicar Ventas Comerciales",
+                  href: "#contact",
+                },
+              },
+            ]}
             textAnimation="slide-up"
           />
         </SectionErrorBoundary>
@@ -88,7 +136,7 @@ export default function HomePage() {
           <FeaturesDetailedCards
             tag="Nuestros Servicios Estratégicos"
             title="Creación de Contenido con Propósito, Storytelling & Embudos de Ventas"
-            description="Llevamos tu marca al siguiente nivel uniendo la producción audiovisual de estética cinematográfica con estrategias de conversión y gestión activa en redes sociales."
+            description="Llevamos tu marca al siguiente nivel uniendo la producción audiovisual de estética cinematográfica con estrategias de conversión comercial y gestión activa en redes sociales."
             primaryButton={{
               text: "Solicitar Propuesta",
               href: "#contact",
@@ -142,10 +190,17 @@ export default function HomePage() {
             }}
             items={[
               {
+                title: "Agentes Inmobiliarios & Real Estate",
+                description: "Tours cinematográficos de propiedades con narración persuasiva para acelerar el cierre de ventas.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=2",
+                buttonIcon: "Compass",
+                buttonHref: "#portfolio",
+              },
+              {
                 title: "Resorts & Hoteles en Punta Cana",
                 description: "Videos envolventes que combinan narrativa aspiracional y experiencias de lujo para incentivar reservas.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=3",
-                buttonIcon: "Compass",
+                buttonIcon: "Sun",
                 buttonHref: "#portfolio",
               },
               {
@@ -153,13 +208,6 @@ export default function HomePage() {
                 description: "Presentaciones cinematográficas de vehículos con ángulos dinámicos y ganchos visuales de alta retención.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=3",
                 buttonIcon: "Car",
-                buttonHref: "#portfolio",
-              },
-              {
-                title: "Playas Paradisiacas & Cap Cana",
-                description: "Tomas aéreas y storytelling de estilo de vida costero en los destinos más icónicos de República Dominicana.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=2",
-                buttonIcon: "Sun",
                 buttonHref: "#portfolio",
               },
               {
@@ -187,6 +235,11 @@ export default function HomePage() {
             }}
             items={[
               {
+                title: "Agencia Inmobiliaria & Real Estate en Cap Cana",
+                description: "Producción audiovisual de alta gama para proyectos inmobiliarios y captación de compradores.",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/rooms/oceanpavillion.webp?_wi=2",
+              },
+              {
                 title: "Resorts de Lujo en Punta Cana",
                 description: "Producción audiovisual de alta gama para complejos turísticos y suites frente al mar.",
                 imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/amenities/pool.jpg?_wi=3",
@@ -199,7 +252,7 @@ export default function HomePage() {
               {
                 title: "Playas & Vistas Aéreas de Cap Cana",
                 description: "Contenido aspiracional de lifestyle playero y villas de vacaciones.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/rooms/oceanpavillion.webp?_wi=2",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/rooms/gardenvilla.webp",
               },
               {
                 title: "Taller Mecánico & Mantenimiento Especializado",
@@ -210,11 +263,6 @@ export default function HomePage() {
                 title: "Excursiones en Catamarán & Bayahíbe",
                 description: "Videos de aventuras marítimas y turismo ecológico en aguas turquesas.",
                 imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/journeys/sailing.webp?_wi=2",
-              },
-              {
-                title: "Villas de Playa & Hospitalidad",
-                description: "Tours guiados para alquileres vacacionales y clubes de playa privados.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/rooms/gardenvilla.webp",
               },
               {
                 title: "Auto Detailing & Estética Automotriz",
@@ -237,7 +285,7 @@ export default function HomePage() {
               {
                 value: "+380%",
                 title: "Conversión Directa",
-                description: "Incremento en consultas y ventas directas generadas a través de redes sociales.",
+                description: "Incremento en consultas inmobiliarias, reservas directas de hotel y ventas generadas.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=4",
               },
               {
@@ -249,7 +297,7 @@ export default function HomePage() {
               {
                 value: "+240",
                 title: "Clientes Potenciales",
-                description: "Prospectos calificados captados mensualmente mediante publicaciones con llamado a la acción.",
+                description: "Inversionistas y huéspedes calificados captados mensualmente mediante llamadas a la acción.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4?_wi=5",
               },
               {
@@ -261,7 +309,7 @@ export default function HomePage() {
               {
                 value: "98%",
                 title: "Retención de Clientes",
-                description: "Marcas que mantienen su gestión de redes sociales y producción continua con Crowned.",
+                description: "Marcas, agentes e inmobiliarias que mantienen su gestión continua con Crowned.",
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4?_wi=2",
               },
             ]}
@@ -275,8 +323,15 @@ export default function HomePage() {
           <TestimonialOverlayCards
             tag="Historias de Éxito"
             title="Marcas que Confían en Nuestra Estrategia"
-            description="Descubre cómo el contenido con propósito, el storytelling y los embudos de ventas han impulsado el crecimiento de nuestros clientes."
+            description="Descubre cómo el contenido con propósito, el storytelling y los embudos de ventas han impulsado el crecimiento de nuestros clientes en bienes raíces, turismo y más."
             testimonials={[
+              {
+                name: "Lic. Alejandro Sterling",
+                role: "Broker Inmobiliario & Director",
+                company: "Sterling Real Estate Group",
+                rating: 5,
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=4",
+              },
               {
                 name: "Don Gustavo Peralta",
                 role: "Director de Operaciones",
@@ -296,7 +351,7 @@ export default function HomePage() {
                 role: "Directora de Marketing",
                 company: "Cap Cana Luxury Villas",
                 rating: 5,
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/rooms/oceanpavillion.webp?_wi=3",
               },
               {
                 name: "Taller AutoTech RD",
@@ -304,13 +359,6 @@ export default function HomePage() {
                 company: "Taller Mecánico Especializado Santiago",
                 rating: 5,
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4?_wi=6",
-              },
-              {
-                name: "Carlos Manuel Cabrera",
-                role: "Fundador",
-                company: "Bayahíbe Excursions & Catamarán",
-                rating: 5,
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4?_wi=3",
               },
             ]}
             textAnimation="slide-up"
@@ -323,8 +371,9 @@ export default function HomePage() {
           <SocialProofMarquee
             tag="Marcas Destacadas"
             title="Potenciando Marcas en Redes Sociales"
-            description="Transformamos la presencia digital de empresas líderes con contenido estratégico."
+            description="Transformamos la presencia digital de inmobiliarias, agentes, resorts y empresas líderes con contenido estratégico."
             names={[
+              "Sterling Real Estate Group",
               "Punta Cana Ocean Resort",
               "AutoHaus Dominicana",
               "Cap Cana Luxury Villas",
@@ -332,7 +381,6 @@ export default function HomePage() {
               "Bayahíbe Catamarán Tours",
               "Santo Domingo Motors Showroom",
               "Las Terrenas Beach Club",
-              "Apex Performance Workshop",
             ]}
             textAnimation="slide-up"
           />
@@ -344,8 +392,16 @@ export default function HomePage() {
           <FaqSplitMedia
             tag="Preguntas Frecuentes"
             title="Resuelve tus Dudas sobre Nuestra Estrategia"
-            description="Respuestas claras sobre cómo aplicamos contenido con propósito, storytelling y embudos de ventas."
+            description="Respuestas claras sobre cómo aplicamos contenido con propósito, storytelling y embudos de ventas en bienes raíces, hoteles y empresas."
             items={[
+              {
+                question: "¿Cómo ayudan a agentes y agencias de bienes raíces (real estate) a vender más?",
+                answer: "Producimos recorridos cinematográficos de propiedades con guiones persuasivos para el agente. Diseñamos embudos de captación en redes sociales que llevan a compradores e inversionistas calificados directamente a tu DM o WhatsApp para agendar visitas de compra.",
+              },
+              {
+                question: "¿De qué manera benefician a hoteles y resorts en la venta de estadías?",
+                answer: "Creamos contenido envolvente que resalta las experiencias, suites y gastronomía del resort. Desarrollamos campañas dirigidas a impulsar las reservas directas en la plataforma del hotel, reduciendo la dependencia y comisiones de las OTAs.",
+              },
               {
                 question: "¿En qué consiste la creación de contenido con propósito?",
                 answer: "Diseñamos cada video, imagen y publicación con un objetivo claro: no solo captar atención o acumular reproducciones, sino comunicar el valor diferencial de tu marca, transmitir emociones mediante storytelling y guiar al usuario hacia una acción concreta de compra o reserva.",
@@ -353,10 +409,6 @@ export default function HomePage() {
               {
                 question: "¿Cómo estructuran los embudos de ventas en redes sociales?",
                 answer: "Implementamos un proceso de 3 fases: Atracción (contenido dinámico y viral para captar audiencia), Nutrición (storytelling y prueba social para generar confianza) y Conversión (llamados a la acción directos para llevar prospectos a mensajes directos, WhatsApp o formularios).",
-              },
-              {
-                question: "¿Cómo integran la producción audiovisual de turismo y sector automotriz?",
-                answer: "Contamos con equipos y formatos optimizados para resorts, playas, hoteles, concesionarios y talleres mecánicos. Capturamos la esencia visual del sector y la combinamos con nuestra metodología de contenido estratégico para maximizar conversiones.",
               },
               {
                 question: "¿Incluyen la gestión completa de Instagram y atención de mensajes?",
@@ -373,7 +425,7 @@ export default function HomePage() {
         <SectionErrorBoundary name="contact">
           <ContactCta
             tag="¿Listo para Escalar tu Marca?"
-            text="Impulsa tu negocio con contenido con propósito, storytelling que conecta y embudos de ventas diseñados para generar resultados reales en redes sociales."
+            text="Impulsa tu negocio con contenido con propósito, storytelling que conecta y embudos de ventas diseñados para generar resultados reales en redes sociales para agentes, inmobiliarias, hoteles y empresas."
             primaryButton={{
               text: "Agendar Sesión Estratégica",
               href: "#",
@@ -389,3 +441,4 @@ export default function HomePage() {
     </>
   );
 }
+
