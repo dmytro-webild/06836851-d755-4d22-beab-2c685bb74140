@@ -57,28 +57,41 @@ const NavbarFloating = ({ logo, logoImageSrc, navItems, ctaButton }: NavbarFloat
         )}
       </AnimatePresence>
 
-      <nav data-section="navbar" className="fixed z-1000 top-5 left-1/2 -translate-x-1/2 w-content-width">
-        <div className="mx-auto w-full md:w-1/2 overflow-hidden rounded backdrop-blur-sm card">
-          <div className="relative z-10 flex items-center justify-between gap-3 xl:gap-4 2xl:gap-5 p-3 xl:p-4 2xl:p-5">
+      <nav data-section="navbar" className="fixed z-1000 top-4 sm:top-5 left-1/2 -translate-x-1/2 w-[92vw] max-w-2xl">
+        <div className="mx-auto w-full overflow-hidden rounded-2xl bg-[#14141a]/95 backdrop-blur-xl border border-white/15 shadow-2xl">
+          <div className="relative z-10 flex items-center justify-between gap-3 xl:gap-4 p-3.5 sm:p-4">
             <a href="/" className="flex items-center gap-2 group">
               {logoImageSrc ? (
-                <img src={logoImageSrc} alt={logo} className="h-6 md:h-7 w-auto object-contain" />
+                <img src={logoImageSrc} alt={logo} className="h-7 sm:h-8 w-auto object-contain" />
               ) : (
-                <span className="text-xl font-bold tracking-tight text-foreground">{logo}</span>
+                <span className="text-xl font-extrabold tracking-tight text-foreground">{logo}</span>
               )}
             </a>
 
-            <div
-              className="flex items-center justify-center shrink-0 size-9 rounded cursor-pointer primary-button"
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
-              <Plus
-                className={cls(
-                  "w-1/2 h-1/2 text-primary-cta-text transition-transform duration-300",
-                  menuOpen ? "rotate-45" : "rotate-0"
-                )}
-                strokeWidth={1.5}
-              />
+            <div className="flex items-center gap-2 sm:gap-3">
+              {ctaButton && (
+                <a
+                  href={ctaButton.href}
+                  className="px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-bold primary-button transition-transform hover:scale-105"
+                >
+                  {ctaButton.text}
+                </a>
+              )}
+
+              <button
+                type="button"
+                aria-label="Menú"
+                className="flex items-center justify-center shrink-0 size-9 sm:size-10 rounded-xl cursor-pointer bg-white/10 hover:bg-white/20 border border-white/10 transition-colors"
+                onClick={() => setMenuOpen(!menuOpen)}
+              >
+                <Plus
+                  className={cls(
+                    "w-5 h-5 text-foreground transition-transform duration-300",
+                    menuOpen ? "rotate-45 text-primary-cta" : "rotate-0"
+                  )}
+                  strokeWidth={2}
+                />
+              </button>
             </div>
           </div>
 

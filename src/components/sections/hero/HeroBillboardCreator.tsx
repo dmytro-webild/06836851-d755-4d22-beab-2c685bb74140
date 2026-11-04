@@ -27,8 +27,6 @@ type HeroBillboardCreatorProps = {
 
 const HeroBillboardCreator = ({
   tag,
-  title,
-  titleHighlight,
   description,
   primaryButton,
   note,
@@ -41,40 +39,54 @@ const HeroBillboardCreator = ({
   return (
     <section
       aria-label="Hero section"
-      className="relative flex flex-col items-center justify-center gap-8 md:gap-10 w-full min-h-svh pt-25 pb-20 md:pt-30"
+      className="relative flex flex-col items-center justify-center gap-8 md:gap-10 w-full min-h-svh pt-32 sm:pt-36 pb-16 md:pt-40"
     >
       <HeroBackgroundSlot />
-      <div className="flex flex-col items-center gap-4 sm:gap-5 w-content-width mx-auto text-center px-4 sm:px-6">
+      <div className="flex flex-col items-center gap-5 sm:gap-6 w-content-width mx-auto text-center px-4 sm:px-6">
         {tag && (
-          <div className="mb-1 px-3 py-1 w-fit text-xs sm:text-sm card rounded tracking-wide">
+          <div className="mb-2 px-4 py-1.5 w-fit text-xs sm:text-sm card rounded-full border border-white/10 tracking-widest uppercase font-semibold text-primary">
             <p>{tag}</p>
           </div>
         )}
 
         <motion.h1
-          className="w-full max-w-4xl lg:max-w-5xl text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-balance text-center"
+          className="w-full max-w-4xl lg:max-w-5xl tracking-tight text-center flex flex-col items-center gap-1.5 sm:gap-2 my-2 sm:my-3"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-20%" }}
-          transition={{ staggerChildren: 0.04 }}
+          transition={{ staggerChildren: 0.08 }}
         >
           <motion.span
-            className="block text-foreground drop-shadow-sm leading-tight"
-            variants={{ hidden: { opacity: 0, y: "30%" }, visible: { opacity: 1, y: 0 } }}
-            transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="block font-sans font-black uppercase text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-tight text-foreground leading-[1.12]"
+            variants={{ hidden: { opacity: 0, y: "20%" }, visible: { opacity: 1, y: 0 } }}
+            transition={{ duration: 0.5 }}
           >
-            {title}
+            CREACIÓN
           </motion.span>
-          {titleHighlight && (
-            <motion.span
-              className="block text-white font-normal italic drop-shadow-lg px-2 sm:px-4 py-1 mt-1 sm:mt-2 leading-tight"
-              style={{ fontFamily: "'Alex Brush', 'Great Vibes', 'Dancing Script', cursive" }}
-              variants={{ hidden: { opacity: 0, y: "30%" }, visible: { opacity: 1, y: 0 } }}
-              transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-            >
-              {titleHighlight}
-            </motion.span>
-          )}
+
+          <motion.span
+            className="block font-serif italic font-normal text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-primary leading-[1.28] py-1"
+            variants={{ hidden: { opacity: 0, y: "20%" }, visible: { opacity: 1, y: 0 } }}
+            transition={{ duration: 0.5 }}
+          >
+            audiovisual
+          </motion.span>
+
+          <motion.span
+            className="block font-serif font-bold uppercase text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-tight text-foreground leading-[1.15] pt-1"
+            variants={{ hidden: { opacity: 0, y: "20%" }, visible: { opacity: 1, y: 0 } }}
+            transition={{ duration: 0.5 }}
+          >
+            &amp; DIRECCIÓN
+          </motion.span>
+
+          <motion.span
+            className="block font-mono font-bold uppercase text-xl sm:text-3xl md:text-4xl lg:text-5xl tracking-widest text-primary/90 leading-[1.25] pt-1.5"
+            variants={{ hidden: { opacity: 0, y: "20%" }, visible: { opacity: 1, y: 0 } }}
+            transition={{ duration: 0.5 }}
+          >
+            DE [CONTENIDO]
+          </motion.span>
         </motion.h1>
 
         <TextAnimation

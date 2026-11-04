@@ -4,16 +4,17 @@
 @import "./styles/animations.css";
 
 :root {
-  /* Clean Light Theme with Dark Slate typography & #DA7756 Brand CTA */
-  --background: #ffffff;
-  --card: #f8fafc;
-  --foreground: #09090b;
+  /* Dark Charcoal Theme with Ivory typography & #DA7756 Terracotta Brand CTA */
+  --background: #0d0d11;
+  --card: #18181f;
+  --foreground: #f4f4f7;
   --primary-cta: #DA7756;
   --primary-cta-text: #ffffff;
-  --secondary-cta: #09090b;
-  --secondary-cta-text: #ffffff;
-  --accent: #f1f5f9;
-  --background-accent: #f8fafc;
+  --secondary-cta: #24242c;
+  --secondary-cta-text: #f4f4f7;
+  --accent: #212129;
+  --background-accent: #121217;
+  --border: rgba(255, 255, 255, 0.12);
 
   /* @layout/border-radius/rounded */
   --radius: 1.5rem;
@@ -131,12 +132,14 @@
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0);
+  scrollbar-color: rgba(255, 255, 255, 0.2) rgba(0, 0, 0, 0);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
 }
 
 html {
   overscroll-behavior: none;
   overscroll-behavior-y: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -167,28 +170,27 @@ i,
   font-family: 'Cardo', serif;
 }
 
-/* Default card/button styles. Template theme.css imports come after this file
-   in template routes, so template-specific styles win there. */
+/* Default card/button styles */
 
 .card {
   /* WEBILD_CARD_STYLE */
-  background: color-mix(in srgb, var(--color-card) 96%, #ffffff);
-  border: 1px solid color-mix(in srgb, var(--color-foreground) 10%, transparent);
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04);
+  background: var(--color-card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px -4px rgba(0, 0, 0, 0.5);
 }
 
 .primary-button {
   /* WEBILD_PRIMARY_BUTTON */
-  background: linear-gradient(135deg, color-mix(in srgb, var(--color-primary-cta) 90%, #ffffff) 0%, var(--color-primary-cta) 50%, color-mix(in srgb, var(--color-primary-cta) 90%, #000000) 100%);
+  background: linear-gradient(135deg, #e58362 0%, #DA7756 50%, #b85435 100%);
   color: var(--color-primary-cta-text);
-  box-shadow: 0 4px 14px 0 color-mix(in srgb, var(--color-primary-cta) 35%, transparent);
+  box-shadow: 0 4px 16px 0 rgba(218, 119, 86, 0.35);
 }
 
 .secondary-button {
   /* WEBILD_SECONDARY_BUTTON */
-  backdrop-filter: blur(8px);
-  background: color-mix(in srgb, var(--color-card) 85%, transparent);
+  backdrop-filter: blur(12px);
+  background: rgba(36, 36, 44, 0.85);
   color: var(--color-foreground);
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.08);
-  border: 1px solid color-mix(in srgb, var(--color-foreground) 15%, transparent);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
