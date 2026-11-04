@@ -12,6 +12,10 @@ export default function Layout() {
       "href": "#services"
     },
     {
+      "name": "Instagram SMM",
+      "href": "#instagram"
+    },
+    {
       "name": "Portafolio",
       "href": "#portfolio"
     },
@@ -84,6 +88,10 @@ export default function Layout() {
                 {
                   label: "Estrategia",
                   href: "#about",
+                },
+                {
+                  label: "Gestión de Instagram",
+                  href: "#instagram",
                 },
                 {
                   label: "Portafolio Visual",
