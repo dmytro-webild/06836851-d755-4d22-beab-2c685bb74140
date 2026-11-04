@@ -50,24 +50,24 @@ const HeroBillboardCreator = ({
         </div>
 
         <motion.h1
-          className="md:max-w-8/10 text-7xl 2xl:text-8xl font-semibold leading-[1.15] text-balance"
+          className="w-full max-w-5xl text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl font-bold tracking-tight text-balance flex flex-col items-center justify-center gap-2 md:gap-3"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-20%" }}
           transition={{ staggerChildren: 0.04 }}
         >
           <motion.span
-            className="inline pb-[0.1em] -mb-[0.1em] bg-linear-to-r from-foreground to-primary-cta bg-clip-text text-transparent"
-            variants={{ hidden: { opacity: 0, y: "50%" }, visible: { opacity: 1, y: 0 } }}
+            className="block text-foreground drop-shadow-sm"
+            variants={{ hidden: { opacity: 0, y: "30%" }, visible: { opacity: 1, y: 0 } }}
             transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
           >
-            {title}{" "}
+            {title}
           </motion.span>
           {titleHighlight && (
             <motion.span
-              className="inline-block text-white font-normal italic drop-shadow-md px-1"
+              className="block text-white font-normal italic drop-shadow-lg px-2 sm:px-4 py-1 -mt-1 md:-mt-2"
               style={{ fontFamily: "'Alex Brush', 'Great Vibes', 'Dancing Script', cursive" }}
-              variants={{ hidden: { opacity: 0, y: "50%" }, visible: { opacity: 1, y: 0 } }}
+              variants={{ hidden: { opacity: 0, y: "30%" }, visible: { opacity: 1, y: 0 } }}
               transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
             >
               {titleHighlight}
