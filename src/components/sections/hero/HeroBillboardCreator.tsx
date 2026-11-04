@@ -44,20 +44,20 @@ const HeroBillboardCreator = ({
       className="relative flex flex-col items-center justify-center gap-8 md:gap-10 w-full min-h-svh pt-25 pb-20 md:pt-30"
     >
       <HeroBackgroundSlot />
-      <div className="flex flex-col items-center gap-3 w-content-width mx-auto text-center">
-        <div className="mb-1 px-3 py-1 w-fit text-sm card rounded">
+      <div className="flex flex-col items-center gap-4 sm:gap-5 w-content-width mx-auto text-center px-4 sm:px-6">
+        <div className="mb-1 px-3 py-1 w-fit text-xs sm:text-sm card rounded tracking-wide">
           <p>{tag}</p>
         </div>
 
         <motion.h1
-          className="w-full max-w-5xl text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl font-bold tracking-tight text-balance flex flex-col items-center justify-center gap-2 md:gap-3"
+          className="w-full max-w-4xl lg:max-w-5xl text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-balance text-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-20%" }}
           transition={{ staggerChildren: 0.04 }}
         >
           <motion.span
-            className="block text-foreground drop-shadow-sm"
+            className="block text-foreground drop-shadow-sm leading-tight"
             variants={{ hidden: { opacity: 0, y: "30%" }, visible: { opacity: 1, y: 0 } }}
             transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
           >
@@ -65,7 +65,7 @@ const HeroBillboardCreator = ({
           </motion.span>
           {titleHighlight && (
             <motion.span
-              className="block text-white font-normal italic drop-shadow-lg px-2 sm:px-4 py-1 -mt-1 md:-mt-2"
+              className="block text-white font-normal italic drop-shadow-lg px-2 sm:px-4 py-1 mt-1 sm:mt-2 leading-tight"
               style={{ fontFamily: "'Alex Brush', 'Great Vibes', 'Dancing Script', cursive" }}
               variants={{ hidden: { opacity: 0, y: "30%" }, visible: { opacity: 1, y: 0 } }}
               transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
@@ -80,7 +80,7 @@ const HeroBillboardCreator = ({
           variant={textAnimation}
           gradientText={false}
           tag="p"
-          className="md:max-w-7/10 text-lg md:text-xl leading-snug text-balance"
+          className="w-full max-w-2xl lg:max-w-3xl text-sm sm:text-base md:text-lg leading-relaxed text-foreground/85 text-balance mx-auto"
         />
 
         <div className="flex justify-center mt-2 md:mt-3">
@@ -88,14 +88,14 @@ const HeroBillboardCreator = ({
         </div>
 
         <motion.div
-          className="flex justify-center mt-2 md:mt-3 text-sm text-foreground/70"
+          className="flex justify-center mt-1 sm:mt-2 text-xs sm:text-sm text-foreground/70"
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <span className="flex items-center gap-2">
-            <div className="flex items-center justify-center size-4 primary-button rounded-full">
+            <div className="flex items-center justify-center size-4 primary-button rounded-full shrink-0">
               <Check className="size-1/2 text-primary-cta-text" />
             </div>
             {note}
