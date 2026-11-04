@@ -32,19 +32,19 @@ export default function HomePage() {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-amara.mp4?_wi=1",
                 name: "Gestión Integral Instagram",
                 followers: "+1.2M Reproducciones",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/features/feature-1.webp",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/features/feature-1.webp?_wi=1",
               },
               {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-chloe.mp4?_wi=1",
                 name: "Fotografía & Campañas",
                 followers: "+340K Ventas Generadas",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/product-1.webp",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/product-1.webp?_wi=1",
               },
               {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-elena.mp4?_wi=1",
                 name: "Storytelling Visual",
                 followers: "4.8x ROI en Redes",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/features/feature-2.webp",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/features/feature-2.webp?_wi=1",
               },
               {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-isla.mp4?_wi=1",
@@ -97,7 +97,7 @@ export default function HomePage() {
                 title: "Fotografía Profesional de Marca & Producto",
                 description: "Dirección de arte y sesiones fotográficas editoriales, de catálogo y de estilo de vida. Creamos imágenes impecables en alta resolución diseñadas para proyectar lujo, captar miradas y elevar el valor percibido de tus productos.",
                 tags: ["Fotografía de Producto", "Dirección de Arte", "Contenido Editorial", "Alta Resolución"],
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/features/feature-1.webp",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/features/feature-1.webp?_wi=2",
               },
               {
                 title: "Gestión Integral de Redes Sociales (SMM)",
@@ -182,7 +182,7 @@ export default function HomePage() {
               {
                 title: "Fotografía Editorial & Estilo de Vida",
                 description: "Imágenes de alta resolución con iluminación de estudio y color grading profesional.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/features/feature-1.webp",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/features/feature-1.webp?_wi=3",
               },
               {
                 title: "Crecimiento Orgánico en Instagram",
@@ -192,7 +192,7 @@ export default function HomePage() {
               {
                 title: "Fotografía de Producto & Catálogo",
                 description: "Detalle y elegancia para hacer que cada producto luzca irresistible en feed y tienda.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/product-1.webp",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/product-1.webp?_wi=2",
               },
               {
                 title: "Gestión Integral & Copies de Venta",
@@ -207,7 +207,7 @@ export default function HomePage() {
               {
                 title: "Fotografía de Marca Personal & Retrato",
                 description: "Proyección de autoridad y liderazgo para fundadores y ejecutivos.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/features/feature-2.webp",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/features/feature-2.webp?_wi=2",
               },
               {
                 title: "Gestión Completa & Optimización SMM",
