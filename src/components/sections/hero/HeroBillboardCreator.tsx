@@ -14,7 +14,7 @@ type CreatorVideo = {
 };
 
 type HeroBillboardCreatorProps = {
-  tag: string;
+  tag?: string;
   title: string;
   titleHighlight?: string;
   description: string;
@@ -45,9 +45,11 @@ const HeroBillboardCreator = ({
     >
       <HeroBackgroundSlot />
       <div className="flex flex-col items-center gap-4 sm:gap-5 w-content-width mx-auto text-center px-4 sm:px-6">
-        <div className="mb-1 px-3 py-1 w-fit text-xs sm:text-sm card rounded tracking-wide">
-          <p>{tag}</p>
-        </div>
+        {tag && (
+          <div className="mb-1 px-3 py-1 w-fit text-xs sm:text-sm card rounded tracking-wide">
+            <p>{tag}</p>
+          </div>
+        )}
 
         <motion.h1
           className="w-full max-w-4xl lg:max-w-5xl text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-balance text-center"
