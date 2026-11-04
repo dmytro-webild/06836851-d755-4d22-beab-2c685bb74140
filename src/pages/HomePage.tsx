@@ -2,7 +2,8 @@ import AboutTestimonial from '@/components/sections/about/AboutTestimonial';
 import ContactCta from '@/components/sections/contact/ContactCta';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import FeaturesImageBento from '@/components/sections/features/FeaturesImageBento';
-import HeroBillboardBrand from '@/components/sections/hero/HeroBillboardBrand';
+import FeaturesMediaCarousel from '@/components/sections/features/FeaturesMediaCarousel';
+import HeroBillboardCreator from '@/components/sections/hero/HeroBillboardCreator';
 import MetricsMediaCards from '@/components/sections/metrics/MetricsMediaCards';
 import SocialProofMarquee from '@/components/sections/social-proof/SocialProofMarquee';
 import TestimonialOverlayCards from '@/components/sections/testimonial/TestimonialOverlayCards';
@@ -11,240 +12,330 @@ import SectionErrorBoundary from "@/components/ui/SectionErrorBoundary";
 export default function HomePage() {
   return (
     <>
-  <div id="hero" data-section="hero">
-    <SectionErrorBoundary name="hero">
-          <HeroBillboardBrand
-      brand="Crowned Agency"
-      description="We architect social media systems that transform purposeful content into measurable sales. Storytelling with intent, executed at the highest level."
-      primaryButton={{
-        text: "Start Growth",
-        href: "#contact",
-      }}
-      secondaryButton={{
-        text: "See Portfolio",
-        href: "#portfolio",
-      }}
-      imageSrc="http://img.b2bpic.net/free-photo/studio-lighting-isolated-white_93675-131426.jpg"
-      textAnimation="slide-up"
-    />
-    </SectionErrorBoundary>
-  </div>
+      <div id="hero" data-section="hero">
+        <SectionErrorBoundary name="hero">
+          <HeroBillboardCreator
+            tag="Agencia de Contenido & Embudos"
+            title="Storytelling en Video que"
+            titleHighlight="Dispara tus Ventas"
+            description="En Crowned creamos contenido audiovisual para redes sociales con propósito. Diseñamos sistemas de Reels, TikToks y embudos que convierten espectadores en clientes leales."
+            primaryButton={{
+              text: "Agendar Sesión Estratégica",
+              href: "#contact",
+            }}
+            note="Estrategias de video personalizadas para escalar marcas y creadores"
+            badgeText="Producción Crowned"
+            textAnimation="fade-blur"
+            videos={[
+              {
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-amara.mp4",
+                name: "@crowned.studio",
+                followers: "+1.2M Reproducciones",
+                imageSrc: "http://img.b2bpic.net/free-photo/studio-lighting-isolated-white_93675-131426.jpg",
+              },
+              {
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-chloe.mp4",
+                name: "Embudo E-Commerce",
+                followers: "+340K Ventas Generadas",
+                imageSrc: "http://img.b2bpic.net/free-photo/businessman-using-his-mobile-phone_53876-176729.jpg",
+              },
+              {
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-elena.mp4",
+                name: "Brand Storytelling",
+                followers: "4.8x ROI en Redes",
+                imageSrc: "http://img.b2bpic.net/free-photo/portrait-fitness-influencer_23-2151564843.jpg",
+              },
+              {
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-isla.mp4",
+                name: "Crecimiento Orgánico",
+                followers: "+1.1M Interacciones",
+                imageSrc: "http://img.b2bpic.net/free-photo/silhouette-man-gym_23-2148024305.jpg",
+              },
+              {
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-zara.mp4",
+                name: "Estrategia Reel Viral",
+                followers: "+890K Alcance Único",
+                imageSrc: "http://img.b2bpic.net/free-photo/top-view-elegant-plates-table_23-2148517973.jpg",
+              },
+              {
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-nadia.mp4",
+                name: "Conversión High-Ticket",
+                followers: "+5.2M Impresiones",
+                imageSrc: "http://img.b2bpic.net/free-photo/colleagues-preparing-business-strategies_482257-120467.jpg",
+              },
+            ]}
+          />
+        </SectionErrorBoundary>
+      </div>
 
-  <div id="about" data-section="about">
-    <SectionErrorBoundary name="about">
+      <div id="about" data-section="about">
+        <SectionErrorBoundary name="about">
           <AboutTestimonial
-      tag="Our Philosophy"
-      quote="In a world of noise, Crowned builds the crown. Content is not just output; it is the infrastructure for revenue."
-      author="The Crowned Team"
-      role="Strategic Content Partners"
-      imageSrc="http://img.b2bpic.net/free-photo/black-white-minimal-portrait_23-2149152610.jpg"
-      textAnimation="slide-up"
-    />
-    </SectionErrorBoundary>
-  </div>
+            tag="Nuestra Filosofía"
+            quote="En un entorno saturado de ruido digital, Crowned construye la corona. El contenido no es solo publicar posts; es la infraestructura estratégica de ingresos y autoridad para tu marca."
+            author="El Equipo Crowned"
+            role="Estrategas de Video & Conversión"
+            videoSrc="https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4"
+            textAnimation="slide-up"
+          />
+        </SectionErrorBoundary>
+      </div>
 
-  <div id="portfolio" data-section="portfolio">
-    <SectionErrorBoundary name="portfolio">
+      <div id="videos" data-section="videos">
+        <SectionErrorBoundary name="videos">
+          <FeaturesMediaCarousel
+            tag="Formatos de Alto Rendimiento"
+            title="Producción de Video Diseñada para Convertir"
+            description="Reels, Shorts y contenido vertical optimizados para captar la atención en los primeros 3 segundos y retener al espectador hasta la llamada a la acción."
+            primaryButton={{
+              text: "Ver Portafolio",
+              href: "#portfolio",
+            }}
+            items={[
+              {
+                title: "Reels de Retención Masiva",
+                description: "Edición dinámica con hooks visuales y narrativa envolvente.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
+                buttonIcon: "Play",
+                buttonHref: "#portfolio",
+              },
+              {
+                title: "Storytelling de Marca & Venta",
+                description: "Videos estructurados para transmitir valor e impulsar compras.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-amara.mp4",
+                buttonIcon: "TrendingUp",
+                buttonHref: "#portfolio",
+              },
+              {
+                title: "Embudos de Contenido Orgánico",
+                description: "Sistemas de contenido en secuencia que califican prospectos.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/joes-coffee/hero/hero.mp4",
+                buttonIcon: "Target",
+                buttonHref: "#portfolio",
+              },
+              {
+                title: "Anuncios en Video de Alto Impacto",
+                description: "Piezas publicitarias optimizadas para escalar campañas pagadas.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4",
+                buttonIcon: "Zap",
+                buttonHref: "#portfolio",
+              },
+            ]}
+            textAnimation="slide-up"
+          />
+        </SectionErrorBoundary>
+      </div>
+
+      <div id="portfolio" data-section="portfolio">
+        <SectionErrorBoundary name="portfolio">
           <FeaturesImageBento
-      tag="Portfolio"
-      title="Creative Excellence"
-      description="A glimpse into our video storytelling and social growth systems."
-      items={[
-        {
-          title: "Brand Cinematic",
-          description: "High-impact storytelling",
-          imageSrc: "http://img.b2bpic.net/free-photo/portrait-fitness-influencer_23-2151564843.jpg",
-        },
-        {
-          title: "Reel Growth",
-          description: "Viral engagement systems",
-          imageSrc: "http://img.b2bpic.net/free-photo/businessman-using-his-mobile-phone_53876-176729.jpg",
-        },
-        {
-          title: "Storytelling Graphic",
-          description: "Purpose-driven design",
-          imageSrc: "http://img.b2bpic.net/free-photo/paper-style-isolation-still-life-assortment_23-2148998859.jpg",
-        },
-        {
-          title: "Seamless Transitions",
-          description: "Fluid motion editing",
-          imageSrc: "http://img.b2bpic.net/free-photo/silhouette-man-gym_23-2148024305.jpg",
-        },
-        {
-          title: "Abstract Concepts",
-          description: "Creative visual flow",
-          imageSrc: "http://img.b2bpic.net/free-photo/smoke-pattern-creative-modern-graphic-design_23-2148092381.jpg",
-        },
-        {
-          title: "Lifestyle Campaign",
-          description: "Premium brand look",
-          imageSrc: "http://img.b2bpic.net/free-photo/top-view-elegant-plates-table_23-2148517973.jpg",
-        },
-        {
-          title: "Data Visualization",
-          description: "Marketing metrics UI",
-          imageSrc: "http://img.b2bpic.net/free-photo/colleagues-preparing-business-strategies_482257-120467.jpg",
-        },
-      ]}
-      textAnimation="slide-up"
-    />
-    </SectionErrorBoundary>
-  </div>
+            tag="Portafolio de Redes"
+            title="Estrategias de Video & Casos de Éxito"
+            description="Explora nuestro flujo visual y los sistemas de contenido que impulsan a marcas líderes en Instagram y TikTok."
+            primaryButton={{
+              text: "Iniciar Proyecto",
+              href: "#contact",
+            }}
+            items={[
+              {
+                title: "Cinemática de Marca",
+                description: "Narrativa visual de alta gama y posicionamiento de autoridad.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-amara.mp4",
+              },
+              {
+                title: "Crecimiento en Instagram Reels",
+                description: "Hook inicial, ritmo acelerado y call-to-action efectivo.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-chloe.mp4",
+              },
+              {
+                title: "Guiones con Propósito",
+                description: "Copywriting enfocado en la psicología del comprador.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-elena.mp4",
+              },
+              {
+                title: "Edición Dinámica & Efectos",
+                description: "Transiciones fluidas y diseño sonoro envolvente.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
+              },
+              {
+                title: "Campañas de Estilo de Vida",
+                description: "Conexión emocional y estética sofisticada.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-isla.mp4",
+              },
+              {
+                title: "Embudos de Retención",
+                description: "Optimización de embudos de ventas en video.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-zara.mp4",
+              },
+              {
+                title: "Producción & Dirección",
+                description: "Calidad de producción profesional sin fricción.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-nadia.mp4",
+              },
+            ]}
+            textAnimation="slide-up"
+          />
+        </SectionErrorBoundary>
+      </div>
 
-  <div id="results" data-section="results">
-    <SectionErrorBoundary name="results">
+      <div id="results" data-section="results">
+        <SectionErrorBoundary name="results">
           <MetricsMediaCards
-      tag="Proven Results"
-      title="Data-Driven Creativity"
-      description="We combine creative storytelling with rigorous funnel systems to drive real performance."
-      metrics={[
-        {
-          value: "350%",
-          title: "Revenue Increase",
-          description: "Avg. boost for our funnel clients",
-          imageSrc: "http://img.b2bpic.net/free-photo/analysis-innovation-opportunities-strengths-strategic_53876-14003.jpg",
-        },
-        {
-          value: "4.2x",
-          title: "Engagement Growth",
-          description: "Across social channels",
-          imageSrc: "http://img.b2bpic.net/free-photo/colorful-bar-graph-orange-graph-pink-background_23-2147892252.jpg",
-        },
-        {
-          value: "24h",
-          title: "Production Speed",
-          description: "Average turnaround time",
-          imageSrc: "http://img.b2bpic.net/free-photo/graph-growth-success-strategy-marketing-computer-concept_53876-47081.jpg",
-        },
-        {
-          value: "98%",
-          title: "Client Retention",
-          description: "Long-term partnership rate",
-          imageSrc: "http://img.b2bpic.net/free-photo/computer-dark-room-with-graphs-screen_169016-48771.jpg",
-        },
-        {
-          value: "12M+",
-          title: "Total Views",
-          description: "Across managed platforms",
-          imageSrc: "http://img.b2bpic.net/free-photo/digital-devices-displaying-company-data_482257-119238.jpg",
-        },
-      ]}
-      textAnimation="slide-up"
-    />
-    </SectionErrorBoundary>
-  </div>
+            tag="Resultados Probados"
+            title="Métricas Reales en Redes y Conversión"
+            description="Unimos creatividad estética con analítica rigurosa para generar impacto comercial en cada cliente."
+            metrics={[
+              {
+                value: "+350%",
+                title: "Incremento en Ventas",
+                description: "Promedio de crecimiento en ventas para clientes con embudo de contenido.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
+              },
+              {
+                value: "4.8x",
+                title: "Mayor Engagement",
+                description: "Aumento de interacciones cualificadas en Instagram y TikTok.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-chloe.mp4",
+              },
+              {
+                value: "24h",
+                title: "Velocidad de Entrega",
+                description: "Flujo continuo de producción y edición para publicaciones diarias.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/joes-coffee/hero/hero.mp4",
+              },
+              {
+                value: "98%",
+                title: "Retención de Clientes",
+                description: "Relaciones estratégicas a largo plazo basadas en retorno directo.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-zara.mp4",
+              },
+              {
+                value: "15M+",
+                title: "Visualizaciones Totales",
+                description: "Reproducciones acumuladas en canales gestionados por Crowned.",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-nadia.mp4",
+              },
+            ]}
+            textAnimation="slide-up"
+          />
+        </SectionErrorBoundary>
+      </div>
 
-  <div id="testimonials" data-section="testimonials">
-    <SectionErrorBoundary name="testimonials">
+      <div id="testimonials" data-section="testimonials">
+        <SectionErrorBoundary name="testimonials">
           <TestimonialOverlayCards
-      tag="Client Success"
-      title="What Clients Say"
-      description="We are honored to work with brands that demand creative excellence."
-      testimonials={[
-        {
-          name: "Alex Rivet",
-          role: "CEO",
-          company: "Vantage",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/boudoir-portrait-asian-woman_23-2148240047.jpg",
-        },
-        {
-          name: "Sarah Miller",
-          role: "Director",
-          company: "LuxBrand",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/positive-confident-business-coach-posing-training-room_74855-3026.jpg",
-        },
-        {
-          name: "Jonah K.",
-          role: "Founder",
-          company: "Rise",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-smiling-blonde-businesswoman-formal-dressed-isolated-dark-textured-background_613910-4617.jpg",
-        },
-        {
-          name: "Elena M.",
-          role: "CMO",
-          company: "Flow",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/portrait-beautiful-business-office-business-center_1303-20365.jpg",
-        },
-        {
-          name: "Marc T.",
-          role: "CEO",
-          company: "Sprint",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/businessman-smiling-looking-camera_23-2148112827.jpg",
-        },
-      ]}
-      textAnimation="slide-up"
-    />
-    </SectionErrorBoundary>
-  </div>
+            tag="Historias de Éxito"
+            title="Lo que Dicen Nuestros Clientes"
+            description="Marcas y fundadores que confiaron en nuestra metodología para transformar sus redes en canales de ingresos."
+            testimonials={[
+              {
+                name: "Alex Rivet",
+                role: "CEO",
+                company: "Vantage Group",
+                rating: 5,
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-amara.mp4",
+              },
+              {
+                name: "Sofía Miller",
+                role: "Directora de Marketing",
+                company: "LuxBrand Co.",
+                rating: 5,
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-chloe.mp4",
+              },
+              {
+                name: "Jonah K.",
+                role: "Fundador",
+                company: "Rise Apparel",
+                rating: 5,
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-elena.mp4",
+              },
+              {
+                name: "Elena M.",
+                role: "CMO",
+                company: "Flow Digital",
+                rating: 5,
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-isla.mp4",
+              },
+              {
+                name: "Marcos T.",
+                role: "Fundador",
+                company: "Sprint Health",
+                rating: 5,
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/skincare-luxury/influencer-zara.mp4",
+              },
+            ]}
+            textAnimation="slide-up"
+          />
+        </SectionErrorBoundary>
+      </div>
 
-  <div id="social-proof" data-section="social-proof">
-    <SectionErrorBoundary name="social-proof">
+      <div id="social-proof" data-section="social-proof">
+        <SectionErrorBoundary name="social-proof">
           <SocialProofMarquee
-      tag="Trusted By"
-      title="Building Industry Leaders"
-      description="We've had the privilege of partnering with companies shaping their industries."
-      names={[
-        "Lumina",
-        "Apex Labs",
-        "Nova",
-        "Stellar",
-        "Orbit",
-        "Flux",
-        "Zenith",
-      ]}
-      textAnimation="slide-up"
-    />
-    </SectionErrorBoundary>
-  </div>
+            tag="Confían en Crowned"
+            title="Creando Líderes en Redes Sociales"
+            description="Trabajamos junto a empresas y creadores que marcan tendencia en sus industrias."
+            names={[
+              "Lumina",
+              "Apex Studio",
+              "Nova Agency",
+              "Stellar Media",
+              "Orbit Funnels",
+              "Flux Commerce",
+              "Zenith Luxury",
+            ]}
+            textAnimation="slide-up"
+          />
+        </SectionErrorBoundary>
+      </div>
 
-  <div id="faq" data-section="faq">
-    <SectionErrorBoundary name="faq">
+      <div id="faq" data-section="faq">
+        <SectionErrorBoundary name="faq">
           <FaqSplitMedia
-      tag="Common Questions"
-      title="Everything You Need To Know"
-      description="Transparency is at the core of our partnership model."
-      items={[
-        {
-          question: "What is the timeline for new clients?",
-          answer: "We onboard and deploy custom content systems within 14 days.",
-        },
-        {
-          question: "Do you only do video content?",
-          answer: "We focus on video and storytelling-led systems (funnels, social growth, messaging).",
-        },
-        {
-          question: "How do you measure success?",
-          answer: "Through funnel conversion metrics, engagement quality, and ROAS.",
-        },
-      ]}
-      textAnimation="slide-up"
-      imageSrc="http://img.b2bpic.net/free-photo/laptop-computer-with-company-charts-screen-standing-table-startup-office-while-diverse-team-sharing-papers-with-marketing-turnover-it-multiethnic-businesspeople-analyzing-graphs_482257-37042.jpg"
-    />
-    </SectionErrorBoundary>
-  </div>
+            tag="Preguntas Frecuentes"
+            title="Todo lo que Necesitas Saber"
+            description="Transparencia, claridad y procesos ágiles desde el primer día."
+            items={[
+              {
+                question: "¿Cuál es el tiempo de inicio para nuevos clientes?",
+                answer: "Diseñamos la estrategia, los guiones y comenzamos las producciones de video en menos de 10 días laborables.",
+              },
+              {
+                question: "¿Solo crean contenido en formato video?",
+                answer: "Nos especializamos en video corto (Reels, TikToks, Shorts) y en el diseño del embudo estratégico completo para convertir esas vistas en ventas reales.",
+              },
+              {
+                question: "¿Cómo miden el éxito de las campañas?",
+                answer: "Analizamos retención de audiencia, tasa de interacción, leads cualificados y el retorno de inversión comercial directo.",
+              },
+              {
+                question: "¿Qué necesita aportar mi empresa?",
+                answer: "Nosotros nos encargamos del análisis de mercado, la estrategia de guiones, edición y optimización. Tu equipo solo aprueba el plan o participa en las grabaciones clave.",
+              },
+            ]}
+            videoSrc="https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4"
+            textAnimation="slide-up"
+          />
+        </SectionErrorBoundary>
+      </div>
 
-  <div id="contact" data-section="contact">
-    <SectionErrorBoundary name="contact">
+      <div id="contact" data-section="contact">
+        <SectionErrorBoundary name="contact">
           <ContactCta
-      tag="Ready to Start?"
-      text="Your brand deserves the Crowned treatment. Let's build your content infrastructure today."
-      primaryButton={{
-        text: "Schedule Strategy Call",
-        href: "#",
-      }}
-      secondaryButton={{
-        text: "View Brochure",
-        href: "#",
-      }}
-      textAnimation="slide-up"
-    />
-    </SectionErrorBoundary>
-  </div>
+            tag="¿Listo para Escalar tu Marca?"
+            text="Tu negocio merece la estrategia, elegancia y resultados de Crowned. Hablemos hoy y construyamos tu infraestructura de contenido."
+            primaryButton={{
+              text: "Agendar Sesión Estratégica",
+              href: "#",
+            }}
+            secondaryButton={{
+              text: "Ver Portafolio en PDF",
+              href: "#",
+            }}
+            textAnimation="slide-up"
+          />
+        </SectionErrorBoundary>
+      </div>
     </>
   );
 }
