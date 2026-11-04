@@ -64,7 +64,7 @@ export default function HomePage() {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?v=2",
                 name: "Proyectos Inmobiliarios & Villas de Lujo",
                 followers: "+6.5M Impresiones",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/rooms/gardenvilla.webp",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/rooms/gardenvilla.webp?_wi=1",
               },
             ]}
           />
@@ -252,7 +252,7 @@ export default function HomePage() {
               {
                 title: "Playas & Vistas Aéreas de Cap Cana",
                 description: "Contenido aspiracional de lifestyle playero y villas de vacaciones.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/rooms/gardenvilla.webp",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/rooms/gardenvilla.webp?_wi=2",
               },
               {
                 title: "Taller Mecánico & Mantenimiento Especializado",
