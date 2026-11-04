@@ -4,17 +4,16 @@
 @import "./styles/animations.css";
 
 :root {
-  /* Black Theme with Ivory typography & #DA7756 Terracotta Brand CTA */
+  /* @colorThemes/lightTheme/grayNavyBlue */
   --background: #000000;
-  --card: #121217;
-  --foreground: #f4f4f7;
+  --card: #111111;
+  --foreground: #ffffff;
   --primary-cta: #DA7756;
   --primary-cta-text: #ffffff;
-  --secondary-cta: #1e1e25;
-  --secondary-cta-text: #f4f4f7;
-  --accent: #17171e;
-  --background-accent: #0a0a0e;
-  --border: rgba(255, 255, 255, 0.12);
+  --secondary-cta: #ffffff;
+  --secondary-cta-text: #000000;
+  --accent: #333333;
+  --background-accent: #222222;
 
   /* @layout/border-radius/rounded */
   --radius: 1.5rem;
@@ -132,14 +131,12 @@
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.2) rgba(0, 0, 0, 0);
-  transition: background-color 0.25s ease, border-color 0.25s ease;
+  scrollbar-color: rgba(255, 255, 255, 1) rgba(255, 255, 255, 0);
 }
 
 html {
   overscroll-behavior: none;
   overscroll-behavior-y: none;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -170,27 +167,27 @@ i,
   font-family: 'Cardo', serif;
 }
 
-/* Default card/button styles */
+/* Default card/button styles. Template theme.css imports come after this file
+   in template routes, so template-specific styles win there. */
 
 .card {
   /* WEBILD_CARD_STYLE */
-  background: var(--color-card);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px -4px rgba(0, 0, 0, 0.5);
+  /* @cards/gradient-radial */
+  background: radial-gradient(circle at center, color-mix(in srgb, var(--color-card) 100%, var(--color-accent) 20%) 0%, var(--color-card) 90%);
 }
 
 .primary-button {
   /* WEBILD_PRIMARY_BUTTON */
-  background: linear-gradient(135deg, #e58362 0%, #DA7756 50%, #b85435 100%);
-  color: var(--color-primary-cta-text);
-  box-shadow: 0 4px 16px 0 rgba(218, 119, 86, 0.35);
+  /* @primaryButtons/metallic */
+  background: linear-gradient(135deg, color-mix(in srgb, var(--color-primary-cta) 80%, var(--color-foreground)) 0%, var(--color-primary-cta) 25%, color-mix(in srgb, var(--color-primary-cta) 90%, var(--color-background)) 50%, var(--color-primary-cta) 75%, color-mix(in srgb, var(--color-primary-cta) 85%, var(--color-foreground)) 100%);
+  box-shadow: inset 0 1px 0 0 color-mix(in srgb, var(--color-foreground) 30%, transparent), 0 3px 8px -2px color-mix(in srgb, var(--color-background) 50%, transparent);
 }
 
 .secondary-button {
   /* WEBILD_SECONDARY_BUTTON */
-  backdrop-filter: blur(12px);
-  background: rgba(36, 36, 44, 0.85);
-  color: var(--color-foreground);
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  /* @secondaryButtons/glass */
+  backdrop-filter: blur(8px);
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--color-secondary-cta) 80%, transparent), var(--color-secondary-cta));
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  border: 1px solid var(--color-secondary-cta);
 }
