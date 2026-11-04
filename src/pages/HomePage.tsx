@@ -30,40 +30,40 @@ export default function HomePage() {
             textAnimation="fade-blur"
             videos={[
               {
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=1",
                 name: "Resorts & Playas en Punta Cana",
                 followers: "+4.8M Reproducciones",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/amenities/pool.jpg",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/amenities/pool.jpg?_wi=1",
               },
               {
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=1",
                 name: "Concesionarios & Showrooms de Lujo",
                 followers: "+3.2M Interacciones",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/feature1.webp",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/feature1.webp?_wi=1",
               },
               {
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=1",
                 name: "Villas de Playa & Vistas Aéreas en Cap Cana",
                 followers: "+5.1M Alcance Único",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/rooms/oceanpavillion.webp",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/rooms/oceanpavillion.webp?_wi=1",
               },
               {
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4?_wi=1",
                 name: "Talleres Mecánicos & Servicio Especializado",
                 followers: "+2.9M Visualizaciones",
                 imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/features2.webp",
               },
               {
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4?_wi=1",
                 name: "Excursiones en Catamarán & Bayahíbe",
                 followers: "4.8x Conversión Directa",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/journeys/sailing.webp",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/journeys/sailing.webp?_wi=1",
               },
               {
                 videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?v=2",
                 name: "Taller & Detallado Automotriz en Santo Domingo",
                 followers: "+6.5M Impresiones",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/feature1.webp",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/detailing/features/feature1.webp?_wi=2",
               },
             ]}
           />
@@ -77,7 +77,7 @@ export default function HomePage() {
             quote="Posicionamos las mejores marcas del país combinando la belleza paradisíaca de los resorts y playas de República Dominicana con la solidez visual de concesionarios y talleres mecánicos, todo gestionado mediante estrategias de Instagram diseñadas para llenar habitaciones y agendar citas."
             author="El Equipo Crowned"
             role="Gestión de Redes Sociales & Producción Audiovisual Especializada"
-            videoSrc="https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4"
+            videoSrc="https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=2"
             textAnimation="slide-up"
           />
         </SectionErrorBoundary>
@@ -98,19 +98,19 @@ export default function HomePage() {
                 title: "Turismo & Resorts en República Dominicana",
                 description: "Estrategia visual y Reels virales para resorts 5 estrellas, villas de lujo, hoteles boutique y playas en Punta Cana, Cap Cana, Las Terrenas y Bayahíbe. Resaltamos experiencias caribeñas exclusivas para atraer viajeros nacionales e internacionales.",
                 tags: ["Punta Cana", "Resorts de Lujo", "Playas RD", "Turismo"],
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/amenities/pool.jpg",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/amenities/pool.jpg?_wi=2",
               },
               {
                 title: "Concesionarios de Vehículos & Showrooms",
                 description: "Creación de contenido para concesionarios de vehículos nuevos y seminuevos. Destacamos lanzamientos, recorridos 360°, pruebas de manejo y promociones estratégicas que generan solicitudes directas por mensaje privado.",
                 tags: ["Concesionarios", "Showrooms", "Ventas de Autos", "Reels Automotrices"],
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=2",
               },
               {
                 title: "Talleres Mecánicos & Centros de Mantenimiento",
                 description: "Mostramos la capacidad técnica, diagnósticos computarizados y antes/después de reparación mecánica y auto detailing. Generamos máxima credibilidad para agendar citas de servicio semanalmente.",
                 tags: ["Talleres Mecánicos", "Mantenimiento Preventivo", "Auto Detailing", "Citas por DM"],
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4?_wi=2",
               },
               {
                 title: "Gestión Integral de Redes Sociales (Instagram SMM)",
@@ -144,28 +144,28 @@ export default function HomePage() {
               {
                 title: "Resorts & Hoteles en Punta Cana",
                 description: "Videos envolventes que muestran piscinas infinitas, suites de lujo y gastronomía de clase mundial.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=3",
                 buttonIcon: "Compass",
                 buttonHref: "#portfolio",
               },
               {
                 title: "Exhibición en Concesionarios",
                 description: "Presentaciones cinematográficas de vehículos con ángulos dinámicos y sonido envolvente.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=3",
                 buttonIcon: "Car",
                 buttonHref: "#portfolio",
               },
               {
                 title: "Playas Paradisiacas & Cap Cana",
                 description: "Tomas aéreas y estilo de vida costero en las playas más icónicas de República Dominicana.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=2",
                 buttonIcon: "Sun",
                 buttonHref: "#portfolio",
               },
               {
                 title: "Procesos en Talleres Mecánicos",
                 description: "Contenido detallado de mecánica especializada, afinación y acabados de auto detailing.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4?_wi=3",
                 buttonIcon: "Wrench",
                 buttonHref: "#portfolio",
               },
@@ -189,27 +189,27 @@ export default function HomePage() {
               {
                 title: "Resorts de Lujo en Punta Cana",
                 description: "Producción audiovisual de alta gama para complejos turísticos y suites frente al mar.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/amenities/pool.jpg",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/amenities/pool.jpg?_wi=3",
               },
               {
                 title: "Showroom & Concesionario de Vehículos",
                 description: "Reels de impacto para lanzamientos de autos de lujo e inventario nuevo.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=4",
               },
               {
                 title: "Playas & Vistas Aéreas de Cap Cana",
                 description: "Contenido aspiracional de lifestyle playero y villas de vacaciones.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/rooms/oceanpavillion.webp",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/rooms/oceanpavillion.webp?_wi=2",
               },
               {
                 title: "Taller Mecánico & Mantenimiento Especializado",
                 description: "Demostraciones paso a paso de servicios mecánicos y reparaciones de precisión.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4?_wi=4",
               },
               {
                 title: "Excursiones en Catamarán & Bayahíbe",
                 description: "Videos de aventuras marítimas y turismo ecológico en aguas turquesas.",
-                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/journeys/sailing.webp",
+                imageSrc: "https://storage.googleapis.com/webild/default/templates/hotel/journeys/sailing.webp?_wi=2",
               },
               {
                 title: "Villas de Playa & Hospitalidad",
@@ -238,31 +238,31 @@ export default function HomePage() {
                 value: "+380%",
                 title: "Reservas en Resorts",
                 description: "Incremento en consultas y reservas directas para hoteles y villas en Punta Cana.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=4",
               },
               {
                 value: "4.5x",
                 title: "Pruebas de Manejo",
                 description: "Aumento en citas de test drive agendadas por DM para concesionarios automotrices.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=5",
               },
               {
                 value: "+240",
                 title: "Citas en Taller Mecánico",
                 description: "Clientes nuevos recibidos mensualmente gracias a reels de mantenimiento y diagnóstico.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4?_wi=5",
               },
               {
                 value: "18M+",
                 title: "Alcance en Instagram",
                 description: "Visualizaciones orgánicas acumuladas en contenido de playas, resorts y autos en RD.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=3",
               },
               {
                 value: "98%",
                 title: "Fidelización de Clientes",
                 description: "Marcas del sector turísticos y automotriz que mantienen su gestión de redes con Crowned.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4?_wi=2",
               },
             ]}
             textAnimation="slide-up"
@@ -282,35 +282,35 @@ export default function HomePage() {
                 role: "Director de Operaciones",
                 company: "Punta Cana Ocean Resort",
                 rating: 5,
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=5",
               },
               {
                 name: "Ing. Marcos Almonte",
                 role: "Gerente de Ventas",
                 company: "AutoHaus Concesionario RD",
                 rating: 5,
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/hero/hero.mp4?_wi=6",
               },
               {
                 name: "Lic. Laura Reyes",
                 role: "Directora de Marketing",
                 company: "Cap Cana Luxury Villas",
                 rating: 5,
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=4",
               },
               {
                 name: "Taller AutoTech RD",
                 role: "Propietario",
                 company: "Taller Mecánico Especializado Santiago",
                 rating: 5,
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/detailing/contact/cta-video.mp4?_wi=6",
               },
               {
                 name: "Carlos Manuel Cabrera",
                 role: "Fundador",
                 company: "Bayahíbe Excursions & Catamarán",
                 rating: 5,
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4?_wi=3",
               },
             ]}
             textAnimation="slide-up"
@@ -363,7 +363,7 @@ export default function HomePage() {
                 answer: "Tras la reunión de planificación estratégica y la toma del contenido inicial en las instalaciones de tu resort, concesionario o taller, lanzamos el primer calendario editorial en menos de 7 a 10 días laborables.",
               },
             ]}
-            videoSrc="https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4"
+            videoSrc="https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=6"
             textAnimation="slide-up"
           />
         </SectionErrorBoundary>
