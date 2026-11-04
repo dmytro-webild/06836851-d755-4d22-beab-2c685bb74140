@@ -13,9 +13,20 @@ interface NavbarFloatingProps {
 
 const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, onClose?: () => void) => {
   if (href.startsWith("#")) {
-    e.preventDefault();
-    const element = document.getElementById(href.slice(1));
-    element?.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (window.location.pathname !== "/") {
+      window.location.href = "/" + href;
+    } else {
+      e.preventDefault();
+      const element = document.getElementById(href.slice(1));
+      element?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  } else if (href.includes("#")) {
+    const [path, hash] = href.split("#");
+    if (window.location.pathname === path) {
+      e.preventDefault();
+      const element = document.getElementById(hash);
+      element?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   }
   onClose?.();
 };
