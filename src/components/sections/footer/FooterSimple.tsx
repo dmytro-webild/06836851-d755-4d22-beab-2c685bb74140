@@ -39,11 +39,13 @@ const FooterBottomLink = ({ label, href, onClick }: FooterLink) => {
 
 const FooterSimple = ({
   brand,
+  brandImageSrc,
   columns,
   copyright,
   links,
 }: {
   brand: string;
+  brandImageSrc?: string;
   columns: FooterColumn[];
   copyright: string;
   links: FooterLink[];
@@ -53,7 +55,11 @@ const FooterSimple = ({
       <div className="w-content-width mx-auto">
         <div className="flex flex-col md:flex-row gap-10 md:gap-0 justify-between items-start mb-10">
           <div className="flex flex-col gap-2 items-start">
-            <span className="text-xl font-bold tracking-tight text-primary-cta-text">{brand}</span>
+            {brandImageSrc ? (
+              <img src={brandImageSrc} alt={brand} className="h-7 md:h-8 w-auto object-contain brightness-0 invert" />
+            ) : (
+              <span className="text-xl font-bold tracking-tight text-primary-cta-text">{brand}</span>
+            )}
             <span className="text-xs opacity-80 font-serif italic tracking-wider">est 2026 · Estudio creativo</span>
           </div>
 
